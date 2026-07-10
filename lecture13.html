@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 13. Modelling oscillations with second order ODEs: a worked example &#8212; MAS108 Mathematical Modelling</title>
+    <title>Lecture 13. Inhomogeneous second order ODEs &#8212; MAS108 Mathematical Modelling</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture13';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 14. The muddiest point: part II" href="lecture14.html" />
-    <link rel="prev" title="Lecture 12. Inhomogeneous second order ODEs" href="lecture12.html" />
+    <link rel="next" title="Lecture 14. Modelling oscillations with second order ODEs: a worked example" href="lecture14.html" />
+    <link rel="prev" title="Lecture 12. Modelling damped oscillations with homogeneous second order ODEs" href="lecture12.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -422,7 +422,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 13. Modelling oscillations with second order ODEs: a worked example</h1>
+    <h1>Lecture 13. Inhomogeneous second order ODEs</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -432,6 +432,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-method-of-undetermined-coefficients">12.1 The method of undetermined coefficients</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-13-homework-exercises">Lecture 13 Homework exercises</a></li>
 </ul>
             </nav>
@@ -444,226 +445,168 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="lecture-13-modelling-oscillations-with-second-order-odes-a-worked-example">
-<h1>Lecture 13. Modelling oscillations with second order ODEs: a worked example<a class="headerlink" href="#lecture-13-modelling-oscillations-with-second-order-odes-a-worked-example" title="Link to this heading">#</a></h1>
-<p>In the last three lectures, we introduced both homogeneous and inhomogeneous ODEs, showing how they can be used to model oscillatory motion. Here we will work through a single example that encompasses the various cases we have looked at: undamped motion, damped motion, and forced motion.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-13-inhomogeneous-second-order-odes">
+<h1>Lecture 13. Inhomogeneous second order ODEs<a class="headerlink" href="#lecture-13-inhomogeneous-second-order-odes" title="Link to this heading">#</a></h1>
+<p>Before we go any further, let’s start with an example.</p>
 <div class="proof example admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 20 </span></p>
 <section class="example-content" id="proof-content">
-<p>A particle <span class="math notranslate nohighlight">\(P\)</span> of mass <span class="math notranslate nohighlight">\(m\)</span> is tied to one end of an elastic string of natural length <span class="math notranslate nohighlight">\(a\)</span> and stiffness <span class="math notranslate nohighlight">\(2 m \omega^{2}\)</span>. The other end <span class="math notranslate nohighlight">\(B\)</span> is attached to a point <span class="math notranslate nohighlight">\(A\)</span> on a fixed smooth horizontal plane. The particle is released from rest on the plane when the string is extended to a length <span class="math notranslate nohighlight">\(2 a\)</span>.</p>
-<p>(a) Undamped motion. If the subsequent motion is unresisted, find an expression for extension, <span class="math notranslate nohighlight">\(x(t)\)</span>, of the string at time <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<p>(b) Damped motion. Suppose now that the subsequent motion is resisted by a force <span class="math notranslate nohighlight">\(2 m \omega\)</span> times the speed. Show that</p>
+<p>A particle <span class="math notranslate nohighlight">\(P\)</span> of mass <span class="math notranslate nohighlight">\(m\)</span> is attached to one end of a spring of natural length <span class="math notranslate nohighlight">\(L\)</span> and stiffness <span class="math notranslate nohighlight">\(k\)</span>. The other end of the spring is fixed at the point <span class="math notranslate nohighlight">\(A\)</span>. Initially the spring hangs down vertically in equilibrium. The point <span class="math notranslate nohighlight">\(A\)</span> is then set in vertical motion, so that its displacement from its initial position is</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-\ddot{x}+2 \omega \dot{x}+2 \omega^{2} x=0 \quad(x \geq 0) \tag{148}
+y(t)=D \sin (\sigma t) \tag{135}
 \end{equation*}
 \]</div>
-<p>Find <span class="math notranslate nohighlight">\(x\)</span> as a function of <span class="math notranslate nohighlight">\(t\)</span>, and show that the speed of the particle at the moment the string becomes slack is</p>
+<p>where <span class="math notranslate nohighlight">\(D&gt;0\)</span> and <span class="math notranslate nohighlight">\(\sigma&gt;0\)</span> are constants. Let <span class="math notranslate nohighlight">\(x(t)\)</span> be the displacement of the particle from its equilibrium position. Show that the equation of motion for the particle is</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-\omega a \sqrt{2} e^{-\frac{3 \pi}{4}} \tag{149}
+\ddot{x}+\omega^{2} x=\omega^{2} D \sin (\sigma t) \tag{136}
 \end{equation*}
 \]</div>
-<p>(c) Forced motion. Finally, suppose that the motion is resisted as described in part (b), but, instead of the other end of the string being fixed, it is forced to oscillate so that the distance of <span class="math notranslate nohighlight">\(B\)</span> from <span class="math notranslate nohighlight">\(A\)</span> at time <span class="math notranslate nohighlight">\(t\)</span> is</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-y(t)=a[2 \sin (\omega t)-\cos (\omega t)] . \tag{150}
-\end{equation*}
-\]</div>
-<p>In this case, show that the equation of motion is</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\ddot{x}+2 \omega \dot{x}+2 \omega^{2} x=-5 a \omega^{2} \cos (\omega t) \tag{151}
-\end{equation*}
-\]</div>
-<p>and find <span class="math notranslate nohighlight">\(x\)</span> as a function of <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>where <span class="math notranslate nohighlight">\(\omega\)</span> is a positive constant which should be determined.</p>
 <p><strong>Solution.</strong></p>
 <div class="toggle docutils container">
-<p>(a) By Hooke’s law, the tension in the string when it is extended a distance <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(T=2 m \omega^{2} x\)</span>. Since <span class="math notranslate nohighlight">\(T\)</span> is the only force acting on the mass (Figure 20), the second law of motion (Equation 106) says that</p>
+<p>The forces acting on <span class="math notranslate nohighlight">\(P\)</span> are the weight, <span class="math notranslate nohighlight">\(m g\)</span>, acting vertically downwards, and the tension, <span class="math notranslate nohighlight">\(T\)</span>, in the spring, acting vertically upwards. In equilibrium, let the tension in the spring be <span class="math notranslate nohighlight">\(T=T_{0}\)</span> and the extension of the spring be <span class="math notranslate nohighlight">\(a\)</span>. By Hooke’s Law, <span class="math notranslate nohighlight">\(T_{0}=k a\)</span>. Since the system is in equilibrium, the vertical forces balance (Figure 19), so</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+m g=T_{0}=k a \tag{137}
+\end{equation*}
+\]</div>
+<p>When the system is set in motion, the distance of the spring from the fixed level is <span class="math notranslate nohighlight">\(L+a+x\)</span> (Figure 19), the original length of the spring, <span class="math notranslate nohighlight">\(L+a\)</span>, plus the displacement of the particle from its original position, <span class="math notranslate nohighlight">\(x\)</span>. Since the top of the spring is a distance <span class="math notranslate nohighlight">\(y\)</span> from the fixed level, the length of the spring is <span class="math notranslate nohighlight">\(L+a+x-y\)</span> and so the extension of the spring is <span class="math notranslate nohighlight">\((L+a+x-y)-L=a+x-y\)</span>. By Hooke’s Law, the tension <span class="math notranslate nohighlight">\(T\)</span> in the spring is <span class="math notranslate nohighlight">\(k\)</span> times the extension, which is</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+T=k(a+x-y) \tag{138}
+\end{equation*}
+\]</div>
+<p>Using Newton’s Second Law in the vertical direction:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp; m \ddot{x}=-T=-2 m \omega^{2} x, \\
-\Longrightarrow &amp; \ddot{x}+2 \omega^{2} x=0 \tag{152}
+m \ddot{x} &amp; =m g-T \\
+&amp; =m g-k(a+x-y) \\
+&amp; =m g-k a-k x+k y \\
+&amp; =-k x+k y, \tag{139}
 \end{align*}
 \end{split}\]</div>
-<img src="mas108_stretched_string.png" alt="drawing" width="400"/>
-<p>Figure 20: Forces acting on the string in Example 20a.</p>
-<p>By Proposition 6, the general solution to Equation (152) is</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-x(t)=A \cos (\sqrt{2} \omega t)+B \sin (\sqrt{2} \omega t) \tag{153}
-\end{equation*}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are arbitrary constants. Since the string is initially stretched to a length <span class="math notranslate nohighlight">\(2 a\)</span>, the initial extension is <span class="math notranslate nohighlight">\(a\)</span>, i.e. <span class="math notranslate nohighlight">\(x(0)=a\)</span>. This means that <span class="math notranslate nohighlight">\(A=a\)</span> so</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-x(t)=a \cos (\sqrt{2} \omega t)+B \sin (\sqrt{2} \omega t) \tag{154}
-\end{equation*}
-\]</div>
-<p>Since the particle starts at rest, we have <span class="math notranslate nohighlight">\(\dot{x}(0)=0\)</span>. To apply this condition, we need to differentiate <span class="math notranslate nohighlight">\(x(t)\)</span> to give</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\dot{x}(t)=-a \sqrt{2} \omega \sin (\sqrt{2} \omega t)+B \sqrt{2} \omega \cos (\sqrt{2} \omega t) \text {. } \tag{155}
-\end{equation*}
-\]</div>
-<p>Plugging in <span class="math notranslate nohighlight">\(t=0\)</span> and <span class="math notranslate nohighlight">\(\dot{x}(0)=0\)</span> gives <span class="math notranslate nohighlight">\(B \sqrt{2} \omega=0\)</span> so that <span class="math notranslate nohighlight">\(B=0\)</span>. Therefore</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-x(t)=a \cos (\sqrt{2} \omega t) \tag{156}
-\end{equation*}
-\]</div>
-<p>(b) In this case, the forces are shown in the diagram below</p>
-<img src="mas108_stretched_string_damped.png" alt="drawing" width="400"/>
-<p>Using Newton’s second law, the equation of motion is</p>
+<img src="mas108_forced_osc_both.png" alt="drawing" width="400"/>
+<p><em>Figure 19: Left-hand plot shows the situation when the system is in equilibrium. The righthand plot is when the system is in motion.</em></p>
+<p>where we have used Equation (137) in the last equality. Therefore</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp; m \ddot{x}=-2 m \omega \dot{x}-T=-2 m \omega \dot{x}-2 m \omega^{2} x, \\
-\Longrightarrow &amp; \ddot{x}+2 \omega \dot{x}+2 \omega^{2} x=0 . \tag{157}
+m \ddot{x}+k x &amp; =k y=k D \sin (\sigma t) \\
+\Longrightarrow \ddot{x}+\frac{k}{m} x &amp; =\frac{k}{m} D \sin (\sigma t), \tag{140}
 \end{align*}
 \end{split}\]</div>
-<p>We can then apply Proposition (6) to give</p>
+<p>and we have</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-x(t)=e^{-\omega t}[A \cos (\omega t)+B \sin (\omega t)] \tag{158}
+\ddot{x}+\omega^{2} x=D \omega^{2} \sin (\sigma t) \tag{141}
 \end{equation*}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are arbitrary constants. Using the initial condition <span class="math notranslate nohighlight">\(x=a\)</span> when <span class="math notranslate nohighlight">\(t=0\)</span> gives <span class="math notranslate nohighlight">\(A=a\)</span>, so that</p>
+<p>where <span class="math notranslate nohighlight">\(\omega^{2}=\frac{k}{m}\)</span>, so that <span class="math notranslate nohighlight">\(\omega=\sqrt{\frac{k}{m}}\)</span>.</p>
+</div>
+</section>
+</div><p>Notice that the resulting ODE (Equation 141) is not in the form of Equation (109) so we cannot use our results from Propositions 4-6.</p>
+<div class="proof definition admonition" id="def12_1">
+<p class="admonition-title"><span class="caption-number">Definition 15 </span></p>
+<section class="definition-content" id="proof-content">
+<p>Definition. An equation of the following type</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-x(t)=e^{-\omega t}[a \cos (\omega t)+B \sin (\omega t)] \tag{159}
+\ddot{x}+b \dot{x}+c x=f(t) \tag{142}
 \end{equation*}
 \]</div>
-<p>As in part (a), since the particle starts at rest, we have <span class="math notranslate nohighlight">\(\dot{x}(0)=0\)</span>. To apply this condition, we need to differentiate <span class="math notranslate nohighlight">\(x(t)\)</span> to give</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\dot{x}(t)=-\omega e^{-\omega t}[a \cos (\omega t)+B \sin (\omega t)]+e^{-\omega t}[-a \omega \sin (\omega t)+B \omega \cos (\omega t)] . \tag{160}
-\end{equation*}
-\]</div>
-<p>Plugging in <span class="math notranslate nohighlight">\(t=0\)</span> and <span class="math notranslate nohighlight">\(\dot{x}=0\)</span> gives <span class="math notranslate nohighlight">\(0=-a \omega+B \omega\)</span> so that <span class="math notranslate nohighlight">\(B=a\)</span>. The solution is then</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-x(t)=a e^{-\omega t}[\cos (\omega t)+\sin (\omega t)] \tag{161}
-\end{equation*}
-\]</div>
-<p>The string becomes slack when <span class="math notranslate nohighlight">\(x=0\)</span>, which is when <span class="math notranslate nohighlight">\(\cos (\omega t)+\sin (\omega t)=0\)</span>, i.e. <span class="math notranslate nohighlight">\(\tan (\omega t)=-1\)</span>. The lowest <span class="math notranslate nohighlight">\(t&gt;0\)</span> for which <span class="math notranslate nohighlight">\(\tan (\omega t)=-1\)</span> is when <span class="math notranslate nohighlight">\(\omega t=\frac{3 \pi}{4}\)</span> so <span class="math notranslate nohighlight">\(t=\frac{3 \pi}{4 \omega}\)</span>. Using Equation (160), we have</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{array}{r}
-\dot{x}\left(\frac{3 \pi}{4 \omega}\right)=a e^{-\frac{3 \pi}{4}}\left[-\omega \sin \left(\frac{3 \pi}{4}\right)+\omega \cos \left(\frac{3 \pi}{4}\right)\right] \\
-\quad=a e^{-\frac{3 \pi}{4}}\left[-\omega \frac{\sqrt{2}}{2}-\omega \frac{\sqrt{2}}{2}\right]=-a e^{-\frac{3 \pi}{4}} \omega \sqrt{2}
-\end{array}
-\end{split}\]</div>
-<p>(If you didn’t know that <span class="math notranslate nohighlight">\(\sin (3 \pi / 4)=\sqrt{2} / 2\)</span> and <span class="math notranslate nohighlight">\(\cos (3 \pi / 4)=-\sqrt{2} / 2\)</span>, now is the time to make sure you do!) Therefore the speed of the particle is</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\left|\dot{x}\left(\frac{3 \pi}{4 \omega}\right)\right|=a \omega \sqrt{2} e^{-\frac{3 \pi}{4}} \tag{163}
-\end{equation*}
-\]</div>
-<p>(c) In this case, the force diagram is</p>
-<img src="mas108_stretched_string_forced.png" alt="drawing" width="400"/>
-<p>The displacement of the particle from the fixed point <span class="math notranslate nohighlight">\(A\)</span> is now <span class="math notranslate nohighlight">\(x+a+y\)</span>. Therefore the velocity of the particle is <span class="math notranslate nohighlight">\(\dot{x}+\dot{y}\)</span> and the acceleration of the particle is <span class="math notranslate nohighlight">\(\ddot{x}+\ddot{y}\)</span>. Using Newton’s
-second law, the equation of motion is</p>
+<p>for some function <span class="math notranslate nohighlight">\(f(t) \neq 0\)</span> and constants <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>, is called an inhomogeneous second order ODE with constant coefficients.</p>
+</section>
+</div><p>Notice that Equation (141) is an example of an inhomogeneous second order ODE with constant coefficients.</p>
+<section id="the-method-of-undetermined-coefficients">
+<h2>12.1 The method of undetermined coefficients<a class="headerlink" href="#the-method-of-undetermined-coefficients" title="Link to this heading">#</a></h2>
+<p>There is no single catch-all method for solving inhomogeneous second order ODE with constant coefficients, but there is a method that works in many cases, called the method of undetermined coefficients, as follows</p>
+<ol class="arabic simple">
+<li><p>Try to find a solution to Equation (142) of the same form as <span class="math notranslate nohighlight">\(f(t)\)</span>, called the particular solution, <span class="math notranslate nohighlight">\(x_{P}(t)\)</span>.</p></li>
+<li><p>Solve the associated homogeneous ODE, <span class="math notranslate nohighlight">\(\ddot{x}_{I}+b \dot{x}_{I}+c x_{I}=0\)</span> to obtain the complementary function, <span class="math notranslate nohighlight">\(x_{I}(t)\)</span>.</p></li>
+<li><p>Then the general solution is <span class="math notranslate nohighlight">\(x(t)=x_{I}(t)+x_{P}(t)\)</span>.</p></li>
+</ol>
+<p>The problem with this method is that Step 1 does not always work for any function <span class="math notranslate nohighlight">\(f(t)\)</span>. However, it usually works for polynomials, exponential functions, sine, and cosine.</p>
+<div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 21 </span></p>
+<section class="example-content" id="proof-content">
+<p>Find the general solution to Equation (141) in the case <span class="math notranslate nohighlight">\(\sigma^{2} \neq \omega^{2}\)</span>.</p>
+<p><strong>Solution.</strong></p>
+<div class="toggle docutils container">
+<p>The right-hand side of Equation (141) is <span class="math notranslate nohighlight">\(\sin (\sigma t)\)</span>, so we will try to find a solution of the form <span class="math notranslate nohighlight">\(x(t)=A \sin (\sigma t)\)</span>. Here, <span class="math notranslate nohighlight">\(\dot{x}(t)=A \sigma \cos (\sigma t)\)</span> and <span class="math notranslate nohighlight">\(\ddot{x}(t)=-A \sigma^{2} \sin (\sigma t)\)</span>. Plugging these into Equation (141) gives</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp; m(\ddot{x}+\ddot{y})=-2 m \omega(\dot{x}+\dot{y})-2 m \omega^{2} x \\
-\Longrightarrow &amp; \ddot{x}+2 \omega \dot{x}+2 \omega^{2} x=-\ddot{y}-2 \omega \dot{y} \tag{164}
+&amp; A \omega^{2} \sin (\sigma t)-A \sigma^{2} \sin (\sigma t)=D \omega^{2} \sin (\sigma t) \\
+\Longrightarrow &amp; A\left(\omega^{2}-\sigma^{2}\right)=D \omega^{2} \\
+\Longrightarrow &amp; A=\frac{D \omega^{2}}{\omega^{2}-\sigma^{2}} \tag{143}
 \end{align*}
 \end{split}\]</div>
-<p>In the question, we are given that</p>
+<p>where we have used <span class="math notranslate nohighlight">\(\sigma^{2} \neq \omega^{2}\)</span> in the last step. Thus the particular solution is</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-y(t)=a[2 \sin (\omega t)-\cos (\omega t)] \tag{165}
+x_{P}(t)=\frac{D \omega^{2}}{\omega^{2}-\sigma^{2}} \sin (\sigma t) \tag{144}
 \end{equation*}
 \]</div>
-<p>Therefore</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; \dot{y}(t)=a \omega[2 \cos (\omega t)+\sin (\omega t)]  \tag{166}\\
-&amp; \ddot{y}(t)=a \omega^{2}[-2 \sin (\omega t)+\cos (\omega t)] \tag{167}
-\end{align*}
-\end{split}\]</div>
-<p>and therefore Equation (164) becomes</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-\ddot{x}+2 \omega \dot{x}+2 \omega^{2} x &amp; =a \omega^{2}[2 \sin (\omega t)-\cos (\omega t)-4 \cos (\omega t)-2 \sin (\omega t)] \\
-&amp; =-5 a \omega^{2} \cos (\omega t) \tag{168}
-\end{align*}
-\end{split}\]</div>
-<p>The complementary function for this differential equation has already been found in the previous part (Equation 161), so we only need to find a particular solution. For this, try</p>
+<p>Next we solve the corresponding inhomogeneous ODE</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-x_{P}(t)=p \cos (\omega t)+q \sin (\omega t) \tag{169}
+\ddot{x}_{I}+\omega^{2} x_{I}=0 \tag{145}
 \end{equation*}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span> are constants to be determined. Then</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; \dot{x}_{P}(t)=-p \omega \sin (\omega t)+q \omega \cos (\omega t)  \tag{170}\\
-&amp; \ddot{x}_{P}(t)=-p \omega^{2} \cos (\omega t)-q \omega^{2} \sin (\omega t) . \tag{171}
-\end{align*}
-\end{split}\]</div>
-<p>Substituting Equations (170-171) into Equation (168) gives</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
--p \omega^{2} \cos (\omega t)-q \omega^{2} \sin (\omega t)+2 \omega[-p \omega \sin (\omega t)+q \omega \cos (\omega t)] &amp; +2 \omega^{2}[p \cos (\omega t)+q \sin (\omega t)] \\
-&amp; =-5 a \omega^{2} \cos (\omega t) \tag{172}
-\end{align*}
-\end{split}\]</div>
-<p>We now equate the coefficients of <span class="math notranslate nohighlight">\(\cos (\omega t)\)</span> and <span class="math notranslate nohighlight">\(\sin (\omega t)\)</span> on either side of the equation, giving the following two equations for <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; -p \omega^{2}+2 q \omega^{2}+2 p \omega^{2}=-5 a \omega^{2} \\
-&amp; -q \omega^{2}-2 p \omega^{2}+2 q \omega^{2}=0 \tag{173}
-\end{align*}
-\end{split}\]</div>
-<p>which simplify to <span class="math notranslate nohighlight">\(p+2 q=-5 a\)</span> and <span class="math notranslate nohighlight">\(-2 p+q=0\)</span>. From the second of these equations, <span class="math notranslate nohighlight">\(q=2 p\)</span>. Substituting this into the first equation gives <span class="math notranslate nohighlight">\(5 p=-5 a\)</span>, so <span class="math notranslate nohighlight">\(p=-a\)</span>, and so <span class="math notranslate nohighlight">\(q=-2 a\)</span>.</p>
-<p>Plugging these values for <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span> into Equation 169, we obtain the following particular
-solution of the differential equation</p>
+<p>Using Proposition 6, we have that</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-x_{P}(t)=-a[\cos (\omega t)+2 \sin (\omega t)] \tag{174}
+x_{I}(t)=B \sin (\omega t)+C \cos (\omega t) \tag{146}
 \end{equation*}
 \]</div>
-<p>The general solution is found by adding <span class="math notranslate nohighlight">\(x_{P}(t)\)</span> to the right-hand side of the complementary function (Equation 161). This gives</p>
+<p>for constants <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(C\)</span>. Then the general solution is</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-x(t)=x_{P}(t)+x_{I}(t)=a e^{-\omega t}[\cos (\omega t)+\sin (\omega t)]-a[\cos (\omega t)+2 \sin (\omega t)] . \tag{175}
+x(t)=x_{I}(t)+x_{P}(t)=B \sin (\omega t)+C \cos (\omega t)+\frac{D \omega^{2}}{\omega^{2}-\sigma^{2}} \sin (\sigma t) \tag{147}
 \end{equation*}
 \]</div>
 </div>
 </section>
-</div><section id="lecture-13-homework-exercises">
+</div><p>The tricky thing about this method is finding a good guess for the form of the particular solution. Here’s some rules as to what you should try for certain specific functions.</p>
+<ol class="arabic simple">
+<li><p>If <span class="math notranslate nohighlight">\(f(t)\)</span> is a polynomial of degree <span class="math notranslate nohighlight">\(n\)</span>, i.e. <span class="math notranslate nohighlight">\(f(t)=a_{0}+a_{1} t+a_{2} t^{2}+\cdots+a_{n} t^{n}\)</span>, try setting <span class="math notranslate nohighlight">\(x_{P}(t)\)</span> to be another polynomial of degree <span class="math notranslate nohighlight">\(n\)</span>, i.e. <span class="math notranslate nohighlight">\(x_{P}(t)=A_{0}+A_{1} t+A_{2} t^{2}+\cdots+A_{n} t^{n}\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f(t)=a_{0} \exp \left(a_{1} t\right)\)</span>, try <span class="math notranslate nohighlight">\(x_{P}(t)=A \exp \left(a_{1} t\right)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f(t)=a_{0} \sin \left(a_{1} t\right)\)</span> or <span class="math notranslate nohighlight">\(f(t)=\cos \left(a_{1} t\right)\)</span>, try <span class="math notranslate nohighlight">\(x_{P}(t)=A_{1} \sin \left(a_{1} t\right)+A_{2} \cos \left(a_{1} t\right)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f(t)=a_{0} \sin \left(a_{1} t\right)\)</span> and the coefficient of <span class="math notranslate nohighlight">\(\dot{x}\)</span> is zero, <span class="math notranslate nohighlight">\(\operatorname{try} x_{P}(t)=A \sin \left(a_{1} t\right)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f(t)=a_{0} \cos \left(a_{1} t\right)\)</span> and the coefficient of <span class="math notranslate nohighlight">\(\dot{x}\)</span> is zero, try <span class="math notranslate nohighlight">\(x_{P}(t)=A \cos \left(a_{1} t\right)\)</span>.</p></li>
+</ol>
+<p>In the above, <span class="math notranslate nohighlight">\(A, a_{i}\)</span>, and <span class="math notranslate nohighlight">\(A_{i}\)</span> (for each <span class="math notranslate nohighlight">\(i\)</span> ) are all constants.</p>
+</section>
+<section id="lecture-13-homework-exercises">
 <h2>Lecture 13 Homework exercises<a class="headerlink" href="#lecture-13-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-27 admonition">
-<p class="admonition-title">Exercise 27</p>
-<p>Repeat Example 20c, but instead of <span class="math notranslate nohighlight">\(y(t)=a[2 \sin (\omega t)-\cos (\omega t)]\)</span>, as in Equation (150), use the following</p>
-<p>(a) <span class="math notranslate nohighlight">\(y(t)=a \sin (\omega t)\)</span></p>
-<p>(b) <span class="math notranslate nohighlight">\(y(t)=a[\sin (\omega t)+\cos (\omega t)]\)</span></p>
+<div class="admonition-exercise-26 admonition">
+<p class="admonition-title">Exercise 26</p>
+<ol class="arabic simple" start="26">
+<li><p>Find the general solution to each of the following second order ODEs</p></li>
+</ol>
+<p>(a) <span class="math notranslate nohighlight">\(\ddot{x}+3 \dot{x}+2 x=t\)</span></p>
+<p>(b) <span class="math notranslate nohighlight">\(\ddot{x}+2 \dot{x}-x=t^{2}\)</span></p>
+<p>(c) <span class="math notranslate nohighlight">\(\ddot{x}+2 \dot{x}+x=t^{2}+2 t+1\)</span></p>
+<p>(d) <span class="math notranslate nohighlight">\(\ddot{x}+4 \dot{x}+4 x=\sin (2 t)\)</span></p>
+<p>(e) <span class="math notranslate nohighlight">\(\ddot{x}+2 \dot{x}+4 x=\cos (3 t)\)</span></p>
+<p>(f) <span class="math notranslate nohighlight">\(\ddot{x}+\dot{x}+x=\exp (t)\)</span></p>
+<p>(g) <span class="math notranslate nohighlight">\(\ddot{x}+\dot{x}+2 x=2 t^{3}+6\)</span></p>
+<p>(h) <span class="math notranslate nohighlight">\(2 \ddot{x}+4 \dot{x}+2 x=\sin (t)+\cos (t)\)</span></p>
+<p>(i) <span class="math notranslate nohighlight">\(2 \ddot{x}+2 \dot{x}+2 x=4 \sin (4 t)\)</span></p>
+<p>(j) <span class="math notranslate nohighlight">\(3 \ddot{x}+12 \dot{x}+12 x=2 \cos (t)\)</span></p>
 </div>
 </section>
 </section>
@@ -704,7 +647,7 @@ x(t)=x_{P}(t)+x_{I}(t)=a e^{-\omega t}[\cos (\omega t)+\sin (\omega t)]-a[\cos (
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 12. Inhomogeneous second order ODEs</p>
+        <p class="prev-next-title">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</p>
       </div>
     </a>
     <a class="right-next"
@@ -712,7 +655,7 @@ x(t)=x_{P}(t)+x_{I}(t)=a e^{-\omega t}[\cos (\omega t)+\sin (\omega t)]-a[\cos (
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 14. The muddiest point: part II</p>
+        <p class="prev-next-title">Lecture 14. Modelling oscillations with second order ODEs: a worked example</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -732,6 +675,7 @@ x(t)=x_{P}(t)+x_{I}(t)=a e^{-\omega t}[\cos (\omega t)+\sin (\omega t)]-a[\cos (
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-method-of-undetermined-coefficients">12.1 The method of undetermined coefficients</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-13-homework-exercises">Lecture 13 Homework exercises</a></li>
 </ul>
   </nav></div>

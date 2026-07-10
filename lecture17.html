@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 17. Modelling the effect of gravity close to the Earth’s surface &#8212; MAS108 Mathematical Modelling</title>
+    <title>Lecture 17. Relative motion &#8212; MAS108 Mathematical Modelling</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture17';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 18. Modelling projectile motion" href="lecture18.html" />
-    <link rel="prev" title="Lecture 16. Relative motion" href="lecture16.html" />
+    <link rel="next" title="Lecture 18. Modelling the effect of gravity close to the Earth’s surface" href="lecture18.html" />
+    <link rel="prev" title="Lecture 16. The muddiest point: part 2" href="lecture16.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -422,7 +422,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 17. Modelling the effect of gravity close to the Earth’s surface</h1>
+    <h1>Lecture 17. Relative motion</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -432,9 +432,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motion-under-constant-acceleration">17.1 Motion under constant acceleration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constant-acceleration-in-1d">17.2 Constant acceleration in 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">17.3 Examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-17-homework-exercises">Lecture 17 Homework exercises</a></li>
 </ul>
             </nav>
@@ -447,154 +444,151 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="lecture-17-modelling-the-effect-of-gravity-close-to-the-earth-s-surface">
-<h1>Lecture 17. Modelling the effect of gravity close to the Earth’s surface<a class="headerlink" href="#lecture-17-modelling-the-effect-of-gravity-close-to-the-earth-s-surface" title="Link to this heading">#</a></h1>
-<p>Gravity is a fundamental aspect of life on Earth. Almost all the motion we experience on a day-to-day basis is influenced by the effect of gravity. That is why it seems so weird and wonderful to see astronauts hovering in space capsules away from (most of) the effects of gravity, or bouncing on the Moon where the gravity is much lower than on Earth.</p>
-<p>Consequently, being able to model the effect of gravity is a foundational aspect of our understanding of how the physical world works. There are still many unsolved problems related to understanding gravity out in the cosmos, where there are exotic objects like black holes, some of which are currently being explored by colleagues in this School. However, the effect of gravity close to the Earth’s surface is something humankind has known how to model with great accuracy for a very long time.</p>
-<p>In this lecture we will derive the equations that govern motion under gravity close to the Earth’s surface. (These are sometimes known as the ‘suvat’ equations, for reasons that will become clear soon.) Then, in the next few lectures, we will show how to put these into practice in a variety of applications.</p>
-<section id="motion-under-constant-acceleration">
-<h2>17.1 Motion under constant acceleration<a class="headerlink" href="#motion-under-constant-acceleration" title="Link to this heading">#</a></h2>
-<p>The key aspect of gravity near the Earth’s surface that eases the modelling process is that it is pretty-well constant, at about <span class="math notranslate nohighlight">\(g \approx 9.8 \mathrm{~ms}^{-2}\)</span>. It is therefore useful to begin by generalising to any situation where acceleration is constant. So suppose an object is moving subject to a constant acceleration, <span class="math notranslate nohighlight">\(\mathbf{a}\)</span>, where <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> is a vector of arbitrary dimension. Denote its location at time <span class="math notranslate nohighlight">\(t\)</span> by <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span> and its velocity by <span class="math notranslate nohighlight">\(\mathbf{v}(t)\)</span>.</p>
-<p>Recall from Lecture 15, Equation (180), that <span class="math notranslate nohighlight">\(\ddot{\mathbf{r}}(t)=\dot{\mathbf{v}}(t)=\mathbf{a}\)</span>. Integrating once with resect to time gives</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\mathbf{v}(t)=\mathbf{a} t+\mathbf{u} \tag{211}
-\end{equation*}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> is a constant vector. Notice that <span class="math notranslate nohighlight">\(\mathbf{v}(0)=\mathbf{u}\)</span> so <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> is the initial velocity of the object. Since <span class="math notranslate nohighlight">\(\mathbf{v}(t)=\dot{\mathbf{r}}(t)\)</span>, by Equation (178), we have <span class="math notranslate nohighlight">\(\dot{\mathbf{r}}(t)=\mathbf{a} t+\mathbf{u}\)</span>, which we can integrate with respect to time to give</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\mathbf{r}(t)=\frac{1}{2} \mathbf{a} t^{2}+\mathbf{u} t+\mathbf{c} \tag{212}
-\end{equation*}
-\]</div>
-<p>The initial location is <span class="math notranslate nohighlight">\(\mathbf{r}(0)=\mathbf{c}\)</span>. It is often convenient to pick <span class="math notranslate nohighlight">\(\mathbf{c}=\mathbf{0}\)</span>, the origin. In this case we have</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\mathbf{r}(t)=\frac{1}{2} \mathbf{a} t^{2}+\mathbf{u} t \tag{213}
-\end{equation*}
-\]</div>
-<p>Finally, by writing Equation (211) as <span class="math notranslate nohighlight">\(\mathbf{a} t=\mathbf{v}(t)-\mathbf{u}\)</span>, we can substitute this into Equation
-(213) to give</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\mathbf{r}(t)=\frac{1}{2}(\mathbf{v}(t)-\mathbf{u}) t+\mathbf{u} t=\frac{1}{2}(\mathbf{v}(t)+\mathbf{u}) t \tag{214}
-\end{equation*}
-\]</div>
-<p>You may have come across the one dimensional (1D) versions of Equations (211), (213), and (214) in school. However, if you have not seen these before, do not worry! We will have a look at them now.</p>
-</section>
-<section id="constant-acceleration-in-1d">
-<h2>17.2 Constant acceleration in 1D<a class="headerlink" href="#constant-acceleration-in-1d" title="Link to this heading">#</a></h2>
-<p>In 1D, as well as Equations (211), (213), and (214), we can derive a further equation. We will do this now. Let’s start by writing <span class="math notranslate nohighlight">\(s=\mathbf{r}, u=\mathbf{u}, v=\mathbf{v}\)</span>, and <span class="math notranslate nohighlight">\(a=\mathbf{a}\)</span>, as these are now scalars rather than vectors. In this notation, Equations (211), (213), and (214) become, respectively,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; v(t)=a t+u  \tag{215}\\
-&amp; s(t)=\frac{1}{2} a t^{2}+u t  \tag{216}\\
-&amp; s(t)=\frac{1}{2}(v(t)+u) t \tag{217}
-\end{align*}
-\end{split}\]</div>
-<p>We start by squaring both sides of Equation (215) and rearranging</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-v^{2}(t) &amp; =(a t+u)^{2} \\
-&amp; =a^{2} t^{2}+2 a u t+u^{2} \\
-&amp; =u^{2}+2 a\left(\frac{1}{2} a t^{2}+u t\right) \tag{218}
-\end{align*}
-\end{split}\]</div>
-<p>Next we use Equation (216) to give</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-v^{2}(t)=u^{2}+2 a s(t) \tag{219}
-\end{equation*}
-\]</div>
-<p>Together, Equations (215), (216), (217), and (219) are often called the ‘suvat’ equations.</p>
-</section>
-<section id="examples">
-<h2>17.3 Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-17-relative-motion">
+<h1>Lecture 17. Relative motion<a class="headerlink" href="#lecture-17-relative-motion" title="Link to this heading">#</a></h1>
+<p>In the previous lecture, we looked at the motion of particles relative to a fixed origin, which we denoted by <span class="math notranslate nohighlight">\(O\)</span>. However, in reality objects will often be moving relative to one another. For example, you may be running in the park and about to reach a junction of footpaths, but see a cyclist coming along another path towards the same junction. Your motion relative to the cyclist determines whether one of you needs to change speed to avoid a collision. Similar situations happen at sea with boats moving along overlapping trajectories. In this lecture, we will develop the tools for modelling such situations. Let’s start with an example.</p>
 <div class="proof example admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 26 </span></p>
 <section class="example-content" id="proof-content">
-<p>A lift starts from rest at time <span class="math notranslate nohighlight">\(t=0\)</span> and moves in three stages:</p>
-<ul class="simple">
-<li><p>Stage 1. The lift moves upwards with constant acceleration for 2 s .</p></li>
-<li><p>Stage 2. The lift moves upwards with constant velocity for 7 s .</p></li>
-<li><p>Stage 3. The lift moves upwards with constant deceleration for 1s.</p></li>
-</ul>
-<p>After this period of 10 s , the lift is at rest at a height of 34 m above its starting point. Find the acceleration in Stage 1.</p>
+<p>At time <span class="math notranslate nohighlight">\(t=0\)</span> a boat leaves a port situated at the origin <span class="math notranslate nohighlight">\(O\)</span> and moves with uniform velocity <span class="math notranslate nohighlight">\(u \mathbf{i} \mathrm{kmh}^{-1}\)</span>. (Here, <span class="math notranslate nohighlight">\(\mathrm{kmh}^{-1}\)</span> stands for ‘kilometres per hour’, the number of kilometres the boat will travel in an hour at its current speed.) A second boat is moving with uniform velocity <span class="math notranslate nohighlight">\(5 \mathbf{i}+4 \mathbf{j} \mathrm{kmh}^{-1}\)</span> and is initially at the point in the ocean with location vector <span class="math notranslate nohighlight">\(6 \mathbf{i}-2 \mathbf{j} \mathrm{km}\)</span> with respect to the origin, <span class="math notranslate nohighlight">\(O\)</span>.</p>
+<p>(a) Find the value of <span class="math notranslate nohighlight">\(u\)</span> for which the boats collide.</p>
+<p>(b) Find the minimum distance between the boats when <span class="math notranslate nohighlight">\(u=7\)</span>.</p>
 <p><strong>Solution.</strong></p>
 <div class="toggle docutils container">
-<p>We start by drawing a graph of velocity over time (Figure 25).</p>
-<img src="mas108_vel_time_ex.png" alt="drawing" width="400"/>
-<p><em>Figure 25: Change in velocity over time.</em></p>
-<p>Since velocity is the time-derivative of distance <span class="math notranslate nohighlight">\((\dot{\mathbf{r}}=\mathbf{v}\)</span>, Equation 178), the total distance travelled is the area under the velocity-time graph. To find the area under the graph, we first need to find the speed after 2 s . Let <span class="math notranslate nohighlight">\(a\)</span> denote the acceleration in Stage 1 in <span class="math notranslate nohighlight">\(\mathrm{ms}^{-2}\)</span>. Let <span class="math notranslate nohighlight">\(v\)</span> denote the speed after 2 s in <span class="math notranslate nohighlight">\(\mathrm{ms}^{-1}\)</span>. Since the lift starts from rest in Stage 1, we can use <span class="math notranslate nohighlight">\(v=u+a t\)</span> (Equation 215) with <span class="math notranslate nohighlight">\(u=0\)</span>, to give <span class="math notranslate nohighlight">\(v=2 a\)</span>.</p>
-<p>The total distance travelled by the lift is 34 m , so, working in m ,</p>
+<p>The most important thing to do at the start of any question on relative motion is to draw a sketch. This is given in Figure 23.</p>
+<img src="mas108_relative_boat_motion.png" alt="drawing" width="400"/>
+<p><em>Figure 23: Relative motion of two boats.</em></p>
+<p>At time <span class="math notranslate nohighlight">\(t\)</span> hours, Boat 1 has velocity <span class="math notranslate nohighlight">\(\mathbf{v}_{1}=u \mathbf{i} \mathbf{k m h}^{-1}\)</span>. Since it starts at the origin, its location vector in kilometres is</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\mathbf{r}_{1}(t)=u t \mathbf{i} \tag{199}
+\end{equation*}
+\]</div>
+<p>Boat 2 has velocity <span class="math notranslate nohighlight">\(\mathbf{v}_{2}=5 \mathbf{i}+4 \mathbf{j} \mathbf{k m h}^{-1}\)</span> and starts at <span class="math notranslate nohighlight">\(6 \mathbf{i}-2 \mathbf{j}\)</span> so its location vector in kilometres is</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-34 &amp; =\text { Area } 1+\text { Area } 2+\text { Area } 3 \\
-&amp; =\frac{1}{2} \times 2 \times 2 a+7 \times 2 a+\frac{1}{2} \times 1 \times 2 a \\
-&amp; =2 a+14 a+a \\
-&amp; =17 a \tag{220}
+\mathbf{r}_{2}(t) &amp; =6 \mathbf{i}-2 \mathbf{j}+(5 \mathbf{i}+4 \mathbf{j}) t \\
+&amp; =(5 t+6) \mathbf{i}+(4 t-2) \mathbf{j} \tag{200}
 \end{align*}
 \end{split}\]</div>
-<p>Therefore <span class="math notranslate nohighlight">\(a=2\)</span>, and the acceleration in Stage 1 is <span class="math notranslate nohighlight">\(2 \mathrm{~ms}^{-2}\)</span>.</p>
+<p>The location of Boat 2 relative to Boat 1 (in kilometres) is then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\mathbf{r}_{2}(t)-\mathbf{r}_{1}(t) &amp; =[(6+5 t) \mathbf{i}+(4 t-2) \mathbf{j}]-u t \mathbf{i} \\
+&amp; =(6+5 t-u t) \mathbf{i}+(4 t-2) \mathbf{j} \tag{201}
+\end{align*}
+\end{split}\]</div>
+<p>Denote by <span class="math notranslate nohighlight">\(d(t)\)</span> the distance in kilometres between the boats at time <span class="math notranslate nohighlight">\(t\)</span>. Then <span class="math notranslate nohighlight">\(d(t)=\)</span> <span class="math notranslate nohighlight">\(\left|\mathbf{r}_{2}(t)-\mathbf{r}_{1}(t)\right|\)</span>, so that</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+d(t)=\sqrt{(6+5 t-u t)^{2}+(4 t-2)^{2}} \tag{202}
+\end{equation*}
+\]</div>
+<p>(a) If the boats collide, then <span class="math notranslate nohighlight">\(d(t)=0\)</span> for some <span class="math notranslate nohighlight">\(t\)</span>. Under the square root in (202) we have the sum of two positive terms. Therefore, if <span class="math notranslate nohighlight">\(d(t)=0\)</span>, both the positive terms under the square root must be zero. This means that both of the following hold</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{r}
+(6+5 t-u t)^{2}=0 \\
+(4 t-2)^{2}=0 
+\end{array}
+\end{split}\]</div>
+<p>From (204), <span class="math notranslate nohighlight">\(t=\frac{2}{4}=\frac{1}{2}\)</span>. Substituting this into in (203) gives</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+6+5 t-u t=0 \quad \Longrightarrow \quad 6+\frac{5}{2}-\frac{u}{2}=0 \quad \Longrightarrow \quad \frac{u}{2}=6+\frac{5}{2}=\frac{17}{2} \tag{205}
+\end{equation*}
+\]</div>
+<p>so that the boats collide when <span class="math notranslate nohighlight">\(u=17\)</span>.
+(b) When <span class="math notranslate nohighlight">\(u=7\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+d(t) &amp; =\sqrt{(6+5 t-u t)^{2}+(4 t-2)^{2}} \\
+&amp; =\sqrt{(6+5 t-7 t)^{2}+(4 t-2)^{2}} \\
+&amp; =\sqrt{(6-2 t)^{2}+(4 t-2)^{2}} \\
+&amp; =\sqrt{36-24 t+4 t^{2}+16 t^{2}-16 t+4} \\
+&amp; =\sqrt{20 t^{2}-40 t+40} \\
+&amp; =\sqrt{20\left(t^{2}-2 t+2\right)} \tag{206}
+\end{align*}
+\end{split}\]</div>
+<p>Notice that <span class="math notranslate nohighlight">\((t-1)^{2}=t^{2}-2 t+1\)</span> so that</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+d(t) &amp; =\sqrt{20\left(t^{2}-2 t+1+1\right)} \\
+&amp; =\sqrt{20\left[(t-1)^{2}+1\right]} \\
+&amp; =\sqrt{20(t-1)^{2}+20} \tag{207}
+\end{align*}
+\end{split}\]</div>
+<p>The minimum of <span class="math notranslate nohighlight">\(d(t)\)</span> is therefore the minimum of <span class="math notranslate nohighlight">\((t-1)^{2}\)</span>, which is where <span class="math notranslate nohighlight">\(t=1\)</span>. Here, <span class="math notranslate nohighlight">\(d(t)=\sqrt{20}=4.47\)</span> to three significant figures. Thus the minimum distance between the boats, when <span class="math notranslate nohighlight">\(u=7\)</span>, is 4.47 km .</p>
 </div>
 </section>
-</div><div class="proof example admonition" id="example-1">
+</div><p>The previous example motivated a few concepts, which could do with formal definitions.</p>
+<div class="proof definition admonition" id="definition-1">
+<p class="admonition-title"><span class="caption-number">Definition 17 </span></p>
+<section class="definition-content" id="proof-content">
+<p>Suppose we have two moving objects, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. Denote by <span class="math notranslate nohighlight">\(\mathbf{r}_{A}(t)\)</span> and <span class="math notranslate nohighlight">\(\mathbf{r}_{B}(t)\)</span> the location vectors of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> at time <span class="math notranslate nohighlight">\(t\)</span>, respectively. Denote by <span class="math notranslate nohighlight">\(\mathbf{v}_{A}(t)=\dot{\mathbf{r}}_{A}(t)\)</span> and <span class="math notranslate nohighlight">\(\mathbf{v}_{B}(t)=\dot{\mathbf{r}}_{B}(t)\)</span> the velocities of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> at time <span class="math notranslate nohighlight">\(t\)</span>, respectively. Then the location of <span class="math notranslate nohighlight">\(B\)</span> relative to <span class="math notranslate nohighlight">\(A\)</span> is <span class="math notranslate nohighlight">\(\overrightarrow{A B}=\mathbf{r}_{B}-\mathbf{r}_{A}\)</span>. The velocity of <span class="math notranslate nohighlight">\(B\)</span> relative to <span class="math notranslate nohighlight">\(A\)</span> is <span class="math notranslate nohighlight">\(\mathbf{v}_{B}-\mathbf{v}_{A}\)</span>. Note that the distance between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> is <span class="math notranslate nohighlight">\(|\overrightarrow{A B}|=\left|\mathbf{r}_{B}-\mathbf{r}_{A}\right|\)</span>.</p>
+</section>
+</div><div class="proof example admonition" id="example-2">
 <p class="admonition-title"><span class="caption-number">Example 27 </span></p>
 <section class="example-content" id="proof-content">
-<p>A student standing on the edge of a cliff 75 m above sea level throws a stone vertically upwards with a speed of <span class="math notranslate nohighlight">\(10 \mathrm{~ms}^{-1}\)</span>. Find the time at which the stone hits the water. You can assume the acceleration due to gravity is <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>.</p>
+<p>To a cyclist riding due East at <span class="math notranslate nohighlight">\(15 \mathrm{kmh}^{-1}\)</span> the wind appears to the cyclist to be blowing from the North-East at <span class="math notranslate nohighlight">\(12 \mathrm{kmh}^{-1}\)</span>. Find the true velocity of the wind.</p>
 <p><strong>Solution.</strong></p>
 <div class="toggle docutils container">
-<p>As always, we start by drawing a sketch (Figure 26).</p>
-<img src="mas108_stone_cliff.png" alt="drawing" width="400"/>
-<p><em>Figure 26: Throwing a stone off a cliff</em></p>
-<p>Let <span class="math notranslate nohighlight">\(O\)</span> be the point of projection. Let <span class="math notranslate nohighlight">\(s\)</span> be the height (in metres) of the stone above the point of projection at time <span class="math notranslate nohighlight">\(t\)</span> (in seconds). The initial velocity of the stone is <span class="math notranslate nohighlight">\(u=10 \mathrm{~ms}^{-1}\)</span>. Suppose the stone hits the
-water at time <span class="math notranslate nohighlight">\(t\)</span>. Then <span class="math notranslate nohighlight">\(s(t)=-75\)</span>. Therefore, by Equation (213), we have</p>
+<p>As always, we start by drawing a sketch of the situation, which is shown in Figure (24).</p>
+<img src="mas108_cycle_wind.png" alt="drawing" width="400"/>
+<p><em>Figure 24: Cyclist in the wind.</em></p>
+<p>Denote the velocity of the cyclist by <span class="math notranslate nohighlight">\(\mathbf{v}_{C}\)</span> and the velocity of the wind by <span class="math notranslate nohighlight">\(\mathbf{v}_{W}\)</span>. Then <span class="math notranslate nohighlight">\(\mathbf{v}_{C}=15 \mathbf{i}\)</span> <span class="math notranslate nohighlight">\(\mathrm{kmh}^{-1}\)</span>. The unit vector in the North-East direction is <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{2}}(\mathbf{i}+\mathbf{j})\)</span> so, since the speed of the wind relative to the cyclist is <span class="math notranslate nohighlight">\(12 \mathrm{~km}^{-1}\)</span>, the velocity of the wind relative to the cyclist is</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; s(t)=u t+\frac{1}{2} g t^{2} \\
-\Longrightarrow &amp; -75=10 t-4.9 t^{2} \\
-\Longrightarrow &amp; 4.9 t^{2}-10 t-75=0 \\
-\Longrightarrow &amp; t=\frac{10 \pm \sqrt{100+4 \times 4.9 \times 75}}{2 \times 4.9}=\frac{10 \pm \sqrt{1570}}{9.8} \tag{221}
-\end{align*}
-\end{split}\]</div>
-<p>Then, as <span class="math notranslate nohighlight">\(t&gt;0\)</span>, we have <span class="math notranslate nohighlight">\(t=5.06\)</span> to three significant figures.</p>
+\[
+\begin{equation*}
+\mathbf{v}_{W}-\mathbf{v}_{C}=-\frac{12}{\sqrt{2}}(\mathbf{i}+\mathbf{j}) \mathrm{kmh}^{-1} \tag{208}
+\end{equation*}
+\]</div>
+<p>The minus sign is because the wind is coming from the North-East. Then</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\mathbf{v}_{W}=\mathbf{v}_{C}-\frac{12}{\sqrt{2}}(\mathbf{i}+\mathbf{j}) \mathrm{kmh}^{-1},=\left[15 \mathbf{i}-\frac{12}{\sqrt{2}}(\mathbf{i}+\mathbf{j})\right] \mathrm{kmh}^{-1} \tag{209}
+\end{equation*}
+\]</div>
+<p>The true velocity of the wind is therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\left[\left(15-\frac{12}{\sqrt{2}}\right) \mathbf{i}-\frac{12}{\sqrt{2}} \mathbf{j}\right] \mathrm{kmh}^{-1} \tag{210}
+\end{equation*}
+\]</div>
 </div>
 </section>
-</div></section>
-<section id="lecture-17-homework-exercises">
+</div><section id="lecture-17-homework-exercises">
 <h2>Lecture 17 Homework exercises<a class="headerlink" href="#lecture-17-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-33 admonition">
-<p class="admonition-title">Exercise 33.</p>
-<p>A person throws a stone vertically upwards at a speed of <span class="math notranslate nohighlight">\(10 \mathrm{~ms}^{-1}\)</span>, releasing it at a location 1 m above the ground, then runs out of the way. Use the ‘suvat’ equations with <span class="math notranslate nohighlight">\(a=g\)</span> to find when the stone will hit the ground. The same person throws a feather in an identical manner. If you were to use the same model for the feather as you used for the stone, do you expect your estimate to be accurate? Why or why not? Do you expect it to be an underestimate or an overestimate?</p>
+<div class="admonition-exercise-31 admonition">
+<p class="admonition-title">Exercise 31.</p>
+<p>The position vectors of two radio-controlled aircraft at time <span class="math notranslate nohighlight">\(t\)</span> seconds are <span class="math notranslate nohighlight">\(\mathbf{r}_{1}\)</span> metres and <span class="math notranslate nohighlight">\(\mathbf{r}_{2}\)</span> metres, where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+&amp; \mathbf{r}_{1}=10 t(5 \mathbf{i}+7 \mathbf{k}) \\
+&amp; \mathbf{r}_{2}=(60+u t) \mathbf{i}+40(t-4) \mathbf{j}+5(9 t+20) \mathbf{k}
+\end{aligned}
+\end{split}\]</div>
+<p>and <span class="math notranslate nohighlight">\(u\)</span> is a constant. Let <span class="math notranslate nohighlight">\(d\)</span> be the distance in metres between the aircraft.</p>
+<p>(a) Show that <span class="math notranslate nohighlight">\(d^{2}=2225(t-4)^{2}+[60-(50-u) t]^{2}\)</span>.</p>
+<p>(b) Show that if <span class="math notranslate nohighlight">\(u=35\)</span> then the aircraft are on a collision course.</p>
+<p>(c) Find the minimum value of <span class="math notranslate nohighlight">\(d\)</span> when <span class="math notranslate nohighlight">\(u=50\)</span>.</p>
 </div>
-<div class="admonition-exercise-34 admonition">
-<p class="admonition-title">Exercise 34.</p>
-<p>A man fires a gun vertically upwards at head height and the bullet leaves the gun with a speed of <span class="math notranslate nohighlight">\(1000 \mathrm{~ms}^{-1}\)</span>. How long does he have to move out of the way before the bullet hits him on the head? What is the speed of the bullet when it returns to his head height?</p>
-</div>
-<div class="admonition-exercise-35 admonition">
-<p class="admonition-title">Exercise 35.</p>
-<p>A woman drops a stone down a well. It takes 5 seconds before she hears the stone hit the water below. How deep is the well? What is the speed of the stone when it hits the water?</p>
-</div>
-<div class="admonition-exercise-36 admonition">
-<p class="admonition-title">Exercise 36.</p>
-<p>A bus sets off from a bus station <span class="math notranslate nohighlight">\(P\)</span>. It accelerates uniformly for <span class="math notranslate nohighlight">\(T_{1}\)</span> seconds, covering a distance of 300 m . It then travels at a speed of <span class="math notranslate nohighlight">\(V \mathrm{kmh}^{-1}\)</span> for <span class="math notranslate nohighlight">\(T_{2}\)</span> seconds, covering a further distance of 1250 m . Finally, it decelerates uniformly for <span class="math notranslate nohighlight">\(T_{3}\)</span> seconds, coming to rest at a bus stop <span class="math notranslate nohighlight">\(Q\)</span>. If the total time taken is 3 minutes, and <span class="math notranslate nohighlight">\(2 T_{1}=3 T_{3}\)</span>, find the distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(Q\)</span> and the values of <span class="math notranslate nohighlight">\(T_{1}, T_{2}, T_{3}\)</span> and <span class="math notranslate nohighlight">\(V\)</span>.</p>
-</div>
-<div class="admonition-exercise-37 admonition">
-<p class="admonition-title">Exercise 37.</p>
-<p>A ball is dropped from a board 10 m above a pool. When does it hit the surface? Now assume that, at the same time the ball is dropped, a dolphin rises vertically from the water, with a speed of <span class="math notranslate nohighlight">\(8 \mathrm{~ms}^{-1}\)</span> when its head breaks the surface. Where and when does the dolphin head the ball?</p>
-</div>
-<div class="admonition-exercise-38 admonition">
-<p class="admonition-title">Exercise 38.</p>
-<p>A car is travelling along a straight level road at a constant speed of <span class="math notranslate nohighlight">\(54 \mathrm{kmh}^{-1}\)</span>. At time <span class="math notranslate nohighlight">\(t=0\)</span>, the car passes a lorry which is starting to accelerate from rest at a uniform rate of <span class="math notranslate nohighlight">\(0.5 \mathrm{~ms}^{-2}\)</span>. Find the time that elapses and the distance covered when the lorry draws level with the car.</p>
+<div class="admonition-exercise-32 admonition">
+<p class="admonition-title">Exercise 32.</p>
+<p>An eagle is flying with velocity <span class="math notranslate nohighlight">\(2 \mathbf{j} \mathrm{ms}^{-1}\)</span> (where <span class="math notranslate nohighlight">\(\mathrm{ms}^{-1}\)</span> stands for ‘metres per second’). An owl is flying with velocity <span class="math notranslate nohighlight">\(u \mathbf{i}+v \mathbf{j} \mathrm{ms}^{-1}\)</span>.</p>
+<p>(a) Write down an expression for the velocity of the owl relative to the eagle.</p>
+<p>(b) To the eagle, the owl appears to have velocity in the direction <span class="math notranslate nohighlight">\(-\mathbf{i}\)</span>. Show that <span class="math notranslate nohighlight">\(u&lt;0\)</span> and <span class="math notranslate nohighlight">\(v=2\)</span>.</p>
+<p>(c) The eagle now increases its speed so that its velocity is now <span class="math notranslate nohighlight">\(4 \mathrm{j} \mathrm{ms}^{-1}\)</span>, but the owl does not change its velocity. It now appears to the eagle that the velocity of the owl is in the direction <span class="math notranslate nohighlight">\(-\mathbf{i}-\mathbf{j}\)</span>. Show that the speed of the owl is <span class="math notranslate nohighlight">\(2 \sqrt{2} \mathrm{~ms}^{-1}\)</span> and state its direction.</p>
 </div>
 </section>
 </section>
@@ -635,7 +629,7 @@ water at time <span class="math notranslate nohighlight">\(t\)</span>. Then <spa
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 16. Relative motion</p>
+        <p class="prev-next-title">Lecture 16. The muddiest point: part 2</p>
       </div>
     </a>
     <a class="right-next"
@@ -643,7 +637,7 @@ water at time <span class="math notranslate nohighlight">\(t\)</span>. Then <spa
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 18. Modelling projectile motion</p>
+        <p class="prev-next-title">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -663,9 +657,6 @@ water at time <span class="math notranslate nohighlight">\(t\)</span>. Then <spa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motion-under-constant-acceleration">17.1 Motion under constant acceleration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constant-acceleration-in-1d">17.2 Constant acceleration in 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">17.3 Examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-17-homework-exercises">Lecture 17 Homework exercises</a></li>
 </ul>
   </nav></div>

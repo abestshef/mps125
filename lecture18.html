@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 18. Modelling projectile motion &#8212; MAS108 Mathematical Modelling</title>
+    <title>Lecture 18. Modelling the effect of gravity close to the Earth’s surface &#8212; MAS108 Mathematical Modelling</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture18';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 19. More examples of motion with constant acceleration" href="lecture19.html" />
-    <link rel="prev" title="Lecture 17. Modelling the effect of gravity close to the Earth’s surface" href="lecture17.html" />
+    <link rel="next" title="Lecture 19. Modelling projectile motion" href="lecture19.html" />
+    <link rel="prev" title="Lecture 17. Relative motion" href="lecture17.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,24 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -423,7 +422,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 18. Modelling projectile motion</h1>
+    <h1>Lecture 18. Modelling the effect of gravity close to the Earth’s surface</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -433,7 +432,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-shape-of-a-projectile-s-path">18.1 The shape of a projectile’s path</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motion-under-constant-acceleration">18.1 Motion under constant acceleration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constant-acceleration-in-1d">18.2 Constant acceleration in 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">18.3 Examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-18-homework-exercises">Lecture 18 Homework exercises</a></li>
 </ul>
             </nav>
@@ -446,132 +447,154 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="lecture-18-modelling-projectile-motion">
-<h1>Lecture 18. Modelling projectile motion<a class="headerlink" href="#lecture-18-modelling-projectile-motion" title="Link to this heading">#</a></h1>
-<p>Last lecture we focused predominantly on models of motion in one dimension with constant acceleration, with a particular emphasis on acceleration due to gravity. This is fine for modelling things that move vertically up and down, but often movement occurs in a horizontal direction, too. Here we will examine motion under the effect of constant acceleration where there are components of motion both parallel and perpendicular to the direction of the acceleration.</p>
-<p>A paradigmatic example of this is the motion of projectiles close to the Earth’s surface. When an object is propelled in a non-vertical direction, its motion will be governed by the acceleration due to gravity. However, the object will also have some horizontal movement.</p>
-<p>If we are modelling a projectile that has a non-vertical initial velocity, we can write the initial velocity as</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-18-modelling-the-effect-of-gravity-close-to-the-earth-s-surface">
+<h1>Lecture 18. Modelling the effect of gravity close to the Earth’s surface<a class="headerlink" href="#lecture-18-modelling-the-effect-of-gravity-close-to-the-earth-s-surface" title="Link to this heading">#</a></h1>
+<p>Gravity is a fundamental aspect of life on Earth. Almost all the motion we experience on a day-to-day basis is influenced by the effect of gravity. That is why it seems so weird and wonderful to see astronauts hovering in space capsules away from (most of) the effects of gravity, or bouncing on the Moon where the gravity is much lower than on Earth.</p>
+<p>Consequently, being able to model the effect of gravity is a foundational aspect of our understanding of how the physical world works. There are still many unsolved problems related to understanding gravity out in the cosmos, where there are exotic objects like black holes, some of which are currently being explored by colleagues in this School. However, the effect of gravity close to the Earth’s surface is something humankind has known how to model with great accuracy for a very long time.</p>
+<p>In this lecture we will derive the equations that govern motion under gravity close to the Earth’s surface. (These are sometimes known as the ‘suvat’ equations, for reasons that will become clear soon.) Then, in the next few lectures, we will show how to put these into practice in a variety of applications.</p>
+<section id="motion-under-constant-acceleration">
+<h2>18.1 Motion under constant acceleration<a class="headerlink" href="#motion-under-constant-acceleration" title="Link to this heading">#</a></h2>
+<p>The key aspect of gravity near the Earth’s surface that eases the modelling process is that it is pretty-well constant, at about <span class="math notranslate nohighlight">\(g \approx 9.8 \mathrm{~ms}^{-2}\)</span>. It is therefore useful to begin by generalising to any situation where acceleration is constant. So suppose an object is moving subject to a constant acceleration, <span class="math notranslate nohighlight">\(\mathbf{a}\)</span>, where <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> is a vector of arbitrary dimension. Denote its location at time <span class="math notranslate nohighlight">\(t\)</span> by <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span> and its velocity by <span class="math notranslate nohighlight">\(\mathbf{v}(t)\)</span>.</p>
+<p>Recall from Lecture 15, Equation (180), that <span class="math notranslate nohighlight">\(\ddot{\mathbf{r}}(t)=\dot{\mathbf{v}}(t)=\mathbf{a}\)</span>. Integrating once with resect to time gives</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-\mathbf{u}=x_{0} \mathbf{i}+y_{0} \mathbf{j}+z_{0} \mathbf{k} \tag{222}
+\mathbf{v}(t)=\mathbf{a} t+\mathbf{u} \tag{211}
 \end{equation*}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(x_{0}, y_{0}\)</span>, and <span class="math notranslate nohighlight">\(z_{0}\)</span> are constants. Since we can choose our horizontal co-ordinates however we want, it is convenient to assume the horizontal component of movement is all in the <span class="math notranslate nohighlight">\(\mathbf{i}\)</span> direction. In other words, without loss of generality we set <span class="math notranslate nohighlight">\(y_{0}=0\)</span> so that</p>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> is a constant vector. Notice that <span class="math notranslate nohighlight">\(\mathbf{v}(0)=\mathbf{u}\)</span> so <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> is the initial velocity of the object. Since <span class="math notranslate nohighlight">\(\mathbf{v}(t)=\dot{\mathbf{r}}(t)\)</span>, by Equation (178), we have <span class="math notranslate nohighlight">\(\dot{\mathbf{r}}(t)=\mathbf{a} t+\mathbf{u}\)</span>, which we can integrate with respect to time to give</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-\mathbf{u}=x_{0} \mathbf{i}+z_{0} \mathbf{k} \tag{223}
+\mathbf{r}(t)=\frac{1}{2} \mathbf{a} t^{2}+\mathbf{u} t+\mathbf{c} \tag{212}
 \end{equation*}
 \]</div>
-<p>Suppose that the projectile is released at an angle of <span class="math notranslate nohighlight">\(\theta\)</span> to the horizontal. Then <span class="math notranslate nohighlight">\(x_{0}=V \cos (\theta)\)</span> and <span class="math notranslate nohighlight">\(z_{0}=V \sin (\theta)\)</span> where <span class="math notranslate nohighlight">\(V\)</span> is the initial speed of the projectile (Figure 27).</p>
-<img src="mas108_projectile1.png" alt="drawing" width="400"/>
-<p>Figure 27: A projectile released at an angle <span class="math notranslate nohighlight">\(\theta\)</span> from the horizontal.</p>
-<p>Now, since the acceleration due to gravity is in the negative <span class="math notranslate nohighlight">\(\mathbf{k}\)</span>-direction, we have <span class="math notranslate nohighlight">\(\mathbf{a}=-g \mathbf{k}\)</span>, where <span class="math notranslate nohighlight">\(g\)</span> is the gravitational constant. We can now put these expressions for <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> into Equation (211) (which says <span class="math notranslate nohighlight">\(\mathbf{v}(t)=\mathbf{a} t+\mathbf{u}\)</span> ). This gives</p>
+<p>The initial location is <span class="math notranslate nohighlight">\(\mathbf{r}(0)=\mathbf{c}\)</span>. It is often convenient to pick <span class="math notranslate nohighlight">\(\mathbf{c}=\mathbf{0}\)</span>, the origin. In this case we have</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-\mathbf{v}(t)=-g \mathbf{k} t+V \cos (\theta) \mathbf{i}+V \sin (\theta) \mathbf{k} \tag{224}
+\mathbf{r}(t)=\frac{1}{2} \mathbf{a} t^{2}+\mathbf{u} t \tag{213}
 \end{equation*}
 \]</div>
-<p>Writing <span class="math notranslate nohighlight">\(\mathbf{v}(t)=\dot{x}(t) \mathbf{i}+\dot{z}(t) \mathbf{k}\)</span>, we have</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; \dot{x}(t)=V \cos (\theta)  \tag{225}\\
-&amp; \dot{z}(t)=V \sin (\theta)-g t \tag{226}
-\end{align*}
-\end{split}\]</div>
-<p>which are, respectively, the horizontal and vertical components of the velocity.
-Similarly, we can use Equation (213) to find the horizontal and vertical components of the projectile’s location, <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(z(t)\)</span> respectively, as follows</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-\mathbf{r}(t) &amp; =\frac{1}{2} \mathbf{a} t^{2}+\mathbf{u} t \\
-&amp; =-\frac{g}{2} \mathbf{k} t^{2}+V \cos (\theta) \mathbf{i} t+V \sin (\theta) \mathbf{k} t \\
-&amp; =x(t) \mathbf{i}+z(t) \mathbf{k} \tag{227}
-\end{align*}
-\end{split}\]</div>
-<p>which gives</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; x(t)=V t \cos (\theta)  \tag{228}\\
-&amp; z(t)=V t \sin (\theta)-\frac{1}{2} g t^{2} \tag{229}
-\end{align*}
-\end{split}\]</div>
-<section id="the-shape-of-a-projectile-s-path">
-<h2>18.1 The shape of a projectile’s path<a class="headerlink" href="#the-shape-of-a-projectile-s-path" title="Link to this heading">#</a></h2>
-<p>The path of a parabola turns out to form a well-known shape. We demonstrate this by rearranging Equations (228-229) to give an expression for <span class="math notranslate nohighlight">\(z\)</span> in terms of <span class="math notranslate nohighlight">\(x\)</span>. For this, it is convenient to drop the explicit dependence of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(z\)</span> on <span class="math notranslate nohighlight">\(t\)</span>, to write</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; x=V t \cos (\theta)  \tag{230}\\
-&amp; z=V t \sin (\theta)-\frac{1}{2} g t^{2} \tag{231}
-\end{align*}
-\end{split}\]</div>
-<p>Equation (230) rearranges to give</p>
+<p>Finally, by writing Equation (211) as <span class="math notranslate nohighlight">\(\mathbf{a} t=\mathbf{v}(t)-\mathbf{u}\)</span>, we can substitute this into Equation
+(213) to give</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-t=\frac{x}{V \cos (\theta)} \tag{232}
+\mathbf{r}(t)=\frac{1}{2}(\mathbf{v}(t)-\mathbf{u}) t+\mathbf{u} t=\frac{1}{2}(\mathbf{v}(t)+\mathbf{u}) t \tag{214}
 \end{equation*}
 \]</div>
-<p>which we can put into Equation (231) to give</p>
+<p>You may have come across the one dimensional (1D) versions of Equations (211), (213), and (214) in school. However, if you have not seen these before, do not worry! We will have a look at them now.</p>
+</section>
+<section id="constant-acceleration-in-1d">
+<h2>18.2 Constant acceleration in 1D<a class="headerlink" href="#constant-acceleration-in-1d" title="Link to this heading">#</a></h2>
+<p>In 1D, as well as Equations (211), (213), and (214), we can derive a further equation. We will do this now. Let’s start by writing <span class="math notranslate nohighlight">\(s=\mathbf{r}, u=\mathbf{u}, v=\mathbf{v}\)</span>, and <span class="math notranslate nohighlight">\(a=\mathbf{a}\)</span>, as these are now scalars rather than vectors. In this notation, Equations (211), (213), and (214) become, respectively,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-z &amp; =\frac{V x \sin (\theta)}{V \cos (\theta)}-\frac{g x^{2}}{2 V^{2} \cos ^{2}(\theta)} \\
-&amp; =x \tan (\theta)-x^{2} \frac{g \sec ^{2}(\theta)}{2 V^{2}} \\
-&amp; =a x-b x^{2} \tag{233}
+&amp; v(t)=a t+u  \tag{215}\\
+&amp; s(t)=\frac{1}{2} a t^{2}+u t  \tag{216}\\
+&amp; s(t)=\frac{1}{2}(v(t)+u) t \tag{217}
 \end{align*}
 \end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(a=\tan (\theta)\)</span> and <span class="math notranslate nohighlight">\(b=g \sec ^{2}(\theta) /\left(2 V^{2}\right)\)</span> are constants. This is a quadratic function, so the shape of the projectile’s path is a parabola.</p>
+<p>We start by squaring both sides of Equation (215) and rearranging</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+v^{2}(t) &amp; =(a t+u)^{2} \\
+&amp; =a^{2} t^{2}+2 a u t+u^{2} \\
+&amp; =u^{2}+2 a\left(\frac{1}{2} a t^{2}+u t\right) \tag{218}
+\end{align*}
+\end{split}\]</div>
+<p>Next we use Equation (216) to give</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+v^{2}(t)=u^{2}+2 a s(t) \tag{219}
+\end{equation*}
+\]</div>
+<p>Together, Equations (215), (216), (217), and (219) are often called the ‘suvat’ equations.</p>
+</section>
+<section id="examples">
+<h2>18.3 Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
 <div class="proof example admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 28 </span></p>
 <section class="example-content" id="proof-content">
-<p>A player for Sheffield Bruins baseball club hits a ball at a height of 1 meter above the ground. The ball’s initial speed is <span class="math notranslate nohighlight">\(90mph\)</span> (~<span class="math notranslate nohighlight">\(40m/s\)</span>) at an angle of <span class="math notranslate nohighlight">\(\frac{\pi}{6}\)</span> radians above the horizontal. Find the horizontal distance from the person to the place where the ball first bounces, assuming <span class="math notranslate nohighlight">\(g=9.8\)</span>.</p>
-<img src="mas108_projectile_ex.png" alt="drawing" width="400"/>
-<p><em>Figure 28: The trajectory of a ball.</em></p>
+<p>A lift starts from rest at time <span class="math notranslate nohighlight">\(t=0\)</span> and moves in three stages:</p>
+<ul class="simple">
+<li><p>Stage 1. The lift moves upwards with constant acceleration for 2 s .</p></li>
+<li><p>Stage 2. The lift moves upwards with constant velocity for 7 s .</p></li>
+<li><p>Stage 3. The lift moves upwards with constant deceleration for 1s.</p></li>
+</ul>
+<p>After this period of 10 s , the lift is at rest at a height of 34 m above its starting point. Find the acceleration in Stage 1.</p>
 <p><strong>Solution.</strong></p>
 <div class="toggle docutils container">
-<p>As usual, we start with a sketch (Figure 28) Let the vertical height of the ball be <span class="math notranslate nohighlight">\(z \mathrm{~m}\)</span> above the point of projection and let the ball be <span class="math notranslate nohighlight">\(x \mathrm{~m}\)</span> horizontally from the person. Then</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-z=x \tan (\theta)-\frac{g x^{2}}{2 V^{2}} \sec ^{2}(\theta) \tag{234}
-\end{equation*}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(V=40, g=9.8\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{6}\)</span>. Then we have, working to three significant figures,</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-z=0.577 x-0.00408 x^{2} \tag{235}
-\end{equation*}
-\]</div>
-<p>The ball reaches the ground when <span class="math notranslate nohighlight">\(z=-1, x=d\)</span>. This gives</p>
+<p>We start by drawing a graph of velocity over time (Figure 25).</p>
+<img src="mas108_vel_time_ex.png" alt="drawing" width="400"/>
+<p><em>Figure 25: Change in velocity over time.</em></p>
+<p>Since velocity is the time-derivative of distance <span class="math notranslate nohighlight">\((\dot{\mathbf{r}}=\mathbf{v}\)</span>, Equation 178), the total distance travelled is the area under the velocity-time graph. To find the area under the graph, we first need to find the speed after 2 s . Let <span class="math notranslate nohighlight">\(a\)</span> denote the acceleration in Stage 1 in <span class="math notranslate nohighlight">\(\mathrm{ms}^{-2}\)</span>. Let <span class="math notranslate nohighlight">\(v\)</span> denote the speed after 2 s in <span class="math notranslate nohighlight">\(\mathrm{ms}^{-1}\)</span>. Since the lift starts from rest in Stage 1, we can use <span class="math notranslate nohighlight">\(v=u+a t\)</span> (Equation 215) with <span class="math notranslate nohighlight">\(u=0\)</span>, to give <span class="math notranslate nohighlight">\(v=2 a\)</span>.</p>
+<p>The total distance travelled by the lift is 34 m , so, working in m ,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp; -1=0.577 d-0.00408 d^{2} \\
-\Longrightarrow &amp; 0.00408 d^{2}-0.577 d-1=0 \\
-\Longrightarrow &amp; d=\frac{0.577 \pm \sqrt{0.577^{2}+4 \times 0.00408}}{2 \times 0.00408} \tag{236}
+34 &amp; =\text { Area } 1+\text { Area } 2+\text { Area } 3 \\
+&amp; =\frac{1}{2} \times 2 \times 2 a+7 \times 2 a+\frac{1}{2} \times 1 \times 2 a \\
+&amp; =2 a+14 a+a \\
+&amp; =17 a \tag{220}
 \end{align*}
 \end{split}\]</div>
-<p>Since <span class="math notranslate nohighlight">\(d\)</span> must be positive, we have <span class="math notranslate nohighlight">\(d \approx 143\)</span>, so the ball first bounces 143m (470 feet) away. (At the Bruins home ground this would probably mean a home run and a broken car window).</p>
+<p>Therefore <span class="math notranslate nohighlight">\(a=2\)</span>, and the acceleration in Stage 1 is <span class="math notranslate nohighlight">\(2 \mathrm{~ms}^{-2}\)</span>.</p>
+</div>
+</section>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 29 </span></p>
+<section class="example-content" id="proof-content">
+<p>A student standing on the edge of a cliff 75 m above sea level throws a stone vertically upwards with a speed of <span class="math notranslate nohighlight">\(10 \mathrm{~ms}^{-1}\)</span>. Find the time at which the stone hits the water. You can assume the acceleration due to gravity is <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>.</p>
+<p><strong>Solution.</strong></p>
+<div class="toggle docutils container">
+<p>As always, we start by drawing a sketch (Figure 26).</p>
+<img src="mas108_stone_cliff.png" alt="drawing" width="400"/>
+<p><em>Figure 26: Throwing a stone off a cliff</em></p>
+<p>Let <span class="math notranslate nohighlight">\(O\)</span> be the point of projection. Let <span class="math notranslate nohighlight">\(s\)</span> be the height (in metres) of the stone above the point of projection at time <span class="math notranslate nohighlight">\(t\)</span> (in seconds). The initial velocity of the stone is <span class="math notranslate nohighlight">\(u=10 \mathrm{~ms}^{-1}\)</span>. Suppose the stone hits the
+water at time <span class="math notranslate nohighlight">\(t\)</span>. Then <span class="math notranslate nohighlight">\(s(t)=-75\)</span>. Therefore, by Equation (213), we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; s(t)=u t+\frac{1}{2} g t^{2} \\
+\Longrightarrow &amp; -75=10 t-4.9 t^{2} \\
+\Longrightarrow &amp; 4.9 t^{2}-10 t-75=0 \\
+\Longrightarrow &amp; t=\frac{10 \pm \sqrt{100+4 \times 4.9 \times 75}}{2 \times 4.9}=\frac{10 \pm \sqrt{1570}}{9.8} \tag{221}
+\end{align*}
+\end{split}\]</div>
+<p>Then, as <span class="math notranslate nohighlight">\(t&gt;0\)</span>, we have <span class="math notranslate nohighlight">\(t=5.06\)</span> to three significant figures.</p>
 </div>
 </section>
 </div></section>
 <section id="lecture-18-homework-exercises">
 <h2>Lecture 18 Homework exercises<a class="headerlink" href="#lecture-18-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-39 admonition">
-<p class="admonition-title">Exercise 39.</p>
-<p>A ball is thrown with an initial speed of <span class="math notranslate nohighlight">\(30 \mathrm{~ms}^{-1}\)</span> to strike a target at a horizontal distance of 40 m and at a height of 10 m above the ground. Taking <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>, determine the possible angles of projection above the horizontal.</p>
+<div class="admonition-exercise-33 admonition">
+<p class="admonition-title">Exercise 33.</p>
+<p>A person throws a stone vertically upwards at a speed of <span class="math notranslate nohighlight">\(10 \mathrm{~ms}^{-1}\)</span>, releasing it at a location 1 m above the ground, then runs out of the way. Use the ‘suvat’ equations with <span class="math notranslate nohighlight">\(a=g\)</span> to find when the stone will hit the ground. The same person throws a feather in an identical manner. If you were to use the same model for the feather as you used for the stone, do you expect your estimate to be accurate? Why or why not? Do you expect it to be an underestimate or an overestimate?</p>
 </div>
-<div class="admonition-exercise-40 admonition">
-<p class="admonition-title">Exercise 40.</p>
-<p>A stone is thrown with initial speed <span class="math notranslate nohighlight">\(30 \mathrm{~ms}^{-1}\)</span> at an angle <span class="math notranslate nohighlight">\(\alpha\)</span> to the horizontal, where <span class="math notranslate nohighlight">\(\tan \alpha=\frac{4}{3}\)</span>. The stone hits the ground after <span class="math notranslate nohighlight">\(T\)</span> seconds at a horizontal distance of 90 m
-from the point of projection and <span class="math notranslate nohighlight">\(k \mathrm{~m}\)</span> below it. Using <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>, find the values of <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(k\)</span>. Find the velocity of the stone when it strikes the ground.</p>
+<div class="admonition-exercise-34 admonition">
+<p class="admonition-title">Exercise 34.</p>
+<p>A man fires a gun vertically upwards at head height and the bullet leaves the gun with a speed of <span class="math notranslate nohighlight">\(1000 \mathrm{~ms}^{-1}\)</span>. How long does he have to move out of the way before the bullet hits him on the head? What is the speed of the bullet when it returns to his head height?</p>
+</div>
+<div class="admonition-exercise-35 admonition">
+<p class="admonition-title">Exercise 35.</p>
+<p>A woman drops a stone down a well. It takes 5 seconds before she hears the stone hit the water below. How deep is the well? What is the speed of the stone when it hits the water?</p>
+</div>
+<div class="admonition-exercise-36 admonition">
+<p class="admonition-title">Exercise 36.</p>
+<p>A bus sets off from a bus station <span class="math notranslate nohighlight">\(P\)</span>. It accelerates uniformly for <span class="math notranslate nohighlight">\(T_{1}\)</span> seconds, covering a distance of 300 m . It then travels at a speed of <span class="math notranslate nohighlight">\(V \mathrm{kmh}^{-1}\)</span> for <span class="math notranslate nohighlight">\(T_{2}\)</span> seconds, covering a further distance of 1250 m . Finally, it decelerates uniformly for <span class="math notranslate nohighlight">\(T_{3}\)</span> seconds, coming to rest at a bus stop <span class="math notranslate nohighlight">\(Q\)</span>. If the total time taken is 3 minutes, and <span class="math notranslate nohighlight">\(2 T_{1}=3 T_{3}\)</span>, find the distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(Q\)</span> and the values of <span class="math notranslate nohighlight">\(T_{1}, T_{2}, T_{3}\)</span> and <span class="math notranslate nohighlight">\(V\)</span>.</p>
+</div>
+<div class="admonition-exercise-37 admonition">
+<p class="admonition-title">Exercise 37.</p>
+<p>A ball is dropped from a board 10 m above a pool. When does it hit the surface? Now assume that, at the same time the ball is dropped, a dolphin rises vertically from the water, with a speed of <span class="math notranslate nohighlight">\(8 \mathrm{~ms}^{-1}\)</span> when its head breaks the surface. Where and when does the dolphin head the ball?</p>
+</div>
+<div class="admonition-exercise-38 admonition">
+<p class="admonition-title">Exercise 38.</p>
+<p>A car is travelling along a straight level road at a constant speed of <span class="math notranslate nohighlight">\(54 \mathrm{kmh}^{-1}\)</span>. At time <span class="math notranslate nohighlight">\(t=0\)</span>, the car passes a lorry which is starting to accelerate from rest at a uniform rate of <span class="math notranslate nohighlight">\(0.5 \mathrm{~ms}^{-2}\)</span>. Find the time that elapses and the distance covered when the lorry draws level with the car.</p>
 </div>
 </section>
 </section>
@@ -612,7 +635,7 @@ from the point of projection and <span class="math notranslate nohighlight">\(k 
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</p>
+        <p class="prev-next-title">Lecture 17. Relative motion</p>
       </div>
     </a>
     <a class="right-next"
@@ -620,7 +643,7 @@ from the point of projection and <span class="math notranslate nohighlight">\(k 
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 19. More examples of motion with constant acceleration</p>
+        <p class="prev-next-title">Lecture 19. Modelling projectile motion</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -640,7 +663,9 @@ from the point of projection and <span class="math notranslate nohighlight">\(k 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-shape-of-a-projectile-s-path">18.1 The shape of a projectile’s path</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motion-under-constant-acceleration">18.1 Motion under constant acceleration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constant-acceleration-in-1d">18.2 Constant acceleration in 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">18.3 Examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-18-homework-exercises">Lecture 18 Homework exercises</a></li>
 </ul>
   </nav></div>

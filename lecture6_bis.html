@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lecture 19. Modelling projectile motion &#8212; MAS108 Mathematical Modelling</title>
+    <title>Lecture 7. An application: water pollution in the Peak District &#8212; MAS108 Mathematical Modelling</title>
   
   
   
@@ -60,11 +60,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lecture19';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lecture6_bis';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 20. More examples of motion with constant acceleration" href="lecture20.html" />
-    <link rel="prev" title="Lecture 18. Modelling the effect of gravity close to the Earth’s surface" href="lecture18.html" />
+    <link rel="next" title="Lecture 8. Nature’s non-linearity and the need for qualitative solutions" href="lecture8.html" />
+    <link rel="prev" title="Lecture 6. First order linear ordinary differential equations" href="lecture6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,7 +189,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
@@ -203,7 +203,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
 </ul>
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/abestshef/mas108/blob/main/_sources//lecture19.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/abestshef/mas108/blob/main/_sources//lecture6_bis.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -308,7 +308,7 @@
       
       
       
-      <li><a href="https://github.com/abestshef/mas108/issues/new?title=Issue%20on%20page%20%2Flecture19.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/abestshef/mas108/issues/new?title=Issue%20on%20page%20%2Flecture6_bis.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -338,7 +338,7 @@
       
       
       
-      <li><a href="_sources/lecture19.ipynb" target="_blank"
+      <li><a href="_sources/lecture6_bis.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -422,7 +422,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lecture 19. Modelling projectile motion</h1>
+    <h1>Lecture 7. An application: water pollution in the Peak District</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -432,8 +432,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-shape-of-a-projectile-s-path">19.1 The shape of a projectile’s path</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-19-homework-exercises">Lecture 19 Homework exercises</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dynamics-in-howden">7.1 The dynamics in Howden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dynamics-in-derwent">7.2 The dynamics in Derwent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dynamics-in-ladybower">7.3 The dynamics in Ladybower</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#answering-real-world-questions-with-a-model">7.4: Answering real-world questions with a model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-will-pollution-in-derwent-reservoir-peak">“When will pollution in Derwent reservoir peak?”</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a></li>
 </ul>
             </nav>
         </div>
@@ -445,132 +451,242 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="lecture-19-modelling-projectile-motion">
-<h1>Lecture 19. Modelling projectile motion<a class="headerlink" href="#lecture-19-modelling-projectile-motion" title="Link to this heading">#</a></h1>
-<p>Last lecture we focused predominantly on models of motion in one dimension with constant acceleration, with a particular emphasis on acceleration due to gravity. This is fine for modelling things that move vertically up and down, but often movement occurs in a horizontal direction, too. Here we will examine motion under the effect of constant acceleration where there are components of motion both parallel and perpendicular to the direction of the acceleration.</p>
-<p>A paradigmatic example of this is the motion of projectiles close to the Earth’s surface. When an object is propelled in a non-vertical direction, its motion will be governed by the acceleration due to gravity. However, the object will also have some horizontal movement.</p>
-<p>If we are modelling a projectile that has a non-vertical initial velocity, we can write the initial velocity as</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\mathbf{u}=x_{0} \mathbf{i}+y_{0} \mathbf{j}+z_{0} \mathbf{k} \tag{222}
-\end{equation*}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(x_{0}, y_{0}\)</span>, and <span class="math notranslate nohighlight">\(z_{0}\)</span> are constants. Since we can choose our horizontal co-ordinates however we want, it is convenient to assume the horizontal component of movement is all in the <span class="math notranslate nohighlight">\(\mathbf{i}\)</span> direction. In other words, without loss of generality we set <span class="math notranslate nohighlight">\(y_{0}=0\)</span> so that</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\mathbf{u}=x_{0} \mathbf{i}+z_{0} \mathbf{k} \tag{223}
-\end{equation*}
-\]</div>
-<p>Suppose that the projectile is released at an angle of <span class="math notranslate nohighlight">\(\theta\)</span> to the horizontal. Then <span class="math notranslate nohighlight">\(x_{0}=V \cos (\theta)\)</span> and <span class="math notranslate nohighlight">\(z_{0}=V \sin (\theta)\)</span> where <span class="math notranslate nohighlight">\(V\)</span> is the initial speed of the projectile (Figure 27).</p>
-<img src="mas108_projectile1.png" alt="drawing" width="400"/>
-<p>Figure 27: A projectile released at an angle <span class="math notranslate nohighlight">\(\theta\)</span> from the horizontal.</p>
-<p>Now, since the acceleration due to gravity is in the negative <span class="math notranslate nohighlight">\(\mathbf{k}\)</span>-direction, we have <span class="math notranslate nohighlight">\(\mathbf{a}=-g \mathbf{k}\)</span>, where <span class="math notranslate nohighlight">\(g\)</span> is the gravitational constant. We can now put these expressions for <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> into Equation (211) (which says <span class="math notranslate nohighlight">\(\mathbf{v}(t)=\mathbf{a} t+\mathbf{u}\)</span> ). This gives</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-\mathbf{v}(t)=-g \mathbf{k} t+V \cos (\theta) \mathbf{i}+V \sin (\theta) \mathbf{k} \tag{224}
-\end{equation*}
-\]</div>
-<p>Writing <span class="math notranslate nohighlight">\(\mathbf{v}(t)=\dot{x}(t) \mathbf{i}+\dot{z}(t) \mathbf{k}\)</span>, we have</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-7-an-application-water-pollution-in-the-peak-district">
+<h1>Lecture 7. An application: water pollution in the Peak District<a class="headerlink" href="#lecture-7-an-application-water-pollution-in-the-peak-district" title="Link to this heading">#</a></h1>
+<p>Last lecture, we worked through two key ways to solve first-order linear ODEs: separation of variables and integrating factors. We applied these to two fairly straight-forward examples. Now let’s apply these methods to a more interesting real-world scenario.</p>
+<p>Among the many delights of the Peak District National Park (have you been yet? You should - take a bus or a train) are the three connected reservoirs of Howden, Derwent and Ladybower. Suppose a company decides to illegally dump pollution into Howden reservoir. How will this pollution spread downstream?</p>
+<p>Let us define a few terms first. We will use the letters <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(D\)</span> and <span class="math notranslate nohighlight">\(L\)</span> to denote the amount of pollution in the three respective reservoirs. We will assume the pollution quickly becomes well-mixed into the body of water. The flow rate of water (and, since it is well-mixed, therefore also the flow rate of pollution) from Howden into Derwent is given by <span class="math notranslate nohighlight">\(\phi\)</span>, and the flow-rate from Derwent into Ladybower as <span class="math notranslate nohighlight">\(\rho\)</span>. The initial amount of pollution is <span class="math notranslate nohighlight">\(P_0\)</span>. For simplicity we will assume there is no out-flow from Ladybower (perhaps after the pollution event immediate measures were taken to stop the flow and limit the spread).</p>
+<p>We can then write out these three equations as,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{align*}
-&amp; \dot{x}(t)=V \cos (\theta)  \tag{225}\\
-&amp; \dot{z}(t)=V \sin (\theta)-g t \tag{226}
-\end{align*}
+\begin{array}{ll}
+\frac{\mathrm{d} H}{\mathrm{~d} t} &amp; = -\phi H(t) \\
+\frac{\mathrm{d} D}{\mathrm{~d} t} &amp; = \phi H(t)-\rho D(t) \\ 
+\frac{\mathrm{d} L}{\mathrm{~d} t} &amp; = \rho D(t)
+\end{array}
 \end{split}\]</div>
-<p>which are, respectively, the horizontal and vertical components of the velocity.
-Similarly, we can use Equation (213) to find the horizontal and vertical components of the projectile’s location, <span class="math notranslate nohighlight">\(x(t)\)</span> and <span class="math notranslate nohighlight">\(z(t)\)</span> respectively, as follows</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-\mathbf{r}(t) &amp; =\frac{1}{2} \mathbf{a} t^{2}+\mathbf{u} t \\
-&amp; =-\frac{g}{2} \mathbf{k} t^{2}+V \cos (\theta) \mathbf{i} t+V \sin (\theta) \mathbf{k} t \\
-&amp; =x(t) \mathbf{i}+z(t) \mathbf{k} \tag{227}
-\end{align*}
-\end{split}\]</div>
-<p>which gives</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; x(t)=V t \cos (\theta)  \tag{228}\\
-&amp; z(t)=V t \sin (\theta)-\frac{1}{2} g t^{2} \tag{229}
-\end{align*}
-\end{split}\]</div>
-<section id="the-shape-of-a-projectile-s-path">
-<h2>19.1 The shape of a projectile’s path<a class="headerlink" href="#the-shape-of-a-projectile-s-path" title="Link to this heading">#</a></h2>
-<p>The path of a parabola turns out to form a well-known shape. We demonstrate this by rearranging Equations (228-229) to give an expression for <span class="math notranslate nohighlight">\(z\)</span> in terms of <span class="math notranslate nohighlight">\(x\)</span>. For this, it is convenient to drop the explicit dependence of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(z\)</span> on <span class="math notranslate nohighlight">\(t\)</span>, to write</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-&amp; x=V t \cos (\theta)  \tag{230}\\
-&amp; z=V t \sin (\theta)-\frac{1}{2} g t^{2} \tag{231}
-\end{align*}
-\end{split}\]</div>
-<p>Equation (230) rearranges to give</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-t=\frac{x}{V \cos (\theta)} \tag{232}
-\end{equation*}
-\]</div>
-<p>which we can put into Equation (231) to give</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-z &amp; =\frac{V x \sin (\theta)}{V \cos (\theta)}-\frac{g x^{2}}{2 V^{2} \cos ^{2}(\theta)} \\
-&amp; =x \tan (\theta)-x^{2} \frac{g \sec ^{2}(\theta)}{2 V^{2}} \\
-&amp; =a x-b x^{2} \tag{233}
-\end{align*}
-\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(a=\tan (\theta)\)</span> and <span class="math notranslate nohighlight">\(b=g \sec ^{2}(\theta) /\left(2 V^{2}\right)\)</span> are constants. This is a quadratic function, so the shape of the projectile’s path is a parabola.</p>
+<p>This gives us a set of three <em>simultaneous</em> differential equations to solve. You will look into how to deal with such situations more deeply in semester 2. However, in this case we can effectively solve them one at a time.</p>
+<section id="the-dynamics-in-howden">
+<h2>7.1 The dynamics in Howden<a class="headerlink" href="#the-dynamics-in-howden" title="Link to this heading">#</a></h2>
+<p>Note that the first equation depends only on the variable <span class="math notranslate nohighlight">\(H(t)\)</span> on both side of the equality. We can therefore treat this case entirely on its own. More helpfully still, since we have no constant term, we can solve this through separation of variables.</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 30 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 12 </span></p>
 <section class="example-content" id="proof-content">
-<p>A player for Sheffield Bruins baseball club hits a ball at a height of 1 meter above the ground. The ball’s initial speed is <span class="math notranslate nohighlight">\(90mph\)</span> (~<span class="math notranslate nohighlight">\(40m/s\)</span>) at an angle of <span class="math notranslate nohighlight">\(\frac{\pi}{6}\)</span> radians above the horizontal. Find the horizontal distance from the person to the place where the ball first bounces, assuming <span class="math notranslate nohighlight">\(g=9.8\)</span>.</p>
-<img src="mas108_projectile_ex.png" alt="drawing" width="400"/>
-<p><em>Figure 28: The trajectory of a ball.</em></p>
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{\mathrm{d} H}{\mathrm{~d} t}=-\phi H
+\end{equation*}
+\]</div>
 <p><strong>Solution.</strong></p>
 <div class="toggle docutils container">
-<p>As usual, we start with a sketch (Figure 28) Let the vertical height of the ball be <span class="math notranslate nohighlight">\(z \mathrm{~m}\)</span> above the point of projection and let the ball be <span class="math notranslate nohighlight">\(x \mathrm{~m}\)</span> horizontally from the person. Then</p>
+<p>Separate the variables to get</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-z=x \tan (\theta)-\frac{g x^{2}}{2 V^{2}} \sec ^{2}(\theta) \tag{234}
+\frac{\mathrm{d} H}{H}=-\phi dt 
 \end{equation*}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(V=40, g=9.8\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{6}\)</span>. Then we have, working to three significant figures,</p>
+<p>Then we can integrate both sides to get,</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-z=0.577 x-0.00408 x^{2} \tag{235}
+\ln(H)=-\phi t+C_1
 \end{equation*}
 \]</div>
-<p>The ball reaches the ground when <span class="math notranslate nohighlight">\(z=-1, x=d\)</span>. This gives</p>
+<p>Finally we take the exponential of both sides, leaving,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp; -1=0.577 d-0.00408 d^{2} \\
-\Longrightarrow &amp; 0.00408 d^{2}-0.577 d-1=0 \\
-\Longrightarrow &amp; d=\frac{0.577 \pm \sqrt{0.577^{2}+4 \times 0.00408}}{2 \times 0.00408} \tag{236}
+H(t)&amp;=e^{-\phi t+C_1} \\
+&amp;=e^{C_1}e^{-\phi t}\\
+&amp;=P_0e^{-\phi t}
 \end{align*}
 \end{split}\]</div>
-<p>Since <span class="math notranslate nohighlight">\(d\)</span> must be positive, we have <span class="math notranslate nohighlight">\(d \approx 143\)</span>, so the ball first bounces 143m (470 feet) away. (At the Bruins home ground this would probably mean a home run and a broken car window).</p>
 </div>
 </section>
 </div></section>
-<section id="lecture-19-homework-exercises">
-<h2>Lecture 19 Homework exercises<a class="headerlink" href="#lecture-19-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-39 admonition">
-<p class="admonition-title">Exercise 39.</p>
-<p>A ball is thrown with an initial speed of <span class="math notranslate nohighlight">\(30 \mathrm{~ms}^{-1}\)</span> to strike a target at a horizontal distance of 40 m and at a height of 10 m above the ground. Taking <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>, determine the possible angles of projection above the horizontal.</p>
+<section id="the-dynamics-in-derwent">
+<h2>7.2 The dynamics in Derwent<a class="headerlink" href="#the-dynamics-in-derwent" title="Link to this heading">#</a></h2>
+<p>Let’s look at the equation for Derwent in isolation,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{\mathrm{d} D}{\mathrm{~d} t}=\phi H - \rho D.
+\end{equation*}
+\]</div>
+<p>This may initially look problematic, because now we have two different dependent variables on the RHS: <span class="math notranslate nohighlight">\(H\)</span> and <span class="math notranslate nohighlight">\(D\)</span>. As mentioned, there is a method for handling this in general that you will meet next semester. But for now, we have the advantage that we have just worked out a full solution for <span class="math notranslate nohighlight">\(H(t)\)</span>. We can therefore update the equation to,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{\mathrm{d} D}{\mathrm{~d} t}=\phi P_0e^{-\phi t} - \rho D.
+\end{equation*}
+\]</div>
+<p>We now only have the one dependent variable: <span class="math notranslate nohighlight">\(D\)</span>, along with the independent variable: <span class="math notranslate nohighlight">\(t\)</span>. As such it remains a first-order linear ODE that we can solve with an integrating factor.</p>
+<div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 13 </span></p>
+<section class="example-content" id="proof-content">
+<p>Solve</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{\mathrm{d} D}{\mathrm{~d} t}=\phi P_0e^{-\phi t} - \rho D.
+\end{equation*}
+\]</div>
+<p><strong>Solution.</strong></p>
+<div class="toggle docutils container">
+<p>First re-arrange the equation into the standard form for integrating factors,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{\mathrm{d} D}{\mathrm{~d} t}+\rho D=\phi P_0e^{-\phi t}.
+\end{equation*}
+\]</div>
+<p>Now we define our integrating factor as <span class="math notranslate nohighlight">\(I(t)=e^{\rho t}\)</span>. We multiply every term in the ODE by this to get,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{\mathrm{d} D}{\mathrm{~d} t}e^{\rho t}+\rho De^{\rho t}&amp;=\phi P_0e^{-\phi t}e^{\rho t} \\
+\frac{\mathrm{d} }{\mathrm{~d} t}\left[De^{\rho t}\right]&amp;=\phi P_0e^{(\rho-\phi) t} 
+\end{align*}
+\end{split}\]</div>
+<p>Then we can integrate both sides to get,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+De^{\rho t}=\frac{\phi}{\rho-\phi}P_0e^{(\rho-\phi) t}+C_2
+\end{equation*}
+\]</div>
+<p>Divide through by the exponential, taking care with what happens on the RHS to get,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+D=\frac{\phi}{\rho-\phi}P_0e^{-\phi t}+C_2e^{-\rho t}
+\end{equation*}
+\]</div>
 </div>
-<div class="admonition-exercise-40 admonition">
-<p class="admonition-title">Exercise 40.</p>
-<p>A stone is thrown with initial speed <span class="math notranslate nohighlight">\(30 \mathrm{~ms}^{-1}\)</span> at an angle <span class="math notranslate nohighlight">\(\alpha\)</span> to the horizontal, where <span class="math notranslate nohighlight">\(\tan \alpha=\frac{4}{3}\)</span>. The stone hits the ground after <span class="math notranslate nohighlight">\(T\)</span> seconds at a horizontal distance of 90 m
-from the point of projection and <span class="math notranslate nohighlight">\(k \mathrm{~m}\)</span> below it. Using <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>, find the values of <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(k\)</span>. Find the velocity of the stone when it strikes the ground.</p>
+</section>
+</div><p>We’ve got a (reasonably) nice expression for the pollution level in Derwent now, but it still contains a constant <span class="math notranslate nohighlight">\(C_2\)</span>. Do we know an initial condition we can use to replace this with something more meaningful? Think back: the pollution was initially dumped into Howden reservoir, meaning that at our start point (<span class="math notranslate nohighlight">\(t=0\)</span>) there was no pollution in Derwent. So we can take,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+D(0)=0&amp;=\frac{\phi}{\rho-\phi}P_0e^{0}+C_2e^{0} \\
+C_2&amp;=-\frac{\phi}{\rho-\phi}P_0
+\end{align*}
+\end{split}\]</div>
+<p>This means our full solution is,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+D(t)=\frac{\phi}{\rho-\phi}P_0\left[e^{-\phi t}-e^{-\rho t}\right].
+\end{equation*}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the two flow rates are equal, <span class="math notranslate nohighlight">\(\rho=\phi\)</span> then our solution doesn’t make sense. A solution does exist, we just have to restart our workings replacing <span class="math notranslate nohighlight">\(\rho\)</span> with <span class="math notranslate nohighlight">\(\phi\)</span>. This is left as a homework exercise for you.</p>
+</div>
+</section>
+<section id="the-dynamics-in-ladybower">
+<h2>7.3 The dynamics in Ladybower<a class="headerlink" href="#the-dynamics-in-ladybower" title="Link to this heading">#</a></h2>
+<p>Finally we come to the equation for pollution in Ladybower,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{\mathrm{d} L}{\mathrm{~d} t}=\rho D.
+\end{equation*}
+\]</div>
+<p>Again, initially we might worry that it is the ‘wrong’ dependent variable on the RHS, until we remember we now have a full solution for this, so the equation becomes,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+\frac{\mathrm{d} L}{\mathrm{~d} t}= \frac{\rho\phi}{\rho-\phi}P_0\left[e^{-\phi t}-e^{-\rho t}\right].
+\end{equation*}
+\]</div>
+<p>Now there are no dependent variables at all in the RHS! This means it is just a standard integration.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+L(t)=\int\frac{\mathrm{d} L}{\mathrm{~d} t}dt&amp;= \int\frac{\rho\phi}{\rho-\phi}P_0\left[e^{-\phi t}-e^{-\rho t}\right]dt. \\
+&amp;=\frac{\rho\phi}{\rho-\phi}P_0\left[\frac{e^{-\phi t}}{-\phi}-\frac{e^{-\rho t}}{-\rho}\right]+C_3\\
+&amp;=\frac{-\left[{e^{-\phi t}}\rho-{e^{-\rho t}}\phi\right]}{\rho-\phi}P_0+C_3\\
+&amp;=\frac{\left[{e^{-\rho t}}\phi-{e^{-\phi t}}\rho\right]}{\rho-\phi}P_0+C_3
+\end{align*}
+\end{split}\]</div>
+<p>Finally, we should try and replace the constant <span class="math notranslate nohighlight">\(C_3\)</span> with something more meaningful. Again, at the start of the event we know <span class="math notranslate nohighlight">\(L(0)=0\)</span>, so we can say,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+L(0)=0&amp;= \frac{\left[{e^{0}}\phi-{e^{0}}\rho\right]}{\rho-\phi}P_0+C_3\\
+C_3&amp;=-\frac{\left[\phi-\rho\right]}{\rho-\phi}P_0\\
+C_3&amp;=P_0
+\end{align*}
+\end{split}\]</div>
+<p>So we have the final equation for pollution in Ladybower as,</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation*}
+L(t)= \left[\frac{{e^{-\rho t}}\phi-{e^{-\phi t}}\rho}{\rho-\phi}+1\right]P_0.
+\end{equation*}
+\]</div>
+<p>Well that was nice. We had three first-order linear ordinary differential equations that we have solved by three different methods: seperation of variables, an integrating factor, and plain-old integration.</p>
+</section>
+<section id="answering-real-world-questions-with-a-model">
+<h2>7.4: Answering real-world questions with a model<a class="headerlink" href="#answering-real-world-questions-with-a-model" title="Link to this heading">#</a></h2>
+<p>We might now feel very satisfied with ourselves for having completed all these calculations. However, our <em>mathematical modelling</em> work has not yet finished. The workers from the Environment Agency or Peak District National Park don’t just want to be given some equations, as nice as they may look. They will have some practical questions for us. We will consider one possible query here. To make things even more realistic, let’s take some reasonable values for some of our quantities. We will say the amount of pollution dumped is 0.5 megalitres (Ml). The bulk flow rate between the reservoirs is 150 Ml/day. The volume of Howden is around 7,500 Ml and Derwent is around 30,000 Ml, giving respective flow rates of <span class="math notranslate nohighlight">\(\phi=0.02\)</span> and <span class="math notranslate nohighlight">\(\rho=0.005\)</span>.</p>
+<section id="when-will-pollution-in-derwent-reservoir-peak">
+<h3>“When will pollution in Derwent reservoir peak?”<a class="headerlink" href="#when-will-pollution-in-derwent-reservoir-peak" title="Link to this heading">#</a></h3>
+<p>We have an expression for the amount of pollution in Derwent, which we can substitute our values into:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+D(t)&amp;=\frac{\phi}{\rho-\phi}P_0\left[e^{-\phi t}-e^{-\rho t}\right]\\
+&amp;=-\frac{2}{3}\left[e^{-0.02 t}-e^{-0.005 t}\right].
+\end{align*}
+\end{split}\]</div>
+<p>How can we find the peak of this? Imagine what the graph of this will look like. We know it starts at 0, it’s going to increase as the pollution flows in, and then decrease again as it flows out. So we expect there to be a maximum to this function, and that will occur where <span class="math notranslate nohighlight">\(dD(t)/dt=0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{dD(t)}{dt}=0&amp;=-\frac{2}{3}\left[-0.02e^{-0.02 t}+0.005e^{-0.005 t}\right]\\
+&amp;=-0.02e^{-0.02 t}+0.005e^{-0.005 t}\\
+4e^{-0.02 t}&amp;=e^{-0.005 t}.
+\end{align*}
+\end{split}\]</div>
+<p>Taking logs of both sides we get,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\ln(4)-0.02 t&amp;=-0.005 t\\
+0.015t&amp;=\ln(4)\\
+t&amp;\approx92\textrm{ days}.
+\end{align*}
+\end{split}\]</div>
+<p>So, if no further action were taken, we’d have a long time to wait for the pollution to spread through the system.</p>
+</section>
+</section>
+<section id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<div class="admonition-exercise-x1 admonition">
+<p class="admonition-title">Exercise X1</p>
+<p>At the end of the lecture we calculated <em>when</em> the pollution would reach its peak level in Derwent. Using this, find the what the amount of pollution is at this peak.</p>
+</div>
+<div class="admonition-exercise-x2 admonition">
+<p class="admonition-title">Exercise X2</p>
+<p>After completing our work getting the equation for the pollution in Derwent, we noted that if <span class="math notranslate nohighlight">\(\phi=\rho\)</span> then our solution does not make sense. Re-calculate the solutions for all three reservoirs now assuming that the flow rates are equal at <span class="math notranslate nohighlight">\(\phi\)</span>.</p>
+</div>
+<div class="admonition-exercise-x3 admonition">
+<p class="admonition-title">Exercise X3</p>
+<p>We took the major assumption that there is no out-flow from the system. Even considering that engineers may seek to reduce the flow after a pollution spill, it is unlikely to be shut off entirely. To incorporate this additional flow we update the model to,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{ll}
+\frac{\mathrm{d} H}{\mathrm{~d} t} &amp; = -\phi H(t) \\
+\frac{\mathrm{d} D}{\mathrm{~d} t} &amp; = \phi H(t)-\rho D(t) \\ 
+\frac{\mathrm{d} L}{\mathrm{~d} t} &amp; = \rho D(t) - \kappa L(t).
+\end{array}
+\end{split}\]</div>
+<p>Which of our equations need to be re-calculated with this change? Perform these re-calculaions to get updated solutions to the model. The volume of Ladybower is around 25,000 mL, meaning <span class="math notranslate nohighlight">\(\kappa=0.006\)</span>. When will the pollution in Ladybower peak?</p>
 </div>
 </section>
 </section>
@@ -606,20 +722,20 @@ from the point of projection and <span class="math notranslate nohighlight">\(k 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="lecture18.html"
+       href="lecture6.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</p>
+        <p class="prev-next-title">Lecture 6. First order linear ordinary differential equations</p>
       </div>
     </a>
     <a class="right-next"
-       href="lecture20.html"
+       href="lecture8.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 20. More examples of motion with constant acceleration</p>
+        <p class="prev-next-title">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -639,8 +755,14 @@ from the point of projection and <span class="math notranslate nohighlight">\(k 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-shape-of-a-projectile-s-path">19.1 The shape of a projectile’s path</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-19-homework-exercises">Lecture 19 Homework exercises</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dynamics-in-howden">7.1 The dynamics in Howden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dynamics-in-derwent">7.2 The dynamics in Derwent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dynamics-in-ladybower">7.3 The dynamics in Ladybower</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#answering-real-world-questions-with-a-model">7.4: Answering real-world questions with a model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-will-pollution-in-derwent-reservoir-peak">“When will pollution in Derwent reservoir peak?”</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a></li>
 </ul>
   </nav></div>
 

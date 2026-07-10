@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MAS108 Project &#8212; MAS108 Mathematical Modelling</title>
+    <title>MAS108 Project: Saving red squirrels &#8212; MAS108 Mathematical Modelling</title>
   
   
   
@@ -177,7 +177,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -188,8 +188,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. 1st order linear ODEs applied</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
@@ -205,7 +204,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">MAS108 Project</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">MAS108 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -409,7 +408,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -420,11 +421,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>MAS108 Project</h1>
+    <h1>MAS108 Project: Saving red squirrels</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marking">Marking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-on-how-to-write-a-good-report">Tips on how to write a (good) report</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -434,38 +444,63 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="mas108-project">
-<h1>MAS108 Project<a class="headerlink" href="#mas108-project" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="mas108-project-saving-red-squirrels">
+<h1>MAS108 Project: Saving red squirrels<a class="headerlink" href="#mas108-project-saving-red-squirrels" title="Link to this heading">#</a></h1>
 <p><strong>This assessment is worth 20% of your grade for MAS108.  You should hand it in on Blackboard, via the ‘Assessment Information / Written Project’ folder, by 2pm Thursday 23rd January.</strong></p>
-<p>This project examines a model of predator-prey dynamics in discrete time.  Let <span class="math notranslate nohighlight">\(U(t)\)</span> and <span class="math notranslate nohighlight">\(V(t)\)</span> be the number of prey and predators at time <span class="math notranslate nohighlight">\(t\)</span>, respectively.  We model their dynamics as follows</p>
-<div class="amsmath math notranslate nohighlight" id="equation-20ef3e00-7dc8-472a-a00e-6395b36d501a">
-<span class="eqno">(1)<a class="headerlink" href="#equation-20ef3e00-7dc8-472a-a00e-6395b36d501a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>The UK’s native red squirrel population has had a precipitous decline since the introduction of the non-native grey squirrel in the late 1800s, due to a mix of competition and disease. One potential conservation tool being considered is encouraging populations of pine martens, another native species. Pine martens are predators of both red and grey squirrels, but are particularly succesful at hunting the grey squirrels: in regions where the three species coexist naturally, grey squirrel populations have been found to be much smaller, leading to more resilient red squirrel populations.</p>
+<p>For this project you will take the role of a mathematical modelling consultant, such as might work at BIOSS (https://www.bioss.ac.uk/) or CEH (https://www.ceh.ac.uk/). You have been contacted by a local Wildlife Trust, who are looking into the pros and cons of introducing pine martens into the region to help limit the grey squirrel population. Your task is to produce some initial modelling of the predator-prey dynamics of pine martens and grey squirrels, analyse the results and draw some conclusions.</p>
+<p>Let <span class="math notranslate nohighlight">\(G(t)\)</span> and <span class="math notranslate nohighlight">\(P(t)\)</span> be the number of grey squirels and pine martens at time <span class="math notranslate nohighlight">\(t\)</span>, respectively.  You are provided with the following initial model for their dynamics:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-82d5eedb-4aa6-4d52-8b85-edc7006f442c">
+<span class="eqno">(1)<a class="headerlink" href="#equation-82d5eedb-4aa6-4d52-8b85-edc7006f442c" title="Permalink to this equation">#</a></span>\[\begin{align}
 	\label{prey}
-	U(t+1)&amp;=U(t)+rU(t)-pU(t)V(t), \\
+	G(t+1)&amp;=G(t)+rG(t)-pG(t)P(t), \\
 	\label{pred}
-	V(t+1)&amp;=V(t)+pcU(t)V(t)-dV(t),
+	P(t+1)&amp;=P(t)+pcP(t)G(t)-dP(t),
 \end{align}\]</div>
-<p>where <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, and <span class="math notranslate nohighlight">\(d\)</span> are positive constants.</p>
+<p>where <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, and <span class="math notranslate nohighlight">\(d\)</span> are positive constants. Based on field-studies, the current best estimates for the parameters are: <span class="math notranslate nohighlight">\(r=0.5\)</span>, <span class="math notranslate nohighlight">\(p=0.0001\)</span>, <span class="math notranslate nohighlight">\(c=0.5\)</span>, <span class="math notranslate nohighlight">\(d=0.1\)</span>.</p>
 <p>Your tasks are as follows:</p>
 <ol class="arabic simple">
 <li><p>Explain how to interpret the constants <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, and <span class="math notranslate nohighlight">\(d\)</span> biologically.</p></li>
-<li><p>Set <span class="math notranslate nohighlight">\(r=0.5\)</span>, <span class="math notranslate nohighlight">\(p=0.0001\)</span>, <span class="math notranslate nohighlight">\(c=0.5\)</span>, <span class="math notranslate nohighlight">\(d=0.1\)</span>.  Set <span class="math notranslate nohighlight">\(U(0)=4000+N\)</span> where <span class="math notranslate nohighlight">\(N\)</span> is the last three digits of your registration number.  Set <span class="math notranslate nohighlight">\(V(0)=4000+M\)</span> where <span class="math notranslate nohighlight">\(M\)</span> is the number given by the 5th, 6th, and 7th digits of your registration number.  (For example, if your registration number is 160153427 then <span class="math notranslate nohighlight">\(U(0)=4427\)</span> and <span class="math notranslate nohighlight">\(V(0)=4534\)</span>.)  Calculate <span class="math notranslate nohighlight">\(U(t)\)</span> and <span class="math notranslate nohighlight">\(V(t)\)</span> for <span class="math notranslate nohighlight">\(t&lt;40\)</span> and plot the resulting curves (of <span class="math notranslate nohighlight">\(U(t)\)</span> and <span class="math notranslate nohighlight">\(V(t)\)</span> against <span class="math notranslate nohighlight">\(t\)</span>) on a single graph.</p></li>
-<li><p>Explore the dynamics of the equations by repeating Task 2 for different parameter values, maximum times, and/or initial conditions.</p></li>
-<li><p>Write up what you have found by doing tasks 1-3 in a single report, including a biological interpretation of your findings, using between 800 and 1000 words, plus diagrams.  Hand this report in according to the instructions at the top of this page.</p></li>
+<li><p>There is some uncertainty in the population numbers. Set <span class="math notranslate nohighlight">\(G(0)=4000+N\)</span> where <span class="math notranslate nohighlight">\(N\)</span> is the last three digits of your registration number.  Set <span class="math notranslate nohighlight">\(P(0)=4000+M\)</span> where <span class="math notranslate nohighlight">\(M\)</span> is the number given by the 5th, 6th, and 7th digits of your registration number.  (For example, if your registration number is 160153427 then <span class="math notranslate nohighlight">\(G(0)=4427\)</span> and <span class="math notranslate nohighlight">\(P(0)=4534\)</span>.)  Calculate <span class="math notranslate nohighlight">\(G(t)\)</span> and <span class="math notranslate nohighlight">\(P(t)\)</span> for <span class="math notranslate nohighlight">\(t&lt;40\)</span> and plot the resulting curves (of <span class="math notranslate nohighlight">\(G(t)\)</span> and <span class="math notranslate nohighlight">\(P(t)\)</span> against <span class="math notranslate nohighlight">\(t\)</span>) on a single graph.</p></li>
+<li><p>Make at least one change to the model to gain wider insight into the possible behaviours. Ideas include using different parameter values or initial conditions. You are also welcome to make any changes to the model you believe are sensible for the conservation issue in question (though be careful of spending too much time on this - you are a busy consultant!).</p></li>
+<li><p>Provide a biological interpretation of your results and what your advice would be based on this work.</p></li>
+<li><p>Write up what you have found by doing tasks 1-4 in a single report, using between 800 and 1000 words, plus diagrams.  Hand this report in according to the instructions at the top of this page.</p></li>
 </ol>
-<p>This will be marked on a pass/resubmit basis first time around.  To pass, your report must meet the following criteria:</p>
-<ul class="simple">
-<li><p>All the above tasks must be attempted.</p></li>
-<li><p>A reasonable attempt at interpreting  <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, and <span class="math notranslate nohighlight">\(d\)</span> must be given, even if your interpretations miss the mark.</p></li>
-<li><p>Your report must contain an explanation of the dynamics for at least three different sets of parameter values, maximum times, and/or initial conditions. (You can, of course, do more than three, or many more than three, if you want!)</p></li>
-<li><p>The report must contain the plot from Task 2 (but it may also contain further plots).</p></li>
-<li><p>There must be a reasonable attempt at interpreting your findings biologically, even if your interpretations miss the mark.</p></li>
-</ul>
-<p><strong>Notes</strong></p>
+<section id="marking">
+<h2>Marking<a class="headerlink" href="#marking" title="Link to this heading">#</a></h2>
+<p>This will be marked on a pass/resubmit basis first time around. To pass, your report <strong>must</strong> have addressed <strong>all</strong> the tasks listed above.</p>
 <p>In spirit, I want to see people having a go, without worrying about whether what they produce is right or wrong. A pass can be given even if all the analysis and interpretation is incorrect, as long as your report demonstrates that you have given a decent attempt at all the tasks. The hope is that you can put your worries aside about marks and enjoy exploring the interesting dynamics!</p>
 <p>If you pass first time around, you will receive 20 out of the 20 available marks. All of you should be able to achieve this. However, if you hand in something that does not pass first time around, I will give you some feedback as to where you fell short. Then you will have the opportunity to submit one more time (the deadline for submission will be given with my feedback). If you pass second time around, you will receive 15 out of the 20 available marks. If you do not pass second time around (hopefully no-one will manage this!), you will receive either 10 (for some sign of engagement that nevertheless falls short of the above criteria) or 0 (for nothing creditable).</p>
 <p>Please be aware that, should you fail to hand your assignment in on time, the above marks may be subject to a late hand-in penalty in line with University regulations. At the time of writing, this reads: ‘Late submissions without an extension or beyond an agreed extension date will incur a 5% penalty for each working date they are submitted late. After 5 working days, work will not be accepted and will be an automatic fail.’ So failure to hand in within 5 working days of the deadline, either first time around or second time around, will lead to an automatic mark of 0/20 and no chance for a resubmission.</p>
-<p>I recommend that you do not use Generative AI technologies (e.g. Gemini / Chat GPT) in producing this assignment. I doubt they would help you either acquire modelling skills or meet the criteria for passing. However, if you do choose to use them (for example to improve spelling/grammar), make sure you abide by the University’s policy on unfair means in relation to Generative AI.</p>
+</section>
+<section id="tips-on-how-to-write-a-good-report">
+<h2>Tips on how to write a (good) report<a class="headerlink" href="#tips-on-how-to-write-a-good-report" title="Link to this heading">#</a></h2>
+<p>It is not uncommon for maths students to complain that they don’t like writing, perhaps even claiming it’s why they study maths. Unfortunately, I am here to tell you that <strong>good writing is an essential mathematical skill</strong>. Even those of us who have pursued academic careers - perhaps the most ‘pure’ form of mathematical profession - need to be able to write research papers, grant applications, teaching notes, etc. clearly and coherently. In professions in industry, the civil service, teaching, etc. this will be even more true.</p>
+<p>So, how do you write a report that covers mathematical material? There is no single answer to this, but I will give you a few pointers of things that I think are important:</p>
+<p><strong>Choose a good piece of software</strong></p>
+<p>Handwritten reports will occasionally be acceptable (informal minutes from a meeting, say) but you should really be using typesetting software. A few common choices are:</p>
+<ul class="simple">
+<li><p>LaTeX - custom-designed for writing mathematical work (most of you are learning this in Mathematical Investigation Skills). Excellent for neat formatting of your report, especially if there is significant mathematical content and/or plots. The main downside is accessibility - screen readers cannot parse the equations.</p></li>
+<li><p>Microsoft Word / Google Docs - classic easy-to-use ‘what you see is what you get’ word processors. Mathematical notation can be used but can be a faff, as can neat formatting of long documents.</p></li>
+<li><p>Markdown - a halfway house, that mostly is a plain word processor but will typeset equations using LaTeX commands. Importantly it can be parsed by screen readers. This is what I use for all your notes (with some embellishment…).</p></li>
+</ul>
+<p><strong>Format your document nicely</strong></p>
+<p>What you produce should be easy to read. Think of when you read a textbook, or a magazine article, or an online news story - how are these laid out to make them easily digestible? A few suggestions from me:</p>
+<ul class="simple">
+<li><p>Include a title and sensible section headers.</p></li>
+<li><p>Avoid big blocks of text with no paragraph breaks.</p></li>
+<li><p>Equally, avoid long chains of mathematical workings with no text to break it up.</p></li>
+<li><p>Intersperse figures and plots with the text.</p></li>
+<li><p>Keep to sensible font sizes and margin widths - it should all be readable at 100% scaling on a laptop.</p></li>
+</ul>
+<p><strong>Think carefully about who your reader is</strong></p>
+<p>A maths lecturer specialising in this area is going to have a very different baseline knowledge to a recruitment officer at a pharmaceutical company who knows nothing about maths but is handling your job application. What can you expect them to know, and what is their guiding interest? <em>Remember, in this case you are writing for someone from the Wildlife Trust</em>.</p>
+<p><strong>Tell a story</strong></p>
+<p>I don’t mean make it up. I mean guide us through the work from start to finish. What is the underlying question that motivates the work? Then how have you approached it? What did you find? What do we learn from this? This is the classic structure: introduction, methods, results, conclusions. Sometimes it’ll make sense to do things a bit differently, but it’s generally a good starting point.</p>
+<p><strong>Be wary of generative AI</strong></p>
+<p>It may be tempting to just ask a large language model to “write me a 800-word report on a discrete-time predator-prey model” but please don’t. Would I be able to spot it? Probably, though not certainly - things are always improving but my experience is you still get warning signs. More importantly, you won’t learn anything, in terms of doing the actual modelling, in terms of writing, or in the feedback you get.</p>
+<p>Different people, and certainly different academics, have different takes on the role of AI. For me, in this context, I see it has uses as a spelling and grammar checker, especially for those whose first language is not English. I can also see its use to get you started with some code or point you to a bit of extra reading but you should thoroughly check what it gives you is what you wanted. If you do use generative AI in any capacity at all you <strong>must</strong> declare it in your submission.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -513,6 +548,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marking">Marking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-on-how-to-write-a-good-report">Tips on how to write a (good) report</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
