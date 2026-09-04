@@ -205,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 19. Modelling projectile motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -447,6 +447,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-19-modelling-projectile-motion">
 <h1>Lecture 19. Modelling projectile motion<a class="headerlink" href="#lecture-19-modelling-projectile-motion" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘Grown men with replica shirts worn over their jumpers, who stand up and stretch out their arms when the opposing team fail to hit the target’</em></p>
+</div></blockquote>
 <p>Last lecture we focused predominantly on models of motion in one dimension with constant acceleration, with a particular emphasis on acceleration due to gravity. This is fine for modelling things that move vertically up and down, but often movement occurs in a horizontal direction, too. Here we will examine motion under the effect of constant acceleration where there are components of motion both parallel and perpendicular to the direction of the acceleration.</p>
 <p>A paradigmatic example of this is the motion of projectiles close to the Earth’s surface. When an object is propelled in a non-vertical direction, its motion will be governed by the acceleration due to gravity. However, the object will also have some horizontal movement.</p>
 <p>If we are modelling a projectile that has a non-vertical initial velocity, we can write the initial velocity as</p>
@@ -527,9 +530,9 @@ z &amp; =\frac{V x \sin (\theta)}{V \cos (\theta)}-\frac{g x^{2}}{2 V^{2} \cos ^
 \end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(a=\tan (\theta)\)</span> and <span class="math notranslate nohighlight">\(b=g \sec ^{2}(\theta) /\left(2 V^{2}\right)\)</span> are constants. This is a quadratic function, so the shape of the projectile’s path is a parabola.</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 30 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 29 </span></p>
 <section class="example-content" id="proof-content">
-<p>A player for Sheffield Bruins baseball club hits a ball at a height of 1 meter above the ground. The ball’s initial speed is <span class="math notranslate nohighlight">\(90mph\)</span> (~<span class="math notranslate nohighlight">\(40m/s\)</span>) at an angle of <span class="math notranslate nohighlight">\(\frac{\pi}{6}\)</span> radians above the horizontal. Find the horizontal distance from the person to the place where the ball first bounces, assuming <span class="math notranslate nohighlight">\(g=9.8\)</span>.</p>
+<p>A player for Sheffield Bruins baseball club hits a ball at a height of 1 meter above the ground. The ball’s initial speed is <span class="math notranslate nohighlight">\(75mph\)</span> (~<span class="math notranslate nohighlight">\(34m/s\)</span>) at an angle of <span class="math notranslate nohighlight">\(\frac{\pi}{6}\)</span> radians above the horizontal. Find the horizontal distance from the person to the place where the ball first bounces, assuming <span class="math notranslate nohighlight">\(g=9.8\)</span>.</p>
 <img src="mas108_projectile_ex.png" alt="drawing" width="400"/>
 <p><em>Figure 28: The trajectory of a ball.</em></p>
 <p><strong>Solution.</strong></p>
@@ -541,34 +544,34 @@ z &amp; =\frac{V x \sin (\theta)}{V \cos (\theta)}-\frac{g x^{2}}{2 V^{2} \cos ^
 z=x \tan (\theta)-\frac{g x^{2}}{2 V^{2}} \sec ^{2}(\theta) \tag{234}
 \end{equation*}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(V=40, g=9.8\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{6}\)</span>. Then we have, working to three significant figures,</p>
+<p>where <span class="math notranslate nohighlight">\(V=34, g=9.8\)</span> and <span class="math notranslate nohighlight">\(\theta=\frac{\pi}{6}\)</span>. Then we have, working to three significant figures,</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
-z=0.577 x-0.00408 x^{2} \tag{235}
+z=0.57735 x-0.00565 x^{2} \tag{235}
 \end{equation*}
 \]</div>
 <p>The ball reaches the ground when <span class="math notranslate nohighlight">\(z=-1, x=d\)</span>. This gives</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-&amp; -1=0.577 d-0.00408 d^{2} \\
-\Longrightarrow &amp; 0.00408 d^{2}-0.577 d-1=0 \\
-\Longrightarrow &amp; d=\frac{0.577 \pm \sqrt{0.577^{2}+4 \times 0.00408}}{2 \times 0.00408} \tag{236}
+&amp; -1=0.57735 d-0.00565 d^{2} \\
+\Longrightarrow &amp; 0.00565 d^{2}-0.57735 d-1=0 \\
+\Longrightarrow &amp; d=\frac{0.57735 \pm \sqrt{0.57735^{2}+4 \times 0.00565}}{2 \times 0.00565} \tag{236}
 \end{align*}
 \end{split}\]</div>
-<p>Since <span class="math notranslate nohighlight">\(d\)</span> must be positive, we have <span class="math notranslate nohighlight">\(d \approx 143\)</span>, so the ball first bounces 143m (470 feet) away. (At the Bruins home ground this would probably mean a home run and a broken car window).</p>
+<p>Since <span class="math notranslate nohighlight">\(d\)</span> must be positive, we have <span class="math notranslate nohighlight">\(d \approx 103\)</span>, so the ball first bounces 103m (337 feet) away. (At the Bruins home ground this would mean a home run and probably a broken car window).</p>
 </div>
 </section>
 </div></section>
 <section id="lecture-19-homework-exercises">
 <h2>Lecture 19 Homework exercises<a class="headerlink" href="#lecture-19-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-39 admonition">
-<p class="admonition-title">Exercise 39.</p>
+<div class="admonition-exercise-42 admonition">
+<p class="admonition-title">Exercise 42.</p>
 <p>A ball is thrown with an initial speed of <span class="math notranslate nohighlight">\(30 \mathrm{~ms}^{-1}\)</span> to strike a target at a horizontal distance of 40 m and at a height of 10 m above the ground. Taking <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>, determine the possible angles of projection above the horizontal.</p>
 </div>
-<div class="admonition-exercise-40 admonition">
-<p class="admonition-title">Exercise 40.</p>
+<div class="admonition-exercise-43 admonition">
+<p class="admonition-title">Exercise 43.</p>
 <p>A stone is thrown with initial speed <span class="math notranslate nohighlight">\(30 \mathrm{~ms}^{-1}\)</span> at an angle <span class="math notranslate nohighlight">\(\alpha\)</span> to the horizontal, where <span class="math notranslate nohighlight">\(\tan \alpha=\frac{4}{3}\)</span>. The stone hits the ground after <span class="math notranslate nohighlight">\(T\)</span> seconds at a horizontal distance of 90 m
 from the point of projection and <span class="math notranslate nohighlight">\(k \mathrm{~m}\)</span> below it. Using <span class="math notranslate nohighlight">\(g=9.8 \mathrm{~ms}^{-2}\)</span>, find the values of <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(k\)</span>. Find the velocity of the stone when it strikes the ground.</p>
 </div>

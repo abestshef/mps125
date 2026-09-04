@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -446,6 +446,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-3-cycles-period-doubling-and-chaos">
 <h1>Lecture 3. Cycles, period-doubling, and chaos<a class="headerlink" href="#lecture-3-cycles-period-doubling-and-chaos" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>Entering the store, I nodded to an assistant and hurried to the back area of the shop where I could browse in comfort amongst the organised chaos.</em></p>
+</div></blockquote>
 <p>If you did Exercise 3 from Lecture 2 for your homework, you will have seen some interesting patterns emerge from the logistic model. This lecture, we are going to study the wealth of such patterns and learn how to categorise them. We will work with a version of the logistic map where <span class="math notranslate nohighlight">\(K=1\)</span>. You can thus think of <span class="math notranslate nohighlight">\(U(t)\)</span> as being given in units of thousands of organisms (or millions of organisms) so that <span class="math notranslate nohighlight">\(K=1\)</span> means that the carrying capacity of the environment is a thousand (or a million) organisms. We will also talk about an ‘organism’ rather than a ‘rabbit’ in this lecture, since there is nothing mathematically special about rabbits (just that they are fluffy and cute and breed a lot). This also gives you the chance to picture your favourite animal, plant, archaea, or whatever, as your study organism.</p>
 <p>So, just to be clear, the study equation for this lecture will be</p>
 <div class="math notranslate nohighlight">
@@ -637,7 +640,7 @@ B=\frac{r+2 \pm \sqrt{r^{2}-4}}{2 r} \tag{19}
 \end{split}\]</div>
 <p>but it is a rather lengthy calculation, so I won’t suffer you with it. Instead, I’ll give you a definition.</p>
 <div class="proof definition admonition" id="def3_1">
-<p class="admonition-title"><span class="caption-number">Definition 3 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
 <section class="definition-content" id="proof-content">
 <p>Definition. Let <span class="math notranslate nohighlight">\(U(t)\)</span> be a sequence of real numbers defined for each non-negative integer, <span class="math notranslate nohighlight">\(t\)</span>. If there are non-negative integers <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(\tau\)</span> such that <span class="math notranslate nohighlight">\(U(t+\tau)=U(t)\)</span> for each <span class="math notranslate nohighlight">\(t&gt;T\)</span> (and there is no smaller value of <span class="math notranslate nohighlight">\(\tau\)</span> with this property) then we say that <span class="math notranslate nohighlight">\(U(t)\)</span> settles to a period <span class="math notranslate nohighlight">\(\tau\)</span> oscillation at long times.</p>
 </section>

@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture15';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 16. Relative motion" href="lecture16.html" />
-    <link rel="prev" title="Lecture 14. The muddiest point: part II" href="lecture14.html" />
+    <link rel="next" title="Lecture 16. The muddiest point: part 2" href="lecture16.html" />
+    <link rel="prev" title="Lecture 14. Modelling oscillations with second order ODEs: a worked example" href="lecture14.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. 1st order linear ODEs applied</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -448,11 +448,15 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-15-motion-in-more-than-one-dimension">
 <h1>Lecture 15. Motion in more than one dimension<a class="headerlink" href="#lecture-15-motion-in-more-than-one-dimension" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘But it’s not forthcoming so I have to assume
+That this narrow path belongs to you’</em></p>
+</div></blockquote>
 <p>So far, we have only looked at particles that move in one dimension. However, given that space has (at least) three spatial dimensions, this is very limiting in terms of what we can model about the physical world. To extend the ideas from previous lectures into higher dimensions, we need vectors, which you have been studying in your Core module. For example, suppose there is a particle <span class="math notranslate nohighlight">\(P\)</span> moving in 3 dimensions, as in Figure 21. Then its location at time <span class="math notranslate nohighlight">\(t\)</span> is given by a vector, which we call <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span>. (Note that we use bold font for vectors.) As <span class="math notranslate nohighlight">\(t\)</span> changes, <span class="math notranslate nohighlight">\(P\)</span> traces out a curve, called the path of the particle.</p>
 <img src="mas108_3D_particle.png" alt="drawing" width="400"/>
 <p><em>Figure 21: A particle moving in 3 dimensions, tracing out a path.</em></p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 23 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 22 </span></p>
 <section class="example-content" id="proof-content">
 <p>The position vector of a particle <span class="math notranslate nohighlight">\(P\)</span> is given, at time <span class="math notranslate nohighlight">\(t\)</span>, by</p>
 <div class="math notranslate nohighlight">
@@ -477,7 +481,7 @@ O P=|\overrightarrow{O P}|=\frac{1}{2} g t^{2} \quad \text { where } g=|\mathbf{
 </section>
 </div><p>Now we have shown how to describe the location of a particle, we also want to be able to describe its velocity and acceleration. For this, we need to know how to differentiate vectors.</p>
 <div class="proof definition admonition" id="definition-1">
-<p class="admonition-title"><span class="caption-number">Definition 16 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 15 </span></p>
 <section class="definition-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span> be the location vector (also called ‘position vector’) of a particle moving in <span class="math notranslate nohighlight">\(n\)</span>-dimensional space. We can write this vector as <span class="math notranslate nohighlight">\(\mathbf{r}(t)=\left(r_{1}(t), r_{2}(t), \ldots, r_{n}(t)\right)\)</span>, where <span class="math notranslate nohighlight">\(r_{i}(t)\)</span> is a scalar function of time for each <span class="math notranslate nohighlight">\(i \in\{1, \ldots, n\}\)</span>. Then the derivative of <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span> with respect to time <span class="math notranslate nohighlight">\(t\)</span> is written as</p>
 <div class="math notranslate nohighlight">
@@ -564,7 +568,7 @@ O P=|\overrightarrow{O P}|=\frac{1}{2} g t^{2} \quad \text { where } g=|\mathbf{
 <section id="examples">
 <h2>15.2 Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
 <div class="proof example admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 24 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 23 </span></p>
 <section class="example-content" id="proof-content">
 <p>The location vector of a particle <span class="math notranslate nohighlight">\(P\)</span> is given, at time <span class="math notranslate nohighlight">\(t\)</span>, by</p>
 <div class="math notranslate nohighlight">
@@ -594,7 +598,7 @@ O P=|\overrightarrow{O P}|=\frac{1}{2} g t^{2} \quad \text { where } g=|\mathbf{
 </section>
 </div><p>Notice that velocity and acceleration are vectors, whereas speed is a scalar.</p>
 <div class="proof example admonition" id="example-3">
-<p class="admonition-title"><span class="caption-number">Example 25 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 24 </span></p>
 <section class="example-content" id="proof-content">
 <p>The location vector of a particle <span class="math notranslate nohighlight">\(P\)</span> in two dimensions is given, at time <span class="math notranslate nohighlight">\(t\)</span>, by</p>
 <div class="math notranslate nohighlight">
@@ -653,8 +657,8 @@ product as</p>
 </section>
 <section id="lecture-15-homework-exercises">
 <h2>Lecture 15 Homework exercises<a class="headerlink" href="#lecture-15-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-28 admonition">
-<p class="admonition-title">Exercise 28.</p>
+<div class="admonition-exercise-31 admonition">
+<p class="admonition-title">Exercise 31.</p>
 <p>For each of the following location vectors, calculate the velocity, speed, and acceleration of a particle whose location is described by the vector. In each case, sketch the path of the particle. [Hint: an easy way to sketch a path is to plot values of <span class="math notranslate nohighlight">\(\mathbf{r}(t)\)</span> for various values of <span class="math notranslate nohighlight">\(t\)</span> and join the dots; for example, try <span class="math notranslate nohighlight">\(t=0,1,2,3,4,5, \ldots\)</span> ]</p>
 <p>(a) <span class="math notranslate nohighlight">\(\mathbf{r}(t)=t \mathbf{i}+t^{2} \mathbf{j}\)</span>.</p>
 <p>(b) <span class="math notranslate nohighlight">\(\mathbf{r}(t)=t \mathbf{i}+t^{3} \mathbf{j}\)</span>.</p>
@@ -662,8 +666,8 @@ product as</p>
 <p>(d) <span class="math notranslate nohighlight">\(\mathbf{r}(t)=\sin (t) \mathbf{i}+\cos (t) \mathbf{j}\)</span>.</p>
 <p>(e) <span class="math notranslate nohighlight">\(\mathbf{r}(t)=\exp (-t)[\sin (t) \mathbf{i}+\cos (t) \mathbf{j}]\)</span></p>
 </div>
-<div class="admonition-exercise-29 admonition">
-<p class="admonition-title">Exercise 29.</p>
+<div class="admonition-exercise-32 admonition">
+<p class="admonition-title">Exercise 32.</p>
 <p>(a) At time <span class="math notranslate nohighlight">\(t\)</span>, the location vector <span class="math notranslate nohighlight">\(\mathbf{r}=\mathbf{r}(t)\)</span> of a point <span class="math notranslate nohighlight">\(P\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -682,8 +686,8 @@ product as</p>
 <p>where <span class="math notranslate nohighlight">\(\mathbf{g}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{U}\)</span> are constant vectors, and <span class="math notranslate nohighlight">\(k\)</span> is a constant scalar. Find the velocity of <span class="math notranslate nohighlight">\(P\)</span> at time <span class="math notranslate nohighlight">\(t\)</span>, and show that <span class="math notranslate nohighlight">\(\ddot{\mathbf{r}}(t)=\mathrm{g}-k \dot{\mathbf{r}}(t)\)</span> for all <span class="math notranslate nohighlight">\(t\)</span>. What is the initial velocity of <span class="math notranslate nohighlight">\(P\)</span> ?
 (c) What are the dimensions of <span class="math notranslate nohighlight">\(\mathbf{g}, \mathbf{U}\)</span> and <span class="math notranslate nohighlight">\(k\)</span> ?</p>
 </div>
-<div class="admonition-exercise-30 admonition">
-<p class="admonition-title">Exercise 30.</p>
+<div class="admonition-exercise-33 admonition">
+<p class="admonition-title">Exercise 33.</p>
 <p>A particle <span class="math notranslate nohighlight">\(P\)</span> is moving such that at time <span class="math notranslate nohighlight">\(t\)</span> its location vector is</p>
 <div class="math notranslate nohighlight">
 \[
@@ -735,7 +739,7 @@ product as</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 14. The muddiest point: part II</p>
+        <p class="prev-next-title">Lecture 14. Modelling oscillations with second order ODEs: a worked example</p>
       </div>
     </a>
     <a class="right-next"
@@ -743,7 +747,7 @@ product as</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 16. Relative motion</p>
+        <p class="prev-next-title">Lecture 16. The muddiest point: part 2</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

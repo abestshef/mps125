@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -433,8 +433,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-exponential-to-logistic-growth">2.1 From exponential to logistic growth</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analytic-solutions-for-logistic-growth">2.2 Analytic solutions for logistic growth</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-2-homework-exercises">Lecture 2 Homework exercises</a></li>
 </ul>
             </nav>
         </div>
@@ -448,6 +446,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-2-introduction-to-difference-equations">
 <h1>Lecture 2. Introduction to Difference Equations<a class="headerlink" href="#lecture-2-introduction-to-difference-equations" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘Every day is Australia Day,
+“Sons and Daughters” and “Home and Away”’</em></p>
+</div></blockquote>
 <section id="from-exponential-to-logistic-growth">
 <h2>2.1 From exponential to logistic growth<a class="headerlink" href="#from-exponential-to-logistic-growth" title="Link to this heading">#</a></h2>
 <p>Recall Example 2 from Lecture 1, about population growth of rabbits. The equation we used to model this situation (Equation 1) is an example of a difference equation.</p>
@@ -475,7 +477,7 @@ U(t+1)=f[U(t)] \tag{4}
 U(t+1)=(1+r) U(t) \tag{5}
 \end{equation*}
 \]</div>
-<p>noting that <span class="math notranslate nohighlight">\(r&gt;-1\)</span> (since <span class="math notranslate nohighlight">\(0 \leq d \leq 1\)</span> and <span class="math notranslate nohighlight">\(a&gt;0\)</span> ). The model in Equation (5) is called the discrete exponential model (or sometimes just ‘exponential model’ for short). We call <span class="math notranslate nohighlight">\(r\)</span> the net reproduction rate when we are modelling population growth. However, Equation (5) can be used to model anything whose growth over time is proportional to its value. For example, we can use it to model the growth of someone’s student loan debt over time once the have finished University. Here, <span class="math notranslate nohighlight">\(U(t)\)</span> is the value of the debt and <span class="math notranslate nohighlight">\(r\)</span> is the interest rate.</p>
+<p>noting that <span class="math notranslate nohighlight">\(r&gt;-1\)</span> (since <span class="math notranslate nohighlight">\(0 \leq d \leq 1\)</span> and <span class="math notranslate nohighlight">\(a&gt;0\)</span> ). The model in Equation (5) is called the discrete exponential model (or sometimes just ‘exponential model’ for short). We call <span class="math notranslate nohighlight">\(r\)</span> the net reproduction rate when we are modelling population growth. However, Equation (5) can be used to model anything whose growth over time is proportional to its value. For example, we can use it to model the growth of someone’s student loan debt over time once they have finished University. Here, <span class="math notranslate nohighlight">\(U(t)\)</span> is the value of the debt and <span class="math notranslate nohighlight">\(r\)</span> is the interest rate.</p>
 <p>For now let’s go back to rabbits. Rabbits were introduced into Australia by European settlers. Until around 1860 they were kept in secure cages/enclosures. One wise soul then decided to release a small number of rabbits for hunting. Let’s model what happened next.</p>
 <p>Suppose the net reproductive rate is <span class="math notranslate nohighlight">\(r=1\)</span>, which is fairly big, but rabbits are well-known as prolific breeders.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -512,7 +514,7 @@ U(t+1)=(1+r) U(t) \tag{5}
 </table>
 </div>
 <p><em>Table 1: Change in rabbit population over time, using the model in Equation (5) with <span class="math notranslate nohighlight">\(r=1\)</span> and <span class="math notranslate nohighlight">\(U(0)=10\)</span>.</em></p>
-<p>In Table 1 we see that after 10 years, we have more than ten thousand rabbits on our island. This may sound incredible but in fact evidence suggests that rabbit numbers reached well over a million in Australia within 10 years of their first release. You may have noticed that <span class="math notranslate nohighlight">\(U(t)=U(0) 2^{t}\)</span>. Indeed, we have the following general result</p>
+<p>In Table 1 we see that after 10 years, we have more than ten thousand rabbits. This may sound incredible but in fact evidence suggests that rabbit numbers reached well over a million in Australia within 10 years of their first release. You may have noticed that <span class="math notranslate nohighlight">\(U(t)=U(0) 2^{t}\)</span>. Indeed, we have the following general result</p>
 <div class="proof proposition admonition" id="prop2_1">
 <p class="admonition-title"><span class="caption-number">Proposition 1 </span></p>
 <section class="proposition-content" id="proof-content">
@@ -529,126 +531,64 @@ U(t+1)=(1+r) U(t) \tag{5}
 <p class="admonition-title">Note</p>
 <p>RHS stands for ‘right-hand side’ and <span class="math notranslate nohighlight">\(L H S\)</span> stands for ‘left-hand side’.</p>
 </div>
-<p>We can use the result of Proposition (1) to calculate the number of rabbits in <span class="math notranslate nohighlight">\(N\)</span> years time for any <span class="math notranslate nohighlight">\(N\)</span>. For example, assuming <span class="math notranslate nohighlight">\(r=1\)</span>, in 20 years time there will be <span class="math notranslate nohighlight">\(10 \times 2^{20}\)</span> rabbits, which is more than ten million. Again, these numbers are if anything an under-prediction of what really happened in Austrtalia during the late 1800s and early 1900s. In 30 years there will be more than ten billion.  However, if we keep going, in 270 years, there will be more rabbits on the island than atoms in the known universe, which is both a flat contradiction and terrifying. The moral of the story is, unless we are only concerned with short times, we will need a better model.</p>
-<p>So what is missing in our current model? Well, it currently does not account for the fact that rabbits must eat in order to survive and reproduce, and there is only a finite amount of vegetation on the continent. To model this fact, we incorporate a competition term, <span class="math notranslate nohighlight">\(r U^{2}(t) / K\)</span>, as follows</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
-U(t+1)=(1+r) U(t)-\frac{r U^{2}(t)}{K} \tag{6}
-\end{equation*}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(K&gt;0\)</span> is a constant. The reason for using <span class="math notranslate nohighlight">\(U^{2}(t)\left(=[U(t)]^{2}\right)\)</span> in the competition term is that it takes two rabbits to compete, so the amount of possible competition between <span class="math notranslate nohighlight">\(U(t)\)</span> rabbits is proportional to <span class="math notranslate nohighlight">\(U^{2}(t)\)</span>. We can re-write Equation (6) as</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation*}
+<p>We can use the result of Proposition (1) to calculate the number of rabbits in <span class="math notranslate nohighlight">\(N\)</span> years time for any <span class="math notranslate nohighlight">\(N\)</span>. For example, assuming <span class="math notranslate nohighlight">\(r=1\)</span>, in 20 years time there will be <span class="math notranslate nohighlight">\(10 \times 2^{20}\)</span> rabbits, which is more than ten million. Again, these numbers are if anything an under-prediction of what really happened in Australia during the late 1800s and early 1900s. In 30 years there will be more than ten billion.  However, if we keep going, in 270 years, there will be more rabbits on the island than atoms in the known universe, which is both a flat contradiction and terrifying. The moral of the story is, unless we are only concerned with short times, we will need a better model.</p>
+<p>So what is missing in our current model? Well, it currently does not account for the fact that rabbits must eat in order to survive and reproduce, and there is only a finite amount of vegetation on the continent. To model this fact, we incorporate a competition term, <span class="math notranslate nohighlight">\(r U^{2}(t) / K\)</span>, as follows
+$$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
 U(t+1)=U(t)+r U(t)\left(1-\frac{U(t)}{K}\right) \tag{7}
-\end{equation*}
-\]</div>
-<p>This is called the discrete logistic model (sometimes also referred to as the ‘discrete logistic map’ or just ‘logistic model’).</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Time, <span class="math notranslate nohighlight">\(t\)</span> years</p></th>
-<th class="head text-left"><p>0</p></th>
-<th class="head text-left"><p>1</p></th>
-<th class="head text-left"><p>2</p></th>
-<th class="head text-left"><p>3</p></th>
-<th class="head text-left"><p>4</p></th>
-<th class="head text-left"><p>5</p></th>
-<th class="head text-left"><p>6</p></th>
-<th class="head text-left"><p>7</p></th>
-<th class="head text-left"><p>8</p></th>
-<th class="head text-left"><p>9</p></th>
-<th class="head text-left"><p>10</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Number of rabbits, <span class="math notranslate nohighlight">\(U(t)\)</span></p></td>
-<td class="text-left"><p>10</p></td>
-<td class="text-left"><p>20</p></td>
-<td class="text-left"><p>39</p></td>
-<td class="text-left"><p>75</p></td>
-<td class="text-left"><p>138</p></td>
-<td class="text-left"><p>238</p></td>
-<td class="text-left"><p>363</p></td>
-<td class="text-left"><p>462</p></td>
-<td class="text-left"><p>497</p></td>
-<td class="text-left"><p>500</p></td>
-<td class="text-left"><p>500</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><em>Table 2: Change in rabbit population over time, using the model in Equation (7) with <span class="math notranslate nohighlight">\(r=1\)</span>, <span class="math notranslate nohighlight">\(K=500\)</span> and <span class="math notranslate nohighlight">\(U(0)=10\)</span>.</em></p>
-<p>In Table 2, the number of rabbits for the discrete logistic model is shown for the first ten years after introduction to the island, where <span class="math notranslate nohighlight">\(r=1\)</span> and <span class="math notranslate nohighlight">\(K=500\)</span>. In Figure 3, we see how the logistic model compares to the exponential model. Whilst in the exponential model the
-population just grows and grows, the logistic model has the rabbit population levelling out at about <span class="math notranslate nohighlight">\(U(t)=500\)</span>.</p>
-<p>Why 500? Where have we seen that before? Well, it’s the value of <span class="math notranslate nohighlight">\(K\)</span>, right? Indeed, <span class="math notranslate nohighlight">\(K\)</span> is an example of what is called a ‘steady state’ and what we have seen is an example of ‘convergence to a steady state’. Let’s define these concepts.</p>
-<div class="proof definition admonition" id="definition-2">
-<p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
-<section class="definition-content" id="proof-content">
-<p>For a difference equation, <span class="math notranslate nohighlight">\(U(t+1)=f[U(t)]\)</span>, a steady state is a constant, <span class="math notranslate nohighlight">\(U_{*}\)</span>, such that <span class="math notranslate nohighlight">\(U_{*}=f\left(U_{*}\right)\)</span>. We say that a difference equation converges to the steady state, <span class="math notranslate nohighlight">\(U_{*}\)</span>, if <span class="math notranslate nohighlight">\(U(t) \rightarrow U_{*}\)</span> as <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span>.</p>
-</section>
-</div><div class="proof example admonition" id="ex2_1">
-<p class="admonition-title"><span class="caption-number">Example 4 </span></p>
-<section class="example-content" id="proof-content">
-<p>What is the steady state of Equation (7) for <span class="math notranslate nohighlight">\(r&gt;0\)</span> ?</p>
-<p><strong>Solution.</strong></p>
-<p>By definition, this is a number <span class="math notranslate nohighlight">\(U_{*}\)</span> such that</p>
+\end{equation*}\]</div>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation*}
+\[or \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+U(t+1)=(1+r) U(t)-\frac{r U^{2}(t)}{K} \tag{6}
+\end{equation*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}where $K&gt;0$ is a constant. We can think of the reproduction rate now being a function of the population size, $N$, decreasing linearly as we get more rabbits in the population to compete with.\\This is called the discrete logistic model (sometimes also referred to as the 'discrete logistic map' or just 'logistic model').\\| Time, $t$ years | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Number of rabbits, $U(t)$ | 10 | 20 | 39 | 75 | 138 | 238 | 363 | 462 | 497 | 500 | 500 |\\*Table 2: Change in rabbit population over time, using the model in Equation (7) with $r=1$, $K=500$ and $U(0)=10$.*\\In Table 2, the number of rabbits for the discrete logistic model is shown for the first ten years after introduction to the island, where $r=1$ and $K=500$. In Figure 3, we see how the logistic model compares to the exponential model. Whilst in the exponential model the
+population just grows and grows, the logistic model has the rabbit population levelling out at about $U(t)=500$.\\Why 500? Where have we seen that before? Well, it's the value of $K$, right? Indeed, $K$ is an example of what is called a 'steady state' and what we have seen is an example of 'convergence to a steady state'. Let's define these concepts.\\````{prf:definition}
+For a difference equation, $U(t+1)=f[U(t)]$, a steady state is a constant, $U_{*}$, such that $U_{*}=f\left(U_{*}\right)$. We say that a difference equation converges to the steady state, $U_{*}$, if $U(t) \rightarrow U_{*}$ as $t \rightarrow \infty$.
+````
+````{prf:example}
+:label: ex2_1\\What is the steady state of Equation (7) for $r&gt;0$ ?\\**Solution.**\\By definition, this is a number $U_{*}$ such that\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
 U_{*}=U_{*}+r U_{*}\left(1-\frac{U_{*}}{K}\right) \tag{8}
-\end{equation*}
-\]</div>
-<p>Thus either <span class="math notranslate nohighlight">\(U_{*}=0\)</span> or we can divide through by <span class="math notranslate nohighlight">\(U_{*}\)</span> to give <span class="math notranslate nohighlight">\(r\left(1-U_{*} / K\right)=0\)</span>, which means that <span class="math notranslate nohighlight">\(U_{*}=K\)</span>.</p>
-</section>
-</div><p>In Table 2 and Figure 3b we see that the population converges to the steady state <span class="math notranslate nohighlight">\(U_{*}=K\)</span>, but not <span class="math notranslate nohighlight">\(U_{*}=0\)</span>. In population modelling, the constant <span class="math notranslate nohighlight">\(K\)</span> is referred to as the carrying capacity of the environment, because it denotes the number of organisms (e.g. rabbits) that the environment can sustain (i.e. ‘carry’) due to its resource richness.</p>
-<img src="mas108_fig_explog.png" alt="comparison of exponential and logistic growth" width="800"/>
-<p><em>Figure 3: Comparison between exponential and logistic growth models.</em></p>
-<p>In general, it is not always straightforward to determine analytically which steady state a system converges to, or if it will converge at all. Next lecture, we will see that the discrete logistic model sometimes does not converge, depending on the parameter values we choose.</p>
-</section>
-<section id="analytic-solutions-for-logistic-growth">
-<h2>2.2 Analytic solutions for logistic growth<a class="headerlink" href="#analytic-solutions-for-logistic-growth" title="Link to this heading">#</a></h2>
-<p>Perhaps the best way to find out how a difference equation will behave over time is to find an exact analytic solution, but this is not always possible. For the exponential model, we were able to find such a solution (Proposition 1). However, this is not possible in general for the logistic model (give it a try and you’ll see how hard it is!).</p>
-<p>Instead, we might try to find another model; one that can be solved exactly but yet retains similar qualitative properties as the logistic model, i.e. that it accounts for births, deaths, and also the carrying capacity of the environment. Indeed it is a general principal of model building that it can be valuable to construct models with analytic tractability in mind. One example of this is the following</p>
+\end{equation*}\]</div>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation*}
+\[ \begin{align}\begin{aligned}Thus either $U_{*}=0$ or we can divide through by $U_{*}$ to give $r\left(1-U_{*} / K\right)=0$, which means that $U_{*}=K$.
+````
+In Table 2 and Figure 3b we see that the population converges to the steady state $U_{*}=K$, but not $U_{*}=0$. In population modelling, the constant $K$ is referred to as the carrying capacity of the environment, because it denotes the number of organisms (e.g. rabbits) that the environment can sustain (i.e. 'carry') due to its resource richness.\\&lt;img src=&quot;mas108_fig_explog.png&quot; alt=&quot;comparison of exponential and logistic growth&quot; width=&quot;800&quot;/&gt;\\*Figure 3: Comparison between exponential and logistic growth models.*\\In general, it is not always straightforward to determine analytically which steady state a system converges to, or if it will converge at all. Next lecture, we will see that the discrete logistic model sometimes does not converge, depending on the parameter values we choose.\\### 2.2 Analytic solutions for logistic growth\\Perhaps the best way to find out how a difference equation will behave over time is to find an exact analytic solution, but this is not always possible. For the exponential model, we were able to find such a solution (Proposition 1). However, this is not possible in general for the logistic model (give it a try and you'll see how hard it is!).\\Instead, we might try to find another model; one that can be solved exactly but yet retains similar qualitative properties as the logistic model, i.e. that it accounts for births, deaths, and also the carrying capacity of the environment. Indeed it is a general principal of model building that it can be valuable to construct models with analytic tractability in mind. One example of this is the following\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
 U(t+1)=\frac{M R U(t)}{M+U(t)} \tag{9}
-\end{equation*}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(M&gt;0\)</span> and <span class="math notranslate nohighlight">\(R&gt;1\)</span>. We will call this the fisheries model as it was originally introduced to model fisheries (it is also sometimes referred to as the Beverton-Holt model after the people who introduced it). Like Equation (7), Equation (9) has two steady states, as follows.</p>
-<div class="proof proposition admonition" id="prop2_2">
-<p class="admonition-title"><span class="caption-number">Proposition 2 </span></p>
-<section class="proposition-content" id="proof-content">
-<p>Let <span class="math notranslate nohighlight">\(U_{*}\)</span> be a steady state of Equation (9). Then either <span class="math notranslate nohighlight">\(U_{*}=0\)</span> or <span class="math notranslate nohighlight">\(U_{*}=K\)</span>, where <span class="math notranslate nohighlight">\(K:=M(R-1)\)</span>. Note that <span class="math notranslate nohighlight">\(K&gt;0\)</span>.</p>
-</section>
-</div><div class="proof admonition" id="proof">
-<p>Proof. The equation defining <span class="math notranslate nohighlight">\(U_{*}\)</span> as a steady state is</p>
+\end{equation*}\]</div>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation*}
+\[ \begin{align}\begin{aligned}where $M&gt;0$ and $R&gt;1$. We will call this the fisheries model as it was originally introduced to model fisheries (it is also sometimes referred to as the Beverton-Holt model after the people who introduced it). Like Equation (7), Equation (9) has two steady states, as follows.\\```{prf:proposition}
+:label: prop2_2\\Let $U_{*}$ be a steady state of Equation (9). Then either $U_{*}=0$ or $U_{*}=K$, where $K:=M(R-1)$. Note that $K&gt;0$.\\```\\````{prf:proof}
+The equation defining $U_{*}$ as a steady state is\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
 U_{*}=\frac{M R U_{*}}{M+U_{*}} \tag{10}
-\end{equation*}
-\]</div>
-<p>so either <span class="math notranslate nohighlight">\(U_{*}=0\)</span> or <span class="math notranslate nohighlight">\(M R / M+U_{*}=1 \Longrightarrow M R=M+U_{*} \Longrightarrow U_{*}=M(R-1)\)</span>.</p>
-</div>
-<p>However, we go further and show the following.</p>
-<div class="proof proposition admonition" id="prop2_3">
-<p class="admonition-title"><span class="caption-number">Proposition 3 </span></p>
-<section class="proposition-content" id="proof-content">
-<p>If <span class="math notranslate nohighlight">\(U(t)\)</span> is governed by the fisheries model (Equation 9) then</p>
+\end{equation*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}so either $U_{*}=0$ or $M R / M+U_{*}=1 \Longrightarrow M R=M+U_{*} \Longrightarrow U_{*}=M(R-1)$.
+````\\However, we go further and show the following.\\```{prf:proposition}
+:label: prop2_3
+If $U(t)$ is governed by the fisheries model (Equation 9) then\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+U(t)=\frac{K U(0)}{U(0)+[K-U(0)] R^{-t}} \tag{11}
+\end{equation*}\]</div>
 <div class="math notranslate nohighlight">
 \[
-\begin{equation*}
-U(t)=\frac{K U(0)}{U(0)+[K-U(0)] R^{-t}} \tag{11}
-\end{equation*}
-\]</div>
-</section>
-</div><div class="proof admonition" id="proof">
-<p>Proof. [This is a bit tedious and uninspiring so don’t worry about understanding it in full. I just put it in for completeness.] Plugging Equation (11) into the right-hand side of Equation (9) gives</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
+```
+````{prf:proof}
+[This is a bit tedious and uninspiring so don't worry about understanding it in full. I just put it in for completeness.] Plugging Equation (11) into the right-hand side of Equation (9) gives\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-6cc752ad-1761-481f-87ac-84bf2f3d9b0f">
+<span class="eqno">(1)<a class="headerlink" href="#equation-6cc752ad-1761-481f-87ac-84bf2f3d9b0f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{M R U(t)}{M+U(t)} &amp; =\frac{M R K U(0) /\left\{U(0)+[K-U(0)] R^{-t}\right\}}{M+K U(0) /\left\{U(0)+[K-U(0)] R^{-t}\right\}} \\
 &amp; =\frac{M R K U(0)}{M\left\{U(0)+[K-U(0)] R^{-t}\right\}+K U(0)}\\
 &amp;=\frac{M^{2} R(R-1) U(0)}{M\left\{U(0)+[M(R-1)-U(0)] R^{-t}\right\}+M(R-1) U(0)}  \\
@@ -657,54 +597,41 @@ U(t)=\frac{K U(0)}{U(0)+[K-U(0)] R^{-t}} \tag{11}
 &amp;=\frac{M(R-1) U(0)}{U(0)+[M(R-1)-U(0)] R^{-(t+1)}}\\
 &amp;=\frac{K U(0)}{U(0)+[K-U(0)] R^{-(t+1)}}\\
 &amp;=U(t+1)
-\end{align} 
-\end{split}\]</div>
-<p>which is the left-hand side of Equation (9).</p>
-</div>
-<img src="mas108_fig_bh.png" alt="Comparison of model time courses" width="800"/>
-<p><em>Figure 4: Example plots of the model in Equation (9). Notice that both plots have <span class="math notranslate nohighlight">\(K=500\)</span>, but the convergence to <span class="math notranslate nohighlight">\(K\)</span> is faster in the second plot.</em></p>
-<p>This means that, for the fisheries model, we use Equation (11) once for all time, rather than needing to calculate <span class="math notranslate nohighlight">\(U(t)\)</span> separately for each time step. Two example plots of Equation (11) are shown in Figure 4.</p>
-</section>
-<section id="lecture-2-homework-exercises">
-<h2>Lecture 2 Homework exercises<a class="headerlink" href="#lecture-2-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-3 admonition">
-<p class="admonition-title">Exercise 3</p>
-<p>For the logistic model (Equation 7), when <span class="math notranslate nohighlight">\(U(0)=10\)</span> and <span class="math notranslate nohighlight">\(K=100\)</span>, calculate <span class="math notranslate nohighlight">\(U(1), \ldots, U(10)\)</span> for the following values of <span class="math notranslate nohighlight">\(r\)</span> : (a) <span class="math notranslate nohighlight">\(r=1\)</span>, (b) <span class="math notranslate nohighlight">\(r=1.5\)</span>, (c) <span class="math notranslate nohighlight">\(r=2.2\)</span>, (d) <span class="math notranslate nohighlight">\(r=2.5\)</span>, (e) <span class="math notranslate nohighlight">\(r=3\)</span>.</p>
-<p>Plot the graph of <span class="math notranslate nohighlight">\(U(t)\)</span> against <span class="math notranslate nohighlight">\(t\)</span> for each of the five cases and describe the solution qualitatively. If you are keen, you can extend this to values higher than <span class="math notranslate nohighlight">\(t=10\)</span>. Feel free to use a computer package (e.g. Python, R, Excel), if you know how, but this is not mandatory - you can do just fine with a calculator.</p>
-</div>
-<div class="admonition-exercise-4 admonition">
-<p class="admonition-title">Exercise 4</p>
-<p>Another model of population growth is given by</p>
+\end{align}\]</div>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation*}
+\[ \begin{align}\begin{aligned}which is the left-hand side of Equation (9).
+````
+&lt;img src=&quot;mas108_fig_bh.png&quot; alt=&quot;Comparison of model time courses&quot; width=&quot;800&quot;/&gt;\\*Figure 4: Example plots of the model in Equation (9). Notice that both plots have $K=500$, but the convergence to $K$ is faster in the second plot.*\\This means that, for the fisheries model, we use Equation (11) once for all time, rather than needing to calculate $U(t)$ separately for each time step. Two example plots of Equation (11) are shown in Figure 4.\\## Lecture 2 Homework exercises\\```{admonition} Exercise 3
+For the logistic model (Equation 7), when $U(0)=10$ and $K=100$, calculate $U(1), \ldots, U(10)$ for the following values of $r$ : (a) $r=1$, (b) $r=1.5$, (c) $r=2.2$, (d) $r=2.5$, (e) $r=3$.\\Plot the graph of $U(t)$ against $t$ for each of the five cases and describe the solution qualitatively. If you are keen, you can extend this to values higher than $t=10$. Feel free to use a computer package (e.g. Python, R, Excel), if you know how, but this is not mandatory - you can do just fine with a calculator.
+```
+```{admonition} Exercise 4
+Another model of population growth is given by\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
 U(t+1)=U(t) \exp \left[r\left(1-\frac{U(t)}{K}\right)\right] \tag{12}
-\end{equation*}
-\]</div>
-<p>(a) Find the steady state solutions for this model, assuming <span class="math notranslate nohighlight">\(r \neq 0\)</span>.</p>
-<p>(b) Using <span class="math notranslate nohighlight">\(U(0)=10\)</span> and <span class="math notranslate nohighlight">\(K=100\)</span>, calculate <span class="math notranslate nohighlight">\(U(1), \ldots, U(10)\)</span> for the same values of <span class="math notranslate nohighlight">\(r\)</span> as in Question 3 (but using Equation 12).</p>
-<p>(c) For each of the five cases, compare the solutions with the corresponding solutions from Question 3. What does this comparison tell you about choosing models for modelling population growth?</p>
-</div>
-<div class="admonition-exercise-5 admonition">
-<p class="admonition-title">Exercise 5</p>
-<p>A farmer owns some sheep. They breed each year and the farmer sells a fixed number each year for food. Explain all the terms in the following model of this situation</p>
+\end{equation*}\]</div>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation*}
+\[ \begin{align}\begin{aligned}(a) Find the steady state solutions for this model, assuming $r \neq 0$.\\(b) Using $U(0)=10$ and $K=100$, calculate $U(1), \ldots, U(10)$ for the same values of $r$ as in Question 3 (but using Equation 12).\\(c) For each of the five cases, compare the solutions with the corresponding solutions from Question 3. What does this comparison tell you about choosing models for modelling population growth?
+```
+```{admonition} Exercise 5
+A farmer owns some sheep. They breed each year and the farmer sells a fixed number each year for food. Explain all the terms in the following model of this situation\end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
 U(t+1)=(1+r) U(t)-s \tag{13}
-\end{equation*}
-\]</div>
-<p>(a) Show that</p>
+\end{equation*}\]</div>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation*}
+\[(a) Show that\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
 U(t)=U(0)(1+r)^{t}-\frac{s\left[(1+r)^{t}-1\right]}{r} \tag{14}
-\end{equation*}
-\]</div>
+\end{equation*}\]</div>
+<p>$$</p>
 <p>(b) Plot <span class="math notranslate nohighlight">\(U(t)\)</span> against <span class="math notranslate nohighlight">\(t\)</span> for <span class="math notranslate nohighlight">\(0 \leq t \leq 7\)</span> in the case <span class="math notranslate nohighlight">\(U(0)=100, r=1\)</span> and <span class="math notranslate nohighlight">\(s=101\)</span>.</p>
 <p>(c) Plot <span class="math notranslate nohighlight">\(U(t)\)</span> against <span class="math notranslate nohighlight">\(t\)</span> for <span class="math notranslate nohighlight">\(0 \leq t \leq 7\)</span> in the case <span class="math notranslate nohighlight">\(U(0)=100, r=1\)</span> and <span class="math notranslate nohighlight">\(s=99\)</span>.</p>
 <p>(d) If the farmer chooses to sell 101 sheep per year, what does that mean for his flock?</p>
 <p>(e) Find the steady state solution to this model. What strategy for selling sheep must the farmer have to maintain a steady state?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
 </div>
 </section>
 </section>
@@ -774,8 +701,6 @@ U(t)=U(0)(1+r)^{t}-\frac{s\left[(1+r)^{t}-1\right]}{r} \tag{14}
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-exponential-to-logistic-growth">2.1 From exponential to logistic growth</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analytic-solutions-for-logistic-growth">2.2 Analytic solutions for logistic growth</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-2-homework-exercises">Lecture 2 Homework exercises</a></li>
 </ul>
   </nav></div>
 

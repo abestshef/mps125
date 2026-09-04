@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -449,6 +449,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-5-from-difference-to-differential-equations">
 <h1>Lecture 5. From difference to differential equations<a class="headerlink" href="#lecture-5-from-difference-to-differential-equations" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘Time flies by when you’re a driver of a train
+Speeding out of Trumpton with a cargo of cocaine’</em></p>
+</div></blockquote>
 <section id="the-continuum-limit">
 <h2>5.1 The continuum limit<a class="headerlink" href="#the-continuum-limit" title="Link to this heading">#</a></h2>
 <p>Difference equations are an intuitive way to model many dynamical systems, but they can be tricky to deal with from an analytic perspective. On the other hand, differential equations (some of which you met in school) admit a far wider range of analytic techniques. Moreover, they are formally related to difference equations. Here we will explain this relation.</p>
@@ -480,7 +484,7 @@ U(t+\tau)=f_{\tau}[U(t)] \tag{38}
 \lim _{\tau \rightarrow 0} \frac{U(t+\tau)-U(t)}{\tau}=\frac{\mathrm{d} U}{\mathrm{~d} t} \tag{40}
 \end{equation*}
 \]</div>
-<p>which is the derivative of <span class="math notranslate nohighlight">\(U\)</span> with respect to <span class="math notranslate nohighlight">\(t\)</span>. You should have seen this at school. However, if you have forgotten it (and/or why it is true), be aware that you will prove this rigorously in a few weeks as part of MAS106. For now, you can just take my word for it! In any case, we arrive at the following differential equation, called the continuum limit</p>
+<p>which is the derivative of <span class="math notranslate nohighlight">\(U\)</span> with respect to <span class="math notranslate nohighlight">\(t\)</span>. You should have seen this at school. However, if you have forgotten it (and/or why it is true), be aware that you will prove this rigorously soon in another module. For now, you can just take my word for it! In any case, we arrive at the following differential equation, called the continuum limit</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
@@ -523,7 +527,7 @@ U(t+\tau)=(1+r \tau) U(t) \tag{42}
 <h2>5.2 Separable solutions: examples<a class="headerlink" href="#separable-solutions-examples" title="Link to this heading">#</a></h2>
 <p>Both Equations 44 and 45 can be solved using a technique (separation of variables) that you learned at school, but may have forgotten. We will go through it here for these two examples, then explain the general method in the Section 5.3.</p>
 <div class="proof example admonition" id="ex5_1">
-<p class="admonition-title"><span class="caption-number">Example 9 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 8 </span></p>
 <section class="example-content" id="proof-content">
 <p>Find the solution to Equation (44) where <span class="math notranslate nohighlight">\(U(0)=1\)</span>.</p>
 <p><strong>Solution.</strong></p>
@@ -590,7 +594,7 @@ U(t+\tau)=(1+r \tau) U(t) \Longrightarrow U(t)=U(0)(1+r \tau)^{t / \tau} \tag{52
 &amp; =\exp \left[\frac{t}{\tau} \ln (1+r \tau)\right] . \tag{53}
 \end{align*}
 \end{split}\]</div>
-<p>For small <span class="math notranslate nohighlight">\(\tau, \ln (1+r \tau) \approx r \tau\)</span>. (You may not have known this, but now you do! The reason why it’s true will be covered in MAS106 later; it has to do with Taylor Series.) Hence, for small <span class="math notranslate nohighlight">\(\tau\)</span>,</p>
+<p>For small <span class="math notranslate nohighlight">\(\tau, \ln (1+r \tau) \approx r \tau\)</span>. (You may not have known this, but now you do! Again, the reason why it’s true will be covered in another module later; it has to do with Taylor Series.) Hence, for small <span class="math notranslate nohighlight">\(\tau\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -607,7 +611,7 @@ U(t+\tau) &amp; =U(0)(1+r \tau)^{t / \tau} \\
 \end{split}\]</div>
 <p>This is the same as Equation 51 . Hence, for small time-steps <span class="math notranslate nohighlight">\(\tau\)</span>, the differential equation agrees with the difference equation. We’d expect this, right?</p>
 <div class="proof example admonition" id="ex5_2">
-<p class="admonition-title"><span class="caption-number">Example 10 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 9 </span></p>
 <section class="example-content" id="proof-content">
 <p>Solve Equation (45) for <span class="math notranslate nohighlight">\(U(0)=K / 10\)</span>.</p>
 <p><strong>Solution.</strong></p>
@@ -696,7 +700,7 @@ U(t+\tau) &amp; =U(0)(1+r \tau)^{t / \tau} \\
 <section id="separable-solutions-general-method">
 <h2>5.3 Separable solutions: general method<a class="headerlink" href="#separable-solutions-general-method" title="Link to this heading">#</a></h2>
 <div class="proof definition admonition" id="definition-2">
-<p class="admonition-title"><span class="caption-number">Definition 4 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 3 </span></p>
 <section class="definition-content" id="proof-content">
 <p>A separable ordinary differential equation is an equation of the following form</p>
 <div class="math notranslate nohighlight">

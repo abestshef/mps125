@@ -205,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -446,9 +446,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-17-relative-motion">
 <h1>Lecture 17. Relative motion<a class="headerlink" href="#lecture-17-relative-motion" title="Link to this heading">#</a></h1>
-<p>In the previous lecture, we looked at the motion of particles relative to a fixed origin, which we denoted by <span class="math notranslate nohighlight">\(O\)</span>. However, in reality objects will often be moving relative to one another. For example, you may be running in the park and about to reach a junction of footpaths, but see a cyclist coming along another path towards the same junction. Your motion relative to the cyclist determines whether one of you needs to change speed to avoid a collision. Similar situations happen at sea with boats moving along overlapping trajectories. In this lecture, we will develop the tools for modelling such situations. Let’s start with an example.</p>
+<blockquote>
+<div><p><em>‘He got a Boardman bike on the Cycle To Work scheme, discovered he really enjoyed it. ‘</em></p>
+</div></blockquote>
+<p>Previously, we looked at the motion of particles relative to a fixed origin, which we denoted by <span class="math notranslate nohighlight">\(O\)</span>. However, in reality objects will often be moving relative to one another. For example, you may be running in the park and about to reach a junction of footpaths, but see a cyclist coming along another path towards the same junction. Your motion relative to the cyclist determines whether one of you needs to change speed to avoid a collision. Similar situations happen at sea with boats moving along overlapping trajectories. In this lecture, we will develop the tools for modelling such situations. Let’s start with an example.</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 26 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 25 </span></p>
 <section class="example-content" id="proof-content">
 <p>At time <span class="math notranslate nohighlight">\(t=0\)</span> a boat leaves a port situated at the origin <span class="math notranslate nohighlight">\(O\)</span> and moves with uniform velocity <span class="math notranslate nohighlight">\(u \mathbf{i} \mathrm{kmh}^{-1}\)</span>. (Here, <span class="math notranslate nohighlight">\(\mathrm{kmh}^{-1}\)</span> stands for ‘kilometres per hour’, the number of kilometres the boat will travel in an hour at its current speed.) A second boat is moving with uniform velocity <span class="math notranslate nohighlight">\(5 \mathbf{i}+4 \mathbf{j} \mathrm{kmh}^{-1}\)</span> and is initially at the point in the ocean with location vector <span class="math notranslate nohighlight">\(6 \mathbf{i}-2 \mathbf{j} \mathrm{km}\)</span> with respect to the origin, <span class="math notranslate nohighlight">\(O\)</span>.</p>
 <p>(a) Find the value of <span class="math notranslate nohighlight">\(u\)</span> for which the boats collide.</p>
@@ -530,12 +533,12 @@ d(t) &amp; =\sqrt{20\left(t^{2}-2 t+1+1\right)} \\
 </section>
 </div><p>The previous example motivated a few concepts, which could do with formal definitions.</p>
 <div class="proof definition admonition" id="definition-1">
-<p class="admonition-title"><span class="caption-number">Definition 17 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 16 </span></p>
 <section class="definition-content" id="proof-content">
 <p>Suppose we have two moving objects, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. Denote by <span class="math notranslate nohighlight">\(\mathbf{r}_{A}(t)\)</span> and <span class="math notranslate nohighlight">\(\mathbf{r}_{B}(t)\)</span> the location vectors of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> at time <span class="math notranslate nohighlight">\(t\)</span>, respectively. Denote by <span class="math notranslate nohighlight">\(\mathbf{v}_{A}(t)=\dot{\mathbf{r}}_{A}(t)\)</span> and <span class="math notranslate nohighlight">\(\mathbf{v}_{B}(t)=\dot{\mathbf{r}}_{B}(t)\)</span> the velocities of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> at time <span class="math notranslate nohighlight">\(t\)</span>, respectively. Then the location of <span class="math notranslate nohighlight">\(B\)</span> relative to <span class="math notranslate nohighlight">\(A\)</span> is <span class="math notranslate nohighlight">\(\overrightarrow{A B}=\mathbf{r}_{B}-\mathbf{r}_{A}\)</span>. The velocity of <span class="math notranslate nohighlight">\(B\)</span> relative to <span class="math notranslate nohighlight">\(A\)</span> is <span class="math notranslate nohighlight">\(\mathbf{v}_{B}-\mathbf{v}_{A}\)</span>. Note that the distance between <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> is <span class="math notranslate nohighlight">\(|\overrightarrow{A B}|=\left|\mathbf{r}_{B}-\mathbf{r}_{A}\right|\)</span>.</p>
 </section>
 </div><div class="proof example admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 27 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 26 </span></p>
 <section class="example-content" id="proof-content">
 <p>To a cyclist riding due East at <span class="math notranslate nohighlight">\(15 \mathrm{kmh}^{-1}\)</span> the wind appears to the cyclist to be blowing from the North-East at <span class="math notranslate nohighlight">\(12 \mathrm{kmh}^{-1}\)</span>. Find the true velocity of the wind.</p>
 <p><strong>Solution.</strong></p>
@@ -568,8 +571,8 @@ d(t) &amp; =\sqrt{20\left(t^{2}-2 t+1+1\right)} \\
 </section>
 </div><section id="lecture-17-homework-exercises">
 <h2>Lecture 17 Homework exercises<a class="headerlink" href="#lecture-17-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-31 admonition">
-<p class="admonition-title">Exercise 31.</p>
+<div class="admonition-exercise-34 admonition">
+<p class="admonition-title">Exercise 34.</p>
 <p>The position vectors of two radio-controlled aircraft at time <span class="math notranslate nohighlight">\(t\)</span> seconds are <span class="math notranslate nohighlight">\(\mathbf{r}_{1}\)</span> metres and <span class="math notranslate nohighlight">\(\mathbf{r}_{2}\)</span> metres, where</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -583,8 +586,8 @@ d(t) &amp; =\sqrt{20\left(t^{2}-2 t+1+1\right)} \\
 <p>(b) Show that if <span class="math notranslate nohighlight">\(u=35\)</span> then the aircraft are on a collision course.</p>
 <p>(c) Find the minimum value of <span class="math notranslate nohighlight">\(d\)</span> when <span class="math notranslate nohighlight">\(u=50\)</span>.</p>
 </div>
-<div class="admonition-exercise-32 admonition">
-<p class="admonition-title">Exercise 32.</p>
+<div class="admonition-exercise-35 admonition">
+<p class="admonition-title">Exercise 35.</p>
 <p>An eagle is flying with velocity <span class="math notranslate nohighlight">\(2 \mathbf{j} \mathrm{ms}^{-1}\)</span> (where <span class="math notranslate nohighlight">\(\mathrm{ms}^{-1}\)</span> stands for ‘metres per second’). An owl is flying with velocity <span class="math notranslate nohighlight">\(u \mathbf{i}+v \mathbf{j} \mathrm{ms}^{-1}\)</span>.</p>
 <p>(a) Write down an expression for the velocity of the owl relative to the eagle.</p>
 <p>(b) To the eagle, the owl appears to have velocity in the direction <span class="math notranslate nohighlight">\(-\mathbf{i}\)</span>. Show that <span class="math notranslate nohighlight">\(u&lt;0\)</span> and <span class="math notranslate nohighlight">\(v=2\)</span>.</p>

@@ -205,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -446,9 +446,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-12-modelling-damped-oscillations-with-homogeneous-second-order-odes">
 <h1>Lecture 12. Modelling damped oscillations with homogeneous second order ODEs<a class="headerlink" href="#lecture-12-modelling-damped-oscillations-with-homogeneous-second-order-odes" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘Whilst the vehicle’s in motion, the driver’s got nothing to say’</em></p>
+</div></blockquote>
 <p>In Example 15, we examined a spring in a gravity-free, friction-free environment. Whilst gravity-free environments exist, it is never possible to have an environment completely free of friction. Even if we are in space, there will be some friction due to the spring itself. But also, by accounting for friction, we can bring our example down to Earth (quite literally). This lecture will explore what happens when we account for friction, as an example of modelling with homogeneous second order ODEs.</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 19 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 18 </span></p>
 <section class="example-content" id="proof-content">
 <p>A particle of mass <span class="math notranslate nohighlight">\(m\)</span> is attached to the end of a massless spring of stiffness <span class="math notranslate nohighlight">\(k\)</span> on a horizontal table. Let the extension of the spring be <span class="math notranslate nohighlight">\(x(t)\)</span> at time <span class="math notranslate nohighlight">\(t\)</span>. The friction (from the table, spring, and air) causes a force of <span class="math notranslate nohighlight">\(2 \beta \omega m \dot{x}\)</span> to act on the particle in the opposite direction to motion, where <span class="math notranslate nohighlight">\(\beta&gt;0\)</span> is a constant and <span class="math notranslate nohighlight">\(\omega=+\sqrt{\frac{k}{m}}\)</span>. Show that the equation of motion of the particle is</p>
 <div class="math notranslate nohighlight">
@@ -564,16 +567,16 @@ x(t)=\exp \left(-\frac{\omega t}{2}\right)\left[A \sin \left(\frac{\sqrt{3}}{2} 
 </div>
 <section id="lecture-12-homework-exercises">
 <h2>Lecture 12 Homework exercises<a class="headerlink" href="#lecture-12-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-23 admonition">
-<p class="admonition-title">Exercise 23}</p>
+<div class="admonition-exercise-26 admonition">
+<p class="admonition-title">Exercise 26}</p>
 <p>A cable is used to suspend an 800 kg safe. The stiffness of the cable is <span class="math notranslate nohighlight">\(k=20,000 \mathrm{Nm}^{-1}\)</span> (recall that <span class="math notranslate nohighlight">\(N\)</span> stands for ‘Newton’ and <span class="math notranslate nohighlight">\(1 N=1 \mathrm{kgms}^{-2}\)</span> ).</p>
 <p>(a) Show that, when the safe is stationary, the extension of the cable is <span class="math notranslate nohighlight">\(a=m g / k\)</span>, where <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity. Calculate <span class="math notranslate nohighlight">\(a\)</span>.</p>
 <p>(b) The safe is being lowered at <span class="math notranslate nohighlight">\(6 \mathrm{~ms}^{-1}\)</span> when the cable jams and suddenly stops moving. Let <span class="math notranslate nohighlight">\(x(t)+a\)</span> be the extension of the cable. Show that <span class="math notranslate nohighlight">\(\ddot{x}+\omega^{2} x=0\)</span> where <span class="math notranslate nohighlight">\(\omega^{2}=k / m\)</span>.</p>
 <p>(c) Solve the ODE from part (b) to show that the safe oscillates in perpetuity at a frequency of <span class="math notranslate nohighlight">\(\omega /(2 \pi)\)</span> and amplitude (i.e. maximum displacement from equilibrium) of <span class="math notranslate nohighlight">\(1.2 m\)</span>.</p>
 <p>(d) Why is this conclusion unrealistic? How might we change our model to make it more realistic?</p>
 </div>
-<div class="admonition-exercise-24 admonition">
-<p class="admonition-title">Exercise 24</p>
+<div class="admonition-exercise-27 admonition">
+<p class="admonition-title">Exercise 27</p>
 <p>An elastic string of natural length <span class="math notranslate nohighlight">\(2 l_{0}\)</span> and stiffness <span class="math notranslate nohighlight">\(k\)</span> is stretched horizontally between two points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> a distance <span class="math notranslate nohighlight">\(2 l\)</span> apart (where <span class="math notranslate nohighlight">\(l&gt;l_{0}\)</span> ), in a gravity-free environment. A particle of mass <span class="math notranslate nohighlight">\(m\)</span> attached to the midpoint <span class="math notranslate nohighlight">\(O\)</span> of the string is drawn aside a small distance <span class="math notranslate nohighlight">\(a\)</span>, where <span class="math notranslate nohighlight">\(a&lt;l-l_{0}\)</span>, along <span class="math notranslate nohighlight">\(A B\)</span> and released. Let <span class="math notranslate nohighlight">\(x(t)\)</span> be the location of the</p>
 <img src="mas108_elastic_qn.png" alt="drawing" width="400"/>
 <p>particle with respect to the origin, <span class="math notranslate nohighlight">\(O\)</span>.</p>
@@ -582,8 +585,8 @@ x(t)=\exp \left(-\frac{\omega t}{2}\right)\left[A \sin \left(\frac{\sqrt{3}}{2} 
 <p>(c) Use the second law of motion to find an ODE describing the motion of the mass.</p>
 <p>(d) Solve this ODE.</p>
 </div>
-<div class="admonition-exercise-25 admonition">
-<p class="admonition-title">Exercise 25</p>
+<div class="admonition-exercise-28 admonition">
+<p class="admonition-title">Exercise 28</p>
 <p>A particle <span class="math notranslate nohighlight">\(P\)</span> of mass <span class="math notranslate nohighlight">\(m\)</span> is tied to one end of an elastic string of natural length <span class="math notranslate nohighlight">\(a\)</span> and stiffness <span class="math notranslate nohighlight">\(2 m \omega^{2}\)</span>. The other end <span class="math notranslate nohighlight">\(B\)</span> is attached to a point <span class="math notranslate nohighlight">\(A\)</span> on a fixed smooth horizontal plane. The particle is released from rest on the plane when the string is extended to a length <span class="math notranslate nohighlight">\(2 a\)</span>. Let <span class="math notranslate nohighlight">\(x(t)\)</span> be the extension of the string.
 (a) Ignoring any friction, derive an equation governing the motion of <span class="math notranslate nohighlight">\(x(t)\)</span>. Use this to find the speed of the particle when the string first becomes slack (i.e. when <span class="math notranslate nohighlight">\(x(t)=0)\)</span>.</p>
 <p>(b) Suppose now that motion is resisted by a force of <span class="math notranslate nohighlight">\(2 m \omega(\dot{x})\)</span>. Show that <span class="math notranslate nohighlight">\(\ddot{x}+2 \omega \dot{x}+\)</span> <span class="math notranslate nohighlight">\(2 \omega^{2} x=0\)</span>. Find <span class="math notranslate nohighlight">\(x\)</span> as a function of <span class="math notranslate nohighlight">\(t\)</span>, and use this to find the time at which the string first becomes slack.</p>

@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,23 +189,23 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -446,9 +446,13 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-4-more-examples-of-difference-equation-models">
 <h1>Lecture 4. More examples of difference equation models<a class="headerlink" href="#lecture-4-more-examples-of-difference-equation-models" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘Hip hip hooray, it’s Record Store Day
+You’re going to need a second mortgage’</em></p>
+</div></blockquote>
 <p>The last couple of lectures introduced a wealth of new concepts, which might have felt a bit overwhelming! This lecture, we are going to shift down gears with the mathematical investigations and just explore a few examples of difference equation models</p>
 <div class="proof example admonition" id="ex4_1">
-<p class="admonition-title"><span class="caption-number">Example 5 </span> (Paying off a mortgage.)</p>
+<p class="admonition-title"><span class="caption-number">Example 4 </span> (Paying off a mortgage.)</p>
 <section class="example-content" id="proof-content">
 <p>Suppose you buy a house and borrow <span class="math notranslate nohighlight">\(M\)</span> pounds from the bank as a mortgage. The bank charges interest at a rate of <span class="math notranslate nohighlight">\(R \%\)</span> per year, and each year you pay <span class="math notranslate nohighlight">\(s\)</span> pounds to the bank. How long does it take to pay off your mortgage, as a function of <span class="math notranslate nohighlight">\(M, R\)</span>, and <span class="math notranslate nohighlight">\(s\)</span> ? Writing <span class="math notranslate nohighlight">\(r=R / 100\)</span>, find the numerical value of this time when <span class="math notranslate nohighlight">\(M=200,000\)</span>, <span class="math notranslate nohighlight">\(s=10,000\)</span>, and <span class="math notranslate nohighlight">\(r=0.02\)</span>. Are there any values of <span class="math notranslate nohighlight">\(M, R\)</span>, and <span class="math notranslate nohighlight">\(s\)</span> for which you will never pay off your mortgage?</p>
 <p><strong>Solution.</strong></p>
@@ -492,7 +496,7 @@ T=\frac{\ln (10,000)-\ln (10,000-0.02 \times 200,000)}{\ln (1.02)} \approx 25.8 
 </div>
 </section>
 </div><div class="proof example admonition" id="ex4_2">
-<p class="admonition-title"><span class="caption-number">Example 6 </span> (Including a gestation period into population models.)</p>
+<p class="admonition-title"><span class="caption-number">Example 5 </span> (Including a gestation period into population models.)</p>
 <section class="example-content" id="proof-content">
 <p>Suppose we have a population of organisms that breed every month at a rate <span class="math notranslate nohighlight">\(r\)</span> but there is a gestation period of a month (i.e. a month between breeding and giving birth). Denote by <span class="math notranslate nohighlight">\(U(t)\)</span> the number of breeding pairs at time <span class="math notranslate nohighlight">\(t\)</span> and assume no organisms die.</p>
 <p>(a) Construct a difference equation model of the change in population size over time.</p>
@@ -530,7 +534,7 @@ U(t+1) &amp; =U(t)+r U(t-1), \quad \text { for } t \geq 1 \tag{24}
 </section>
 </div><p>Notice that, for <span class="math notranslate nohighlight">\(r=1\)</span>, the positive value of <span class="math notranslate nohighlight">\(S_{*}\)</span> is called the Golden Ratio. If you have never heard of the Golden Ratio then look it up using your favourite search engine. There are many claims about its relation to a wide range of applications (some more dubious than others).</p>
 <div class="proof example admonition" id="ex4_3">
-<p class="admonition-title"><span class="caption-number">Example 7 </span> (Predicting the weather.)</p>
+<p class="admonition-title"><span class="caption-number">Example 6 </span> (Predicting the weather.)</p>
 <section class="example-content" id="proof-content">
 <p>Suppose that there is a probability <span class="math notranslate nohighlight">\(p\)</span> of there being a dry day (no rain) after a wet day (some rain) and a probability <span class="math notranslate nohighlight">\(q\)</span> of there being a dry day after a dry day. Suppose it is a dry day today. What is the probability that it will be a dry day in <span class="math notranslate nohighlight">\(t\)</span> days time, as a function of <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span> ? Find the numerical value for <span class="math notranslate nohighlight">\(p=0.2\)</span>, and <span class="math notranslate nohighlight">\(q=0.8\)</span>, and <span class="math notranslate nohighlight">\(t=1,2,3,4,5\)</span>.</p>
 <p><strong>Solution.</strong></p>
@@ -553,7 +557,7 @@ U(t)=U(0)(q-p)^{t}+\frac{p\left[(q-p)^{t}-1\right]}{q-p-1} \tag{28}
 </div>
 </section>
 </div><div class="proof example admonition" id="ex4_4">
-<p class="admonition-title"><span class="caption-number">Example 8 </span> (Competing species.)</p>
+<p class="admonition-title"><span class="caption-number">Example 7 </span> (Competing species.)</p>
 <section class="example-content" id="proof-content">
 <p>Suppose we have two competing species of organisms in the same place, for example rabbits and sheep competing for edible vegetation. Denote by <span class="math notranslate nohighlight">\(U(t)\)</span> and <span class="math notranslate nohighlight">\(V(t)\)</span> the number of organisms of each species given in some arbitrary unit (for example, there could be <span class="math notranslate nohighlight">\(U(t)\)</span> thousand rabbits and <span class="math notranslate nohighlight">\(V(t)\)</span> thousand sheep). We can model this as follows</p>
 <div class="math notranslate nohighlight">

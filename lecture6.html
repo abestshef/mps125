@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture6';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 7. The muddiest point: part I" href="lecture7.html" />
+    <link rel="next" title="Lecture 7. An application: water pollution in the Peak District" href="lecture6_bis.html" />
     <link rel="prev" title="Lecture 5. From difference to differential equations" href="lecture5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -178,7 +178,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    MAS108: Mathematical Modelling
+                    MPS125: Mathematical Modelling
                 </a>
             </li>
         </ul>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture7.html">Lecture 7. The muddiest point: part I</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -448,12 +448,16 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-6-first-order-linear-ordinary-differential-equations">
 <h1>Lecture 6. First order linear ordinary differential equations<a class="headerlink" href="#lecture-6-first-order-linear-ordinary-differential-equations" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘Hey Joyce
+Rock and Roll never gave you a voice’</em></p>
+</div></blockquote>
 <p>Last lecture, you saw an exact technique for solving separable ordinary differential equations. In this lecture, we are going to look at some techniques for solving what are called ‘first order linear ordinary differential equations’. That’s a lot of adjectives, many of which may be new! So we will start by giving some definitions.</p>
 <section id="classification-of-differential-equations">
 <h2>6.1 Classification of differential equations<a class="headerlink" href="#classification-of-differential-equations" title="Link to this heading">#</a></h2>
 <p>The first way to classify a differential equation is by the number of independent variables. What’s an independent variable? Good question - we need a definition.</p>
 <div class="proof definition admonition" id="def6_1">
-<p class="admonition-title"><span class="caption-number">Definition 5 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 4 </span></p>
 <section class="definition-content" id="proof-content">
 <p>A dependent variable is a variable that depends upon other variables. An independent variable is one that is not dependent.</p>
 </section>
@@ -466,13 +470,13 @@ document.write(`
 \]</div>
 <p>the dependent variable is <span class="math notranslate nohighlight">\(U\)</span> as it depends upon <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(t\)</span> is the independent variable as it does not depend on any other variable. Usually, in the context of differential equations, you differentiate dependent variables by independent variables.</p>
 <div class="proof definition admonition" id="def6_2">
-<p class="admonition-title"><span class="caption-number">Definition 6 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 5 </span></p>
 <section class="definition-content" id="proof-content">
 <p>An ordinary differential equation (ODE) is a differential equation with only one independent variable. A differential equation with more than one independent variable is called a partial differential equation (PDE).</p>
 </section>
 </div><p>In this module, we will only be concerned with ordinary differential equations (ODEs), so we will now look at some subclassifications of ODEs.</p>
 <div class="proof definition admonition" id="def6_3">
-<p class="admonition-title"><span class="caption-number">Definition 7 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 6 </span></p>
 <section class="definition-content" id="proof-content">
 <p>The order of an ODE is the highest exponent of any differential operator in the equation.</p>
 </section>
@@ -501,12 +505,12 @@ differentiated twice. Here are two examples</p>
 \end{array}
 \end{split}\]</div>
 <div class="proof definition admonition" id="def 6_4">
-<p class="admonition-title"><span class="caption-number">Definition 8 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 7 </span></p>
 <section class="definition-content" id="proof-content">
 <p>A linear function of <span class="math notranslate nohighlight">\(x_{1}, \ldots, x_{n}\)</span> is a function of the form <span class="math notranslate nohighlight">\(f\left(x_{1}, \ldots, x_{n}\right)=\)</span> <span class="math notranslate nohighlight">\(a_{0}+a_{1} x_{1}+\cdots+a_{n} x_{n}\)</span> where <span class="math notranslate nohighlight">\(a_{0}, \ldots, a_{n}\)</span> are constant with respect to <span class="math notranslate nohighlight">\(x_{1}, \ldots, x_{n}\)</span>.</p>
 </section>
 </div><div class="proof definition admonition" id="def 6_5">
-<p class="admonition-title"><span class="caption-number">Definition 9 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 8 </span></p>
 <section class="definition-content" id="proof-content">
 <p>A linear ODE is one that is a linear function of the dependent variables and their derivatives.</p>
 </section>
@@ -532,7 +536,7 @@ differentiated twice. Here are two examples</p>
 \end{split}\]</div>
 <p>In Equations (78), (79), (80), and (81), the non-linear terms are <span class="math notranslate nohighlight">\(-U^{2}, \sin (U) \frac{\mathrm{d} U}{\mathrm{~d} t},\left(\frac{\mathrm{d} U}{\mathrm{~d} t}\right)^{2}\)</span>, and <span class="math notranslate nohighlight">\(U \frac{\mathrm{d} U}{\mathrm{~d} t}\)</span>, respectively.</p>
 <div class="proof definition admonition" id="def _6">
-<p class="admonition-title"><span class="caption-number">Definition 10 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 9 </span></p>
 <section class="definition-content" id="proof-content">
 <p>The general <span class="math notranslate nohighlight">\(n^{\text {th }}\)</span> order linear ordinary differential equation can be written as</p>
 <div class="math notranslate nohighlight">
@@ -588,12 +592,12 @@ differentiated twice. Here are two examples</p>
 <p>where we can pick <span class="math notranslate nohighlight">\(A=\exp (c)\)</span> for solutions where <span class="math notranslate nohighlight">\(U(t)&gt;0\)</span> or <span class="math notranslate nohighlight">\(A=-\exp (c)\)</span> for solutions where <span class="math notranslate nohighlight">\(U(t)&gt;0\)</span>.</p>
 <p>There is also a general equation for the solution of an inhomogeneous first order linear ODE, but it is rather cumbersome and unenlightening. Instead, we will look at an example, which illustrates the key trick to solving these beasts. But first we need a definition.</p>
 <div class="proof definition admonition" id="def6_7">
-<p class="admonition-title"><span class="caption-number">Definition 11 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 10 </span></p>
 <section class="definition-content" id="proof-content">
 <p>For an ODE in the form of Equation (89), we the define integrating factor as <span class="math notranslate nohighlight">\(I(t)=\exp \left(\int p(t) \mathrm{d} t\right)\)</span>.</p>
 </section>
 </div><div class="proof example admonition" id="example-7">
-<p class="admonition-title"><span class="caption-number">Example 11 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 10 </span></p>
 <section class="example-content" id="proof-content">
 <p>Solve</p>
 <div class="math notranslate nohighlight">
@@ -742,11 +746,11 @@ differentiated twice. Here are two examples</p>
       </div>
     </a>
     <a class="right-next"
-       href="lecture7.html"
+       href="lecture6_bis.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 7. The muddiest point: part I</p>
+        <p class="prev-next-title">Lecture 7. An application: water pollution in the Peak District</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

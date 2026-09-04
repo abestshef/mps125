@@ -205,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -447,9 +447,13 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-13-inhomogeneous-second-order-odes">
 <h1>Lecture 13. Inhomogeneous second order ODEs<a class="headerlink" href="#lecture-13-inhomogeneous-second-order-odes" title="Link to this heading">#</a></h1>
-<p>Before we go any further, let’s start with an example.</p>
+<blockquote>
+<div><p>*’“Last Chance For Hanging Baskets”
+They’re even giving you clues!’</p>
+</div></blockquote>
+<p>Today we’ll continue with equations of motion but for a more complex example. Before we go any further, let’s start with an example.</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 20 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 19 </span></p>
 <section class="example-content" id="proof-content">
 <p>A particle <span class="math notranslate nohighlight">\(P\)</span> of mass <span class="math notranslate nohighlight">\(m\)</span> is attached to one end of a spring of natural length <span class="math notranslate nohighlight">\(L\)</span> and stiffness <span class="math notranslate nohighlight">\(k\)</span>. The other end of the spring is fixed at the point <span class="math notranslate nohighlight">\(A\)</span>. Initially the spring hangs down vertically in equilibrium. The point <span class="math notranslate nohighlight">\(A\)</span> is then set in vertical motion, so that its displacement from its initial position is</p>
 <div class="math notranslate nohighlight">
@@ -514,7 +518,7 @@ m \ddot{x}+k x &amp; =k y=k D \sin (\sigma t) \\
 </section>
 </div><p>Notice that the resulting ODE (Equation 141) is not in the form of Equation (109) so we cannot use our results from Propositions 4-6.</p>
 <div class="proof definition admonition" id="def12_1">
-<p class="admonition-title"><span class="caption-number">Definition 15 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 14 </span></p>
 <section class="definition-content" id="proof-content">
 <p>Definition. An equation of the following type</p>
 <div class="math notranslate nohighlight">
@@ -536,7 +540,7 @@ m \ddot{x}+k x &amp; =k y=k D \sin (\sigma t) \\
 </ol>
 <p>The problem with this method is that Step 1 does not always work for any function <span class="math notranslate nohighlight">\(f(t)\)</span>. However, it usually works for polynomials, exponential functions, sine, and cosine.</p>
 <div class="proof example admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 21 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 20 </span></p>
 <section class="example-content" id="proof-content">
 <p>Find the general solution to Equation (141) in the case <span class="math notranslate nohighlight">\(\sigma^{2} \neq \omega^{2}\)</span>.</p>
 <p><strong>Solution.</strong></p>
@@ -592,11 +596,9 @@ x(t)=x_{I}(t)+x_{P}(t)=B \sin (\omega t)+C \cos (\omega t)+\frac{D \omega^{2}}{\
 </section>
 <section id="lecture-13-homework-exercises">
 <h2>Lecture 13 Homework exercises<a class="headerlink" href="#lecture-13-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-26 admonition">
-<p class="admonition-title">Exercise 26</p>
-<ol class="arabic simple" start="26">
-<li><p>Find the general solution to each of the following second order ODEs</p></li>
-</ol>
+<div class="admonition-exercise-29 admonition">
+<p class="admonition-title">Exercise 29</p>
+<p>Find the general solution to each of the following second order ODEs</p>
 <p>(a) <span class="math notranslate nohighlight">\(\ddot{x}+3 \dot{x}+2 x=t\)</span></p>
 <p>(b) <span class="math notranslate nohighlight">\(\ddot{x}+2 \dot{x}-x=t^{2}\)</span></p>
 <p>(c) <span class="math notranslate nohighlight">\(\ddot{x}+2 \dot{x}+x=t^{2}+2 t+1\)</span></p>

@@ -64,7 +64,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Lecture 9. Direction fields for non-autonomous ODEs" href="lecture9.html" />
-    <link rel="prev" title="Lecture 7. 1st order linear ODEs applied" href="lecture6_bis.html" />
+    <link rel="prev" title="Lecture 7. An application: water pollution in the Peak District" href="lecture6_bis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. 1st order linear ODEs applied</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture9.html">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -448,7 +448,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-8-nature-s-non-linearity-and-the-need-for-qualitative-solutions">
 <h1>Lecture 8. Nature’s non-linearity and the need for qualitative solutions<a class="headerlink" href="#lecture-8-nature-s-non-linearity-and-the-need-for-qualitative-solutions" title="Link to this heading">#</a></h1>
-<p>Many larger, sexually-reproducing animals disperse as adolescents to find a new place to live. This may wel be an evolved trait to make it less likely for individuals to mate with those they are closely related to.</p>
+<blockquote>
+<div><p><em>‘Arthur Askey and Dougie-Wougie Bader went down to the Animal Farm’</em></p>
+</div></blockquote>
+<p>Many larger, sexually-reproducing animals disperse as adolescents to find a new place to live. This may well be an evolved trait to make it less likely for individuals to mate with those they are closely related to.</p>
 <p>A dispersing animal will want to find the ‘best place’ to live on the landscape, which may mean the place with the most access to the resources it needs, or away from danger, or a combination thereof. Suppose we can quantify the ‘quality’ of the landscape (as perceived by the animal) as a function <span class="math notranslate nohighlight">\(G(x)\)</span>, where <span class="math notranslate nohighlight">\(x\)</span> is space. Here we are assuming (for simplicity despite lack of realism) that the landscape is one dimensional. Then a simple model of animal movement might assume that the change in location over time is equal to the gradient of <span class="math notranslate nohighlight">\(G(x)\)</span> (Figure 9), so define <span class="math notranslate nohighlight">\(g(x)=\frac{\mathrm{d} G}{\mathrm{~d} x}\)</span>.</p>
 <img src="mas108_anim_disp.png" alt="drawing" width="800"/>
 <p><em>Figure 9: Panel (a) shows an example landscape whose quality (for a dispersing animal) is given by a function <span class="math notranslate nohighlight">\(G(x)\)</span>. If the animal is at a place where the gradient of <span class="math notranslate nohighlight">\(G(x)\)</span> is positive, such as the rabbit on the left-hand side at <span class="math notranslate nohighlight">\(x \approx 30\)</span>, the animal will move to the right. On the other hand, if the gradient of <span class="math notranslate nohighlight">\(G(x)\)</span> is negative, such as at <span class="math notranslate nohighlight">\(x \approx 75\)</span>, the animal will move left. Panel (b) shows <span class="math notranslate nohighlight">\(g(x)\)</span>, the gradient of <span class="math notranslate nohighlight">\(G(x)\)</span>. The left-hand arrow shows the point where the left-hand rabbit from Panel (a) resides. Note that the value of <span class="math notranslate nohighlight">\(g(x)\)</span> is positive here. The right-hand arrow shows the point where the right-hand rabbit from Panel (a) resides, where <span class="math notranslate nohighlight">\(g(x)\)</span> is negative.</em></p>
@@ -505,7 +508,7 @@ dots at the points where <span class="math notranslate nohighlight">\(\sin (x)=0
 <p><em>Figure 10: Here we plot <span class="math notranslate nohighlight">\(\sin (x)\)</span> with the corresponding phase line beneath. We can see that the unstable equilibria are <span class="math notranslate nohighlight">\(x=2 \pi n\)</span> for <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span> whilst the stable equilibria are <span class="math notranslate nohighlight">\(x=(2 n+1) \pi\)</span> for <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span>.</em></p>
 <p>Notice that there is nothing special here about the sine function. It is entirely possible to construct a phase line for Equation (96) with any continuous function <span class="math notranslate nohighlight">\(g(x)\)</span>. We see an example with a rather more wiggly function in Figure 11. (In this case, we have not shown all the flow arrows as some of the equilibria are too close together to display the arrows easily.)</p>
 <div class="proof definition admonition" id="def8_1">
-<p class="admonition-title"><span class="caption-number">Definition 12 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 11 </span></p>
 <section class="definition-content" id="proof-content">
 <p>An autonomous first order ODE is one of the form</p>
 <div class="math notranslate nohighlight">
@@ -527,7 +530,7 @@ dots at the points where <span class="math notranslate nohighlight">\(\sin (x)=0
 <h2>8.2 Equilibrium points and stability<a class="headerlink" href="#equilibrium-points-and-stability" title="Link to this heading">#</a></h2>
 <p>What sort of questions can we answer with phase lines? We can gain insight into a few concepts that we will now define.</p>
 <div class="proof definition admonition" id="def8_2">
-<p class="admonition-title"><span class="caption-number">Definition 13 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 12 </span></p>
 <section class="definition-content" id="proof-content">
 <p>For an autonomous first order ODE</p>
 <div class="math notranslate nohighlight">
@@ -537,7 +540,7 @@ dots at the points where <span class="math notranslate nohighlight">\(\sin (x)=0
 <p>the stable states (also known as equilibrium points or equilibria) are the points <span class="math notranslate nohighlight">\(U=U_{*}\)</span> where <span class="math notranslate nohighlight">\(g\left(U_{*}\right)=0\)</span>.</p>
 </section>
 </div><div class="proof definition admonition" id="def8_3">
-<p class="admonition-title"><span class="caption-number">Definition 14 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 13 </span></p>
 <section class="definition-content" id="proof-content">
 <p>An equilibrium point, <span class="math notranslate nohighlight">\(U_{*}\)</span>, is asymptotically stable if there is some <span class="math notranslate nohighlight">\(\epsilon&gt;0\)</span> such that <span class="math notranslate nohighlight">\(U(t) \rightarrow U_{*}\)</span> as <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span> whenever <span class="math notranslate nohighlight">\(U_{*}-\epsilon&lt;U(0)&lt;U_{*}+\epsilon\)</span>.</p>
 </section>
@@ -546,7 +549,7 @@ dots at the points where <span class="math notranslate nohighlight">\(\sin (x)=0
 <p><em>Figure 12: The function <span class="math notranslate nohighlight">\(U(K-U)(U-a)\)</span> is shown with the corresponding phase line beneath. For the purposes of this plot, we have set <span class="math notranslate nohighlight">\(K=0.9\)</span> and <span class="math notranslate nohighlight">\(a=0.3\)</span>.</em></p>
 <p>Going back to the example of a dispersing animal, we may want to know ‘where does the animal end up?’ The simple answer is ‘at one of the stable equilibria’. If you know the initial condition, you can also tell which one: just follow the arrows on the phase line. This is explained more in the caption of Figure 11.</p>
 <div class="proof example admonition" id="example-3">
-<p class="admonition-title"><span class="caption-number">Example 14 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 13 </span></p>
 <section class="example-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\(U(t)\)</span> be the number of organisms in a population. In the 1930s, a nowfamous study on goldfish showed that there needs to be a sufficiently high number of organisms for the reproductive rate to exceed the death rate. This has since been observed in a wide variety of contexts, and is named the Allee effect after the author of the goldfish study. The Allee effect may emerge simply because it is too hard to find a suitable mate when the population density is low (not enough fish in the sea, literally). Otherwise, it could be due a complex social structure being required for bringing up young who themselves are able to reproduce. In any case, such a population can be described by the following ODE model</p>
 <div class="math notranslate nohighlight">
@@ -573,8 +576,8 @@ dots at the points where <span class="math notranslate nohighlight">\(\sin (x)=0
 </div></section>
 <section id="lecture-8-homework-exercises">
 <h2>Lecture 8 Homework exercises<a class="headerlink" href="#lecture-8-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-16 admonition">
-<p class="admonition-title">Exercise 16</p>
+<div class="admonition-exercise-19 admonition">
+<p class="admonition-title">Exercise 19</p>
 <p>Plot the phase lines for</p>
 <p>(a) <span class="math notranslate nohighlight">\(\frac{\mathrm{d} U}{\mathrm{~d} t}=U(1-U)\)</span></p>
 <p>(b) <span class="math notranslate nohighlight">\(\frac{\mathrm{d} U}{\mathrm{~d} t}=\cos (U)\)</span></p>
@@ -583,12 +586,12 @@ dots at the points where <span class="math notranslate nohighlight">\(\sin (x)=0
 <p>(e) <span class="math notranslate nohighlight">\(\frac{\mathrm{d} U}{\mathrm{~d} t}=(U+2)(U-3)\)</span></p>
 <p>(f) <span class="math notranslate nohighlight">\(\frac{\mathrm{d} U}{\mathrm{~d} t}=(U-1)^{2}\)</span></p>
 </div>
-<div class="admonition-exercise-17 admonition">
-<p class="admonition-title">Exercise 17</p>
+<div class="admonition-exercise-20 admonition">
+<p class="admonition-title">Exercise 20</p>
 <p>For each of the examples in the previous question, state the equilibria and their stability.</p>
 </div>
-<div class="admonition-exercise-18 admonition">
-<p class="admonition-title">Exercise 18</p>
+<div class="admonition-exercise-21 admonition">
+<p class="admonition-title">Exercise 21</p>
 <p>For each of the following examples, if <span class="math notranslate nohighlight">\(U(0)=1\)</span> then what is the limit as <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span> of <span class="math notranslate nohighlight">\(U(t)\)</span> ?</p>
 <p>(a) <span class="math notranslate nohighlight">\(\frac{\mathrm{d} U}{\mathrm{~d} t}=U(2-U)\)</span></p>
 <p>(b) <span class="math notranslate nohighlight">\(\frac{\mathrm{d} U}{\mathrm{~d} t}=\cos (U)\)</span></p>
@@ -635,7 +638,7 @@ dots at the points where <span class="math notranslate nohighlight">\(\sin (x)=0
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Lecture 7. 1st order linear ODEs applied</p>
+        <p class="prev-next-title">Lecture 7. An application: water pollution in the Peak District</p>
       </div>
     </a>
     <a class="right-next"

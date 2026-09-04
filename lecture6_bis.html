@@ -205,7 +205,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -453,6 +453,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-7-an-application-water-pollution-in-the-peak-district">
 <h1>Lecture 7. An application: water pollution in the Peak District<a class="headerlink" href="#lecture-7-an-application-water-pollution-in-the-peak-district" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘I thought she’d be back in three weeks and we’d go wandering the Peaks’</em></p>
+</div></blockquote>
 <p>Last lecture, we worked through two key ways to solve first-order linear ODEs: separation of variables and integrating factors. We applied these to two fairly straight-forward examples. Now let’s apply these methods to a more interesting real-world scenario.</p>
 <p>Among the many delights of the Peak District National Park (have you been yet? You should - take a bus or a train) are the three connected reservoirs of Howden, Derwent and Ladybower. Suppose a company decides to illegally dump pollution into Howden reservoir. How will this pollution spread downstream?</p>
 <p>Let us define a few terms first. We will use the letters <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(D\)</span> and <span class="math notranslate nohighlight">\(L\)</span> to denote the amount of pollution in the three respective reservoirs. We will assume the pollution quickly becomes well-mixed into the body of water. The flow rate of water (and, since it is well-mixed, therefore also the flow rate of pollution) from Howden into Derwent is given by <span class="math notranslate nohighlight">\(\phi\)</span>, and the flow-rate from Derwent into Ladybower as <span class="math notranslate nohighlight">\(\rho\)</span>. The initial amount of pollution is <span class="math notranslate nohighlight">\(P_0\)</span>. For simplicity we will assume there is no out-flow from Ladybower (perhaps after the pollution event immediate measures were taken to stop the flow and limit the spread).</p>
@@ -465,12 +468,12 @@ document.write(`
 \frac{\mathrm{d} L}{\mathrm{~d} t} &amp; = \rho D(t)
 \end{array}
 \end{split}\]</div>
-<p>This gives us a set of three <em>simultaneous</em> differential equations to solve. You will look into how to deal with such situations more deeply in semester 2. However, in this case we can effectively solve them one at a time.</p>
+<p>This gives us a set of three <em>simultaneous</em> differential equations to solve. You will look into how to deal with such situations more fundamentally in another module. However, in this case we can effectively solve them one at a time.</p>
 <section id="the-dynamics-in-howden">
 <h2>7.1 The dynamics in Howden<a class="headerlink" href="#the-dynamics-in-howden" title="Link to this heading">#</a></h2>
-<p>Note that the first equation depends only on the variable <span class="math notranslate nohighlight">\(H(t)\)</span> on both side of the equality. We can therefore treat this case entirely on its own. More helpfully still, since we have no constant term, we can solve this through separation of variables.</p>
+<p>Note that the first equation depends only on the variable <span class="math notranslate nohighlight">\(H(t)\)</span> on both sides of the equality. We can therefore treat this case entirely on its own. More helpfully still, since we have no constant term, we can solve this through separation of variables.</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 12 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 11 </span></p>
 <section class="example-content" id="proof-content">
 <p>Solve</p>
 <div class="math notranslate nohighlight">
@@ -525,7 +528,7 @@ H(t)&amp;=e^{-\phi t+C_1} \\
 \]</div>
 <p>We now only have the one dependent variable: <span class="math notranslate nohighlight">\(D\)</span>, along with the independent variable: <span class="math notranslate nohighlight">\(t\)</span>. As such it remains a first-order linear ODE that we can solve with an integrating factor.</p>
 <div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 13 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 12 </span></p>
 <section class="example-content" id="proof-content">
 <p>Solve</p>
 <div class="math notranslate nohighlight">
@@ -662,21 +665,21 @@ D(t)&amp;=\frac{\phi}{\rho-\phi}P_0\left[e^{-\phi t}-e^{-\rho t}\right]\\
 t&amp;\approx92\textrm{ days}.
 \end{align*}
 \end{split}\]</div>
-<p>So, if no further action were taken, we’d have a long time to wait for the pollution to spread through the system.</p>
+<p>So, if no further action were taken, we’d have to wait 3 months for the pollution to peak in Derwent, suggesting this will be a long-term issue.</p>
 </section>
 </section>
 <section id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-x1 admonition">
-<p class="admonition-title">Exercise X1</p>
+<div class="admonition-exercise-16 admonition">
+<p class="admonition-title">Exercise 16</p>
 <p>At the end of the lecture we calculated <em>when</em> the pollution would reach its peak level in Derwent. Using this, find the what the amount of pollution is at this peak.</p>
 </div>
-<div class="admonition-exercise-x2 admonition">
-<p class="admonition-title">Exercise X2</p>
+<div class="admonition-exercise-17 admonition">
+<p class="admonition-title">Exercise 17</p>
 <p>After completing our work getting the equation for the pollution in Derwent, we noted that if <span class="math notranslate nohighlight">\(\phi=\rho\)</span> then our solution does not make sense. Re-calculate the solutions for all three reservoirs now assuming that the flow rates are equal at <span class="math notranslate nohighlight">\(\phi\)</span>.</p>
 </div>
-<div class="admonition-exercise-x3 admonition">
-<p class="admonition-title">Exercise X3</p>
+<div class="admonition-exercise-18 admonition">
+<p class="admonition-title">Exercise 18</p>
 <p>We took the major assumption that there is no out-flow from the system. Even considering that engineers may seek to reduce the flow after a pollution spill, it is unlikely to be shut off entirely. To incorporate this additional flow we update the model to,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}

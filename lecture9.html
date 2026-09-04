@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture9';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture 10. From the second law of motion to second order ODEs" href="lecture10.html" />
+    <link rel="next" title="Lecture 10. The muddiest point: part 1" href="lecture10.html" />
     <link rel="prev" title="Lecture 8. Nature’s non-linearity and the need for qualitative solutions" href="lecture8.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -189,23 +189,23 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture4.html">Lecture 4. More examples of difference equation models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture5.html">Lecture 5. From difference to differential equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture6.html">Lecture 6. First order linear ordinary differential equations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. 1st order linear ODEs applied</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture6_bis.html">Lecture 7. An application: water pollution in the Peak District</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture8.html">Lecture 8. Nature’s non-linearity and the need for qualitative solutions</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 9. Direction fields for non-autonomous ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. From the second law of motion to second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. Modelling damped oscillations with homogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Inhomogeneous second order ODEs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Modelling oscillations with second order ODEs: a worked example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. The muddiest point: part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture10.html">Lecture 10. The muddiest point: part 1</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="lecture11.html">Lecture 11. From the second law of motion to second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture12.html">Lecture 12. Modelling damped oscillations with homogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture13.html">Lecture 13. Inhomogeneous second order ODEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture14.html">Lecture 14. Modelling oscillations with second order ODEs: a worked example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture15.html">Lecture 15. Motion in more than one dimension</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. Relative motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Modelling the effect of gravity close to the Earth’s surface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling projectile motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. More examples of motion with constant acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. The muddiest point: part III</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture16.html">Lecture 16. The muddiest point: part 2</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="project.html">MAS108 Project: Saving red squirrels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture17.html">Lecture 17. Relative motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture18.html">Lecture 18. Modelling the effect of gravity close to the Earth’s surface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture19.html">Lecture 19. Modelling projectile motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture20.html">Lecture 20. More examples of motion with constant acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">MPS125 Project: Saving red squirrels</a></li>
 </ul>
 
     </div>
@@ -446,6 +446,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-9-direction-fields-for-non-autonomous-odes">
 <h1>Lecture 9. Direction fields for non-autonomous ODEs<a class="headerlink" href="#lecture-9-direction-fields-for-non-autonomous-odes" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>‘Then time creeps up unseen
+And it puts me back at the front of the bus’</em></p>
+</div></blockquote>
 <p>If an ODE is non-autonomous, i.e. of the form</p>
 <div class="math notranslate nohighlight">
 \[
@@ -465,7 +469,7 @@ document.write(`
 \]</div>
 </div>
 <div class="proof example admonition" id="ex9_1">
-<p class="admonition-title"><span class="caption-number">Example 15 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 14 </span></p>
 <section class="example-content" id="proof-content">
 <p>Draw the direction field for a population of organisms with a seasonally fluctuating birth rate and constant intraspecific competition, given as follows</p>
 <div class="math notranslate nohighlight">
@@ -609,10 +613,9 @@ document.write(`
 </section>
 </div><p>Figure 13 also shows the solution to Equation (104) for two different initial conditions: <span class="math notranslate nohighlight">\(U(0)=4\)</span>, given by the top curve, and <span class="math notranslate nohighlight">\(U(0)=1 / 2\)</span>, given by the bottom curve. These are not algebraic expressions, but rather they are graphical solutions, showing how <span class="math notranslate nohighlight">\(U\)</span> changes over time. Nonetheless, they are still solutions, and valuable for analysing ODEs.</p>
 <div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 16 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 15 </span></p>
 <section class="example-content" id="proof-content">
-<p>Suppose we have a population of animals living in an environment that is being slowly degraded over time (e.g. by climate change or deforestation). We can model this environmental degradation as a decline of carrying capacity: as the environment degrades, it
-is able to sustain less individuals. A simple model of this is as follows</p>
+<p>Suppose we have a population of animals living in an environment that is being slowly degraded over time (e.g. by climate change or deforestation). We can model this environmental degradation as a decline of carrying capacity: as the environment degrades, it is able to sustain less individuals. A simple model of this is as follows</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{equation*}
@@ -727,8 +730,8 @@ is able to sustain less individuals. A simple model of this is as follows</p>
 </section>
 </div><section id="lecture-9-homework-exercises">
 <h2>Lecture 9 Homework exercises<a class="headerlink" href="#lecture-9-homework-exercises" title="Link to this heading">#</a></h2>
-<div class="admonition-exercise-19 admonition">
-<p class="admonition-title">Exercise 19</p>
+<div class="admonition-exercise-22 admonition">
+<p class="admonition-title">Exercise 22</p>
 <p>For each of the following ODEs, draw direction fields. Add some example solution trajectories to the plots.</p>
 <p>(a) <span class="math notranslate nohighlight">\(\dot{U}=U(1-U)\)</span></p>
 <p>(b) <span class="math notranslate nohighlight">\(\dot{U}=t \sin (U)\)</span></p>
@@ -782,7 +785,7 @@ is able to sustain less individuals. A simple model of this is as follows</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture 10. From the second law of motion to second order ODEs</p>
+        <p class="prev-next-title">Lecture 10. The muddiest point: part 1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
